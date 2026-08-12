@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Alba Mercadito | Familias · Catálogo</title>
+<title>Alba Mercadito | Categorías · Catálogo</title>
 <link rel="icon" type="image/webp" href="img/logo.webp"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -254,8 +254,8 @@
     <section class="mb-10">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <div class="max-w-2xl">
-                <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-4" id="mainTitle">FAMILIAS</h1>
-                <p class="text-on-surface-variant body-lg max-w-lg leading-relaxed" id="subtitle">Explora nuestras colecciones</p>
+                <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-4" id="mainTitle">CATEGORIAS</h1>
+                <p class="text-on-surface-variant body-lg max-w-lg leading-relaxed" id="subtitle">Explora nuestras categorías</p>
             </div>
             <div class="w-full md:w-96 relative group">
                 <span class="absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">
@@ -268,7 +268,7 @@
         <div id="backButtonContainer" class="mt-8 hidden">
             <button id="backToFamiliesBtn" class="back-button">
                 <span class="material-symbols-outlined text-sm">arrow_back</span>
-                <span>Volver a todas las familias</span>
+                <span>Volver a todas las categorías</span>
             </button>
         </div>
         
@@ -284,7 +284,7 @@
     </section>
 
     <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
-        <!-- Tarjetas de familias o productos se renderizan dinámicamente -->
+        <!-- Tarjetas de categorías o productos se renderizan dinámicamente -->
     </div>
 </main>
 
@@ -399,11 +399,11 @@
         actualizarContadorCarrito();
     }
 
-    // --- Renderizado de tarjetas de FAMILIA ---
+    // --- Renderizado de tarjetas de CATEGORÍA ---
     function renderFamilias(familiasFiltradas = null) {
         const familiasAMostrar = familiasFiltradas || familiasUnicas;
         if (!familiasAMostrar.length) {
-            productsGrid.innerHTML = '<p class="text-center col-span-3 text-on-surface-variant">No se encontraron familias</p>';
+            productsGrid.innerHTML = '<p class="text-center col-span-3 text-on-surface-variant">No se encontraron categorías</p>';
             return;
         }
         
@@ -440,7 +440,7 @@
         });
     }
 
-    // --- Renderizado de PRODUCTOS (resultados de búsqueda o familia) ---
+    // --- Renderizado de PRODUCTOS (resultados de búsqueda o categoría) ---
     function renderProductos(productos, titulo = null, mostrarBotonVolver = false) {
         if (!productos || productos.length === 0) {
             productsGrid.innerHTML = `<p class="text-center col-span-3 text-on-surface-variant">No se encontraron productos que coincidan con la búsqueda</p>`;
@@ -511,13 +511,13 @@
             return;
         }
         
-        // Si no hay búsqueda, mostrar según familia o familias
+        // Si no hay búsqueda, mostrar según categoría o categorías
         busquedaActiva = false;
         searchResultsCount.classList.add('hidden');
         
         if (familiaActiva === null) {
-            mainTitle.textContent = "FAMILIAS";
-            subtitle.textContent = "Explora nuestras colecciones";
+            mainTitle.textContent = "CATEGORIAS";
+            subtitle.textContent = "Explora nuestras categorías";
             backButtonContainer.classList.add('hidden');
             renderFamilias();
         } else {
@@ -533,17 +533,19 @@
         familiaActiva = familia;
         searchInput.value = '';
         actualizarVistaSegunEstado();
+        // Agregar estado al historial para que el botón atrás funcione
+        window.history.pushState({ familia: familia }, '', window.location.href);
     }
 
     function volverAFamilias() {
         familiaActiva = null;
         searchInput.value = '';
         actualizarVistaSegunEstado();
+        // Reemplazar el estado del historial para evitar bucles
+        window.history.replaceState({ pagina: 'categorias' }, '', window.location.href);
     }
 
     function manejarBusqueda() {
-        // Si estamos dentro de una familia y se escribe, mostrar resultados globales
-        // Si se borra la búsqueda, volver a la familia o familias
         actualizarVistaSegunEstado();
     }
 
@@ -567,8 +569,11 @@
                 throw new Error('Formato JSON inválido: se esperaba un array');
             }
             
+            // Filtrar productos con cantidad > 0
+            const productosFiltrados = data.filter(item => item.Cantidad > 0);
+            
             // Transformar los datos del JSON al formato que usa el código
-            todosLosProductos = data.map(item => ({
+            todosLosProductos = productosFiltrados.map(item => ({
                 id: item.Codigo,
                 nombre: item.Nombre,
                 precio: `$${item.Precio.toFixed(2)}`,
@@ -577,7 +582,7 @@
                 cantidad: item.Cantidad
             }));
             
-            // Obtener familias únicas
+            // Obtener categorías únicas
             const familiasSet = new Set(todosLosProductos.map(p => p.familia).filter(f => f && f.trim()));
             familiasUnicas = Array.from(familiasSet).sort();
             
@@ -585,7 +590,7 @@
             window.cantidadesProductos = {};
             todosLosProductos.forEach(p => { window.cantidadesProductos[p.id] = 1; });
             
-            // Resetear vista a familias
+            // Resetear vista a categorías
             familiaActiva = null;
             searchInput.value = '';
             actualizarVistaSegunEstado();
@@ -630,6 +635,18 @@
             if (refreshIcon) refreshIcon.classList.remove('spinner');
         }
     }
+
+    // Manejar el botón de atrás en el teléfono
+    window.addEventListener('popstate', function(event) {
+        // Si hay una categoría activa, volver a las categorías
+        if (familiaActiva !== null) {
+            volverAFamilias();
+        }
+        // Si ya estamos en la vista de categorías, dejar que el navegador maneje el atrás
+    });
+
+    // Inicializar con un estado base en el historial
+    window.history.replaceState({ pagina: 'categorias' }, '', window.location.href);
 
     // Event listeners
     searchInput.addEventListener('input', manejarBusqueda);
