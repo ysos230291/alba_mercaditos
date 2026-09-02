@@ -858,98 +858,98 @@
         "Nombre": "Leche condensada 390g",
         "Precio": 1.2,
         "Cantidad": 50.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 146,
         "Nombre": "Leche evaporada 354ml",
         "Precio": 1.8,
         "Cantidad": 33.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 147,
         "Nombre": "Leche 1kg Lela",
         "Precio": 6.5,
         "Cantidad": 39.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 149,
         "Nombre": "Chocolate Nestlé Milo 400g",
         "Precio": 8.0,
         "Cantidad": 6.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 151,
         "Nombre": "Queso Gouda 1/2",
         "Precio": 17.0,
         "Cantidad": 9.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 152,
         "Nombre": "Yogurt Yokey fresa",
         "Precio": 5.5,
         "Cantidad": 1.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 153,
         "Nombre": "Yogurt Yokey natural con azúcar",
         "Precio": 5.5,
         "Cantidad": 0.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 154,
         "Nombre": "Yogurt Yokey guanábana",
         "Precio": 5.5,
         "Cantidad": 0.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 155,
         "Nombre": "Yogurt Yokey piña colada",
         "Precio": 5.5,
         "Cantidad": 0.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 156,
         "Nombre": "Yogurt Yokey mango",
         "Precio": 5.5,
         "Cantidad": 0.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 157,
         "Nombre": "Set 4 vasitos yogurt fresa",
         "Precio": 2.5,
         "Cantidad": 8.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 158,
         "Nombre": "Set 4 vasitos yogurt natural",
         "Precio": 2.5,
         "Cantidad": 29.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 159,
         "Nombre": "Set 4 vasitos yogurt plátano",
         "Precio": 2.5,
         "Cantidad": 32.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 160,
         "Nombre": "Set 4 vasitos yogurt macedonia",
         "Precio": 2.5,
         "Cantidad": 34.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 163,
@@ -1033,7 +1033,7 @@
         "Nombre": "Hornilla Eléctrica doble",
         "Precio": 22.0,
         "Cantidad": 4.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 52,
@@ -1187,7 +1187,7 @@
         "Nombre": "Margarina con sal",
         "Precio": 2.0,
         "Cantidad": 11.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 196,
@@ -1229,7 +1229,7 @@
         "Nombre": "Queso Yaguajay 1.5lb aprox",
         "Precio": 4.0,
         "Cantidad": 4.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 203,
@@ -1257,21 +1257,21 @@
         "Nombre": "Leche sabor chocolate 1kg",
         "Precio": 7.8,
         "Cantidad": 5.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 207,
         "Nombre": "Leche sabor fresa 1kg",
         "Precio": 7.8,
         "Cantidad": 4.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 208,
         "Nombre": "Chocolate en polvo 500g sin gluten",
         "Precio": 5.0,
         "Cantidad": 6.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 209,
@@ -1411,21 +1411,21 @@
         "Nombre": "Paletas chocolate",
         "Precio": 1.0,
         "Cantidad": 31.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 235,
         "Nombre": "Paletas vainilla",
         "Precio": 1.0,
         "Cantidad": 27.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 236,
         "Nombre": "Paletas fresa",
         "Precio": 1.0,
         "Cantidad": 27.0,
-        "Categoria": "Lácteos"
+        "Categoria": "Lacteos"
     },
     {
         "Codigo": 237,
