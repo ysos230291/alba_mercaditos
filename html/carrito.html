@@ -93,38 +93,6 @@
         .tonal-transition {
             background: linear-gradient(to bottom, #131313, rgba(19, 19, 19, 0));
         }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            z-index: 100;
-            overflow: hidden;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-        }
-        .whatsapp-float img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        @media (max-width: 768px) {
-            .whatsapp-float {
-                bottom: 80px;
-            }
-        }
-        .error-border {
-            border-bottom-color: #ffb4ab !important;
-        }
         .cart-item-image {
             width: 100%;
             height: 100%;
@@ -132,6 +100,13 @@
         }
         body {
             min-height: max(884px, 100dvh);
+        }
+        .animate-spin {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
     </style>
 </head>
@@ -193,9 +168,13 @@
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_nombre" name="remitente_nombre" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_nombre">Nombre del remitente *</label>
                         </div>
-                        <div class="relative group md:col-span-2">
+                        <div class="relative group">
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_apellidos" name="remitente_apellidos" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_apellidos">Apellidos del remitente (2) *</label>
+                        </div>
+                        <div class="relative group md:col-span-2">
+                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_telefono" name="remitente_telefono" placeholder=" " type="tel"/>
+                            <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_telefono">Teléfono del remitente *</label>
                         </div>
                     </form>
                 </section>
@@ -236,10 +215,7 @@
         </div>
     </main>
 
-    <a href="https://wa.me/5350987817" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
-        <img src="../img/whatsap.webp" alt="WhatsApp" onerror="fallbackWhatsApp(this)"/>
-    </a>
-
+    <!-- Modal de Confirmación -->
     <div class="fixed inset-0 z-[100] hidden items-center justify-center px-6" id="confirm-modal">
         <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
         <div class="relative bg-surface-container-low border border-outline-variant/30 w-full max-w-2xl p-8 md:p-10 text-center shadow-2xl rounded-lg max-h-[90vh] overflow-y-auto">
@@ -253,14 +229,15 @@
 
             <div class="flex flex-col md:flex-row gap-4">
                 <button class="flex-1 py-4 border border-outline-variant text-on-surface font-headline font-bold uppercase tracking-widest text-xs hover:bg-surface-container-high transition-colors" id="close-modal">Cancelar</button>
-                <button class="flex-1 py-4 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" id="confirmar-whatsapp">
-                    <span class="material-symbols-outlined text-sm">check_circle</span>
-                    Confirmar
+                <button class="flex-1 py-4 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:opacity-90 transition-opacity" id="confirmar-telegram">
+                    <span class="material-symbols-outlined text-sm">send</span>
+                    Enviar por Telegram
                 </button>
             </div>
         </div>
     </div>
 
+    <!-- Modal de Error -->
     <div class="fixed inset-0 z-[110] hidden items-center justify-center px-6" id="error-modal">
         <div class="absolute inset-0 bg-surface/95 backdrop-blur-md"></div>
         <div class="relative bg-error-container text-on-error-container border border-error w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
@@ -271,6 +248,32 @@
         </div>
     </div>
 
+    <!-- Modal de Cargando -->
+    <div class="fixed inset-0 z-[120] hidden items-center justify-center px-6" id="loading-modal">
+        <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
+        <div class="relative bg-surface-container-low border border-outline-variant/30 w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-surface-container-highest border border-primary/20 mb-6">
+                <span class="material-symbols-outlined text-primary text-4xl animate-spin">progress_activity</span>
+            </div>
+            <h2 class="font-headline text-xl font-bold mb-2">Enviando pedido...</h2>
+            <p class="font-body text-on-surface-variant/80">Por favor espera un momento</p>
+        </div>
+    </div>
+
+    <!-- Modal de Éxito -->
+    <div class="fixed inset-0 z-[130] hidden items-center justify-center px-6" id="success-modal">
+        <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
+        <div class="relative bg-surface-container-low border border-primary/30 w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 border border-primary/30 mb-6">
+                <span class="material-symbols-outlined text-primary text-4xl">check_circle</span>
+            </div>
+            <h2 class="font-headline text-xl font-bold mb-2 text-primary">¡Pedido Enviado!</h2>
+            <p class="font-body text-on-surface-variant/80 mb-6">Tu pedido ha sido enviado correctamente a los administradores.</p>
+            <button class="px-6 py-3 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-opacity" id="close-success-modal">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Navegación móvil -->
     <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-6 bg-[#131313]/80 backdrop-blur-md z-50 border-t border-[#E5E2E1]/10 tonal-transition">
         <a href="../index.html" class="flex flex-col items-center justify-center text-[#E5E2E1]/40 transition-all duration-300 ease-out">
             <span class="material-symbols-outlined">auto_awesome_mosaic</span>
@@ -287,15 +290,26 @@
     </footer>
 
     <script>
-        const CARRITO_STORAGE_KEY = 'triplem_carrito';
-        let todosLosProductos = [];
+        // ============================================================
+        // 🚀 CONFIGURACIÓN - SOLO CAMBIA ESTOS VALORES
+        // ============================================================
+        
+        const TELEGRAM_BOT_TOKEN = '8820451688:AAEfzeGBbJgN41sdkyZZiwVu28CCHY44aHw';  // Token de @AlbaMercaditoBot
+        
+        // 👇 ADMINISTRADORES - IDS DE TELEGRAM
+        // (Los obtienes con @userinfobot)
+        const ADMINISTRADORES = [
+            '1123398150',        // ✅ ACTIVO - Administrador 1 (el que ya tienes)
+            '6355103438',     // ⬅️ DESCOMENTA Y AGREGA EL ID DEL ADMIN 2
+            '1282893866',     // ⬅️ DESCOMENTA Y AGREGA EL ID DEL ADMIN 3
+        ];
+        
+        // ============================================================
+        // FIN CONFIGURACIÓN - NO TOCAR NADA DEBAJO
+        // ============================================================
 
-        // Fallback para WhatsApp
-        function fallbackWhatsApp(img) {
-            img.style.display = 'none';
-            img.parentElement.style.background = '#25D366';
-            img.parentElement.innerHTML = '<span class="text-white text-2xl">💬</span>';
-        }
+        const CARRITO_STORAGE_KEY = 'alba_carrito';
+        let todosLosProductos = [];
 
         function obtenerCarrito() {
             const carritoGuardado = localStorage.getItem(CARRITO_STORAGE_KEY);
@@ -434,8 +448,10 @@
             const address = document.getElementById('address').value.trim();
             const remitenteNombre = document.getElementById('remitente_nombre').value.trim();
             const remitenteApellidos = document.getElementById('remitente_apellidos').value.trim();
+            const remitenteTelefono = document.getElementById('remitente_telefono').value.trim();
 
-            if (!idCard || !firstName || !lastNames || !phone || !address || !remitenteNombre || !remitenteApellidos) {
+            if (!idCard || !firstName || !lastNames || !phone || !address || 
+                !remitenteNombre || !remitenteApellidos || !remitenteTelefono) {
                 return false;
             }
             return true;
@@ -449,7 +465,8 @@
                 phone: document.getElementById('phone').value.trim(),
                 address: document.getElementById('address').value.trim(),
                 remitente_nombre: document.getElementById('remitente_nombre').value.trim(),
-                remitente_apellidos: document.getElementById('remitente_apellidos').value.trim()
+                remitente_apellidos: document.getElementById('remitente_apellidos').value.trim(),
+                remitente_telefono: document.getElementById('remitente_telefono').value.trim()
             };
         }
 
@@ -466,6 +483,7 @@
 
             resumenHtml += '<p class="font-bold text-primary mt-4">📤 REMITENTE:</p>';
             resumenHtml += '<p class="text-sm">✏️ ' + cliente.remitente_nombre + ' ' + cliente.remitente_apellidos + '</p>';
+            resumenHtml += '<p class="text-sm">📞 ' + cliente.remitente_telefono + '</p>';
 
             resumenHtml += '<p class="font-bold text-primary mt-4">🛒 PRODUCTOS:</p>';
             let subtotal = 0;
@@ -484,8 +502,13 @@
             return resumenHtml;
         }
 
-        function generarMensajeWhatsApp(cliente) {
+        function generarMensajeTelegram() {
             const carrito = obtenerCarrito();
+            const cliente = obtenerDatosCliente();
+            
+            // Limpiar el teléfono (quitar espacios, guiones, etc.)
+            const telefonoLimpio = cliente.remitente_telefono.replace(/[^0-9+]/g, '');
+            
             let mensaje = '🛍️ *NUEVO PEDIDO - ALBA MERCADITO* 🛍️%0A%0A';
             mensaje += '👤 *DATOS DE QUIEN RECIBE:*%0A';
             mensaje += '📄 CI: ' + cliente.id_card + '%0A';
@@ -495,7 +518,8 @@
             mensaje += '📍 Dirección: ' + cliente.address + '%0A%0A';
             mensaje += '📤 *DATOS DE QUIEN ENVÍA (REMITENTE):*%0A';
             mensaje += '✏️ Nombre: ' + cliente.remitente_nombre + '%0A';
-            mensaje += '📝 Apellidos: ' + cliente.remitente_apellidos + '%0A%0A';
+            mensaje += '📝 Apellidos: ' + cliente.remitente_apellidos + '%0A';
+            mensaje += '📞 Teléfono: ' + cliente.remitente_telefono + '%0A%0A';
             mensaje += '📦 *PRODUCTOS SOLICITADOS:*%0A';
 
             let subtotal = 0;
@@ -511,11 +535,67 @@
 
             mensaje += '%0A💰 *TOTAL DEL PEDIDO: $' + subtotal.toFixed(2) + '*%0A%0A';
             mensaje += '🚚 *Domicilio: (Costo adicional)*%0A%0A';
+            
+            // Enlace de WhatsApp para contactar al remitente
+            if (telefonoLimpio) {
+                mensaje += '📱 *Contactar al remitente por WhatsApp:*%0A';
+                mensaje += 'https://wa.me/' + telefonoLimpio + '%0A%0A';
+            }
+            
             mensaje += '🙏 ¡Gracias por su compra!';
 
             return mensaje;
         }
 
+        // --- FUNCIÓN PARA ENVIAR A UN ADMINISTRADOR ---
+        async function enviarAUnAdmin(chatId, mensaje) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${chatId}&text=${mensaje}&parse_mode=Markdown`;
+            
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                return data.ok === true;
+            } catch (error) {
+                console.error('Error enviando a admin:', chatId, error);
+                return false;
+            }
+        }
+
+        // --- FUNCIÓN PARA ENVIAR A TODOS LOS ADMINISTRADORES ---
+        async function enviarPedidoTelegram() {
+            const mensaje = generarMensajeTelegram();
+            
+            // Verificar que hay al menos un administrador
+            if (ADMINISTRADORES.length === 0) {
+                throw new Error('No hay administradores configurados');
+            }
+
+            // Enviar a todos los administradores
+            const resultados = [];
+            for (const adminId of ADMINISTRADORES) {
+                if (adminId && adminId.trim() !== '') {
+                    const exito = await enviarAUnAdmin(adminId.trim(), mensaje);
+                    resultados.push({ adminId, exito });
+                }
+            }
+
+            // Verificar si todos fueron exitosos
+            const todosExitosos = resultados.every(r => r.exito === true);
+            
+            if (!todosExitosos) {
+                const fallaron = resultados.filter(r => !r.exito).map(r => r.adminId);
+                console.warn('Fallaron los envíos a:', fallaron);
+            }
+
+            return {
+                success: todosExitosos,
+                total: resultados.length,
+                exitosos: resultados.filter(r => r.exito).length,
+                fallidos: resultados.filter(r => !r.exito).length
+            };
+        }
+
+        // --- FUNCIONES PARA MODALES ---
         function mostrarError(mensaje) {
             const errorModal = document.getElementById('error-modal');
             const errorMsg = document.getElementById('error-message');
@@ -525,13 +605,44 @@
             document.body.style.overflow = 'hidden';
         }
 
+        function mostrarLoading() {
+            const modal = document.getElementById('loading-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function ocultarLoading() {
+            const modal = document.getElementById('loading-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function mostrarExito() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function ocultarExito() {
+            const modal = document.getElementById('success-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // --- EVENTOS ---
         const openBtn = document.getElementById('open-modal');
         const closeBtn = document.getElementById('close-modal');
         const modal = document.getElementById('confirm-modal');
         const vaciarBtn = document.getElementById('vaciar-carrito');
-        const confirmarWhatsApp = document.getElementById('confirmar-whatsapp');
+        const confirmarTelegram = document.getElementById('confirmar-telegram');
         const closeErrorBtn = document.getElementById('close-error-modal');
         const errorModal = document.getElementById('error-modal');
+        const closeSuccessBtn = document.getElementById('close-success-modal');
+        const successModal = document.getElementById('success-modal');
 
         if (openBtn) {
             openBtn.addEventListener('click', function() {
@@ -574,20 +685,44 @@
             vaciarBtn.addEventListener('click', vaciarCarrito);
         }
 
-        if (confirmarWhatsApp) {
-            confirmarWhatsApp.addEventListener('click', function() {
-                const cliente = obtenerDatosCliente();
-                const mensaje = generarMensajeWhatsApp(cliente);
-                const url = 'https://wa.me/5350987817?text=' + mensaje;
-
-                guardarCarrito({ items: [] });
-                renderizarCarrito();
-
+        if (confirmarTelegram) {
+            confirmarTelegram.addEventListener('click', async function() {
+                // Mostrar loading
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
-                document.body.style.overflow = 'auto';
-
-                window.open(url, '_blank');
+                mostrarLoading();
+                
+                try {
+                    const resultado = await enviarPedidoTelegram();
+                    
+                    ocultarLoading();
+                    
+                    if (resultado.success) {
+                        // Vaciar carrito
+                        guardarCarrito({ items: [] });
+                        renderizarCarrito();
+                        
+                        // Mostrar mensaje de éxito
+                        mostrarExito();
+                    } else {
+                        // Si falló pero algunos se enviaron, igual mostramos éxito con advertencia
+                        if (resultado.exitosos > 0) {
+                            guardarCarrito({ items: [] });
+                            renderizarCarrito();
+                            mostrarExito();
+                            // Mostrar advertencia después de cerrar el éxito
+                            setTimeout(() => {
+                                alert(`⚠️ El pedido se envió a ${resultado.exitosos} de ${resultado.total} administradores. Algunos no recibieron el mensaje.`);
+                            }, 500);
+                        } else {
+                            throw new Error('No se pudo enviar el pedido a ningún administrador');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    ocultarLoading();
+                    mostrarError('❌ Hubo un error al enviar el pedido. Por favor, intente nuevamente.');
+                }
             });
         }
 
@@ -605,6 +740,18 @@
             });
         }
 
+        if (closeSuccessBtn) {
+            closeSuccessBtn.addEventListener('click', function() {
+                ocultarExito();
+            });
+
+            successModal.addEventListener('click', function(e) {
+                if (e.target === successModal.children[0]) {
+                    ocultarExito();
+                }
+            });
+        }
+
         // Manejar el botón de atrás en el teléfono
         window.addEventListener('popstate', function(event) {
             window.location.href = '../index.html';
@@ -615,6 +762,5 @@
 
         cargarProductos();
     </script>
-
 </body>
 </html>
