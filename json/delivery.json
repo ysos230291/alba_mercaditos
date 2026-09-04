@@ -1,0 +1,44 @@
+{
+  "opciones_delivery": [
+    {
+      "localidad": "Pinar ciudad (hasta 5km de las Carreteras)",
+      "minimo": 30.00,
+      "delivery": 0.00
+    },
+    {
+      "localidad": "Km 5 a Luis Lazo a entrada de la Guabina",
+      "minimo": 50.00,
+      "delivery": 5.00
+    },
+    {
+      "localidad": "Km 9 de Luis Lazo hasta Sumidero",
+      "minimo": 80.00,
+      "delivery": 8.00
+    },
+    {
+      "localidad": "Km 5 San Juan hasta pueblos de San Luis y San Juan",
+      "minimo": 50.00,
+      "delivery": 5.00
+    },
+    {
+      "localidad": "Desde punto de control de Montequín, La Conchita, Ovas, Puerta de Golpe, Consolación",
+      "minimo": 50.00,
+      "delivery": 5.00
+    },    
+    {
+      "localidad": "Herradura, Entronque de Herradura, Piloto",
+      "minimo": 80.00,
+      "delivery": 8.00
+    },
+    {
+      "localidad": "Km 5 Ca Viñales hasta pueblo de Viñales",
+      "minimo": 50.00,
+      "delivery": 5.00
+    },    
+    {
+      "localidad": "Carretera Coloma desde Km 5 hasta pueblo de la Coloma",
+      "minimo": 50.00,
+      "delivery": 5.00
+    }
+  ]
+}
