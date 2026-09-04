@@ -90,6 +90,11 @@
             transform: translateY(-1.5rem) scale(0.85);
             color: #f2ca50;
         }
+        select:focus + label,
+        select:not(:placeholder-shown) + label {
+            transform: translateY(-1.5rem) scale(0.85);
+            color: #f2ca50;
+        }
         .tonal-transition {
             background: linear-gradient(to bottom, #131313, rgba(19, 19, 19, 0));
         }
@@ -107,6 +112,16 @@
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
+        }
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: transparent;
+        }
+        select option {
+            background: #131313;
+            color: #e5e2e1;
         }
     </style>
 </head>
@@ -177,6 +192,20 @@
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_telefono">Teléfono del remitente *</label>
                         </div>
                     </form>
+
+                    <!-- Sección: DELIVERY -->
+                    <div class="flex items-center gap-3 mt-8">
+                        <span class="w-8 h-[1px] bg-primary"></span>
+                        <h2 class="font-label text-xs uppercase tracking-[0.3em] text-primary">DELIVERY</h2>
+                    </div>
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10" id="deliveryForm">
+                        <div class="relative group md:col-span-2">
+                            <select class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all cursor-pointer" id="localidad" name="localidad">
+                                <option value="">Seleccione una localidad</option>
+                            </select>
+                            <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="localidad">Localidad *</label>
+                        </div>
+                    </form>
                 </section>
             </div>
             <div class="lg:col-span-5">
@@ -193,9 +222,13 @@
                             <span class="text-on-surface-variant">Subtotal</span>
                             <span class="font-medium" id="subtotal">$0.00</span>
                         </div>
-                        <div class="flex justify-between text-sm">
-                            <span class="text-on-surface-variant">Domicilio</span>
-                            <span class="font-medium text-primary">(Costo adicional)</span>
+                        <div class="flex justify-between text-sm" id="minimoRow">
+                            <span class="text-on-surface-variant">Mínimo</span>
+                            <span class="font-medium" id="minimo">$0.00</span>
+                        </div>
+                        <div class="flex justify-between text-sm" id="deliveryRow">
+                            <span class="text-on-surface-variant">Delivery</span>
+                            <span class="font-medium" id="deliveryCost">$0.00</span>
                         </div>
                         <div class="flex justify-between pt-4 border-t border-outline-variant/10">
                             <span class="font-headline text-lg font-bold">Total</span>
@@ -299,9 +332,9 @@
         // 👇 ADMINISTRADORES - IDS DE TELEGRAM
         // (Los obtienes con @userinfobot)
         const ADMINISTRADORES = [
-            '1123398150',        // ✅ ACTIVO - Administrador 1 (el que ya tienes)
-            '6355103438',     // ⬅️ DESCOMENTA Y AGREGA EL ID DEL ADMIN 2
-            '1282893866',     // ⬅️ DESCOMENTA Y AGREGA EL ID DEL ADMIN 3
+            '1123398150',        // ✅ ACTIVO - Administrador 1
+            '6355103438',        // Administrador 2
+            '1282893866',        // Administrador 3
         ];
         
         // ============================================================
@@ -310,6 +343,10 @@
 
         const CARRITO_STORAGE_KEY = 'alba_carrito';
         let todosLosProductos = [];
+        let deliveryData = [];
+        let deliveryCost = 0;
+        let minimoActual = 0;
+        let subtotalActual = 0;
 
         function obtenerCarrito() {
             const carritoGuardado = localStorage.getItem(CARRITO_STORAGE_KEY);
@@ -348,33 +385,94 @@
             }
         }
 
+        async function cargarDelivery() {
+            try {
+                const response = await fetch('../json/delivery.json?nocache=' + Date.now());
+                const data = await response.json();
+                deliveryData = data.opciones_delivery || [];
+                llenarSelectLocalidades();
+            } catch (error) {
+                console.error('Error cargando delivery:', error);
+            }
+        }
+
+        function llenarSelectLocalidades() {
+            const select = document.getElementById('localidad');
+            // Limpiar opciones excepto la primera
+            while (select.options.length > 1) {
+                select.remove(1);
+            }
+            
+            deliveryData.forEach(opcion => {
+                const option = document.createElement('option');
+                option.value = opcion.localidad;
+                option.textContent = opcion.localidad;
+                select.appendChild(option);
+            });
+
+            // Evento para actualizar el costo de delivery y mínimo
+            select.addEventListener('change', function() {
+                actualizarDatosDelivery(this.value);
+            });
+        }
+
+        function actualizarDatosDelivery(localidad) {
+            const opcion = deliveryData.find(o => o.localidad === localidad);
+            if (opcion) {
+                deliveryCost = opcion.delivery;
+                minimoActual = opcion.minimo;
+            } else {
+                deliveryCost = 0;
+                minimoActual = 0;
+            }
+            actualizarTotales();
+        }
+
+        function actualizarTotales() {
+            const subtotalSpan = document.getElementById('subtotal');
+            const minimoSpan = document.getElementById('minimo');
+            const deliverySpan = document.getElementById('deliveryCost');
+            const totalSpan = document.getElementById('total');
+
+            // Calcular subtotal
+            const carrito = obtenerCarrito();
+            let subtotal = 0;
+            carrito.items.forEach(item => {
+                const producto = todosLosProductos.find(p => p.id === item.id);
+                if (producto) {
+                    const precioNumerico = extraerPrecio(producto);
+                    subtotal += precioNumerico * item.cantidad;
+                }
+            });
+            subtotalActual = subtotal;
+
+            subtotalSpan.textContent = '$' + subtotal.toFixed(2);
+            minimoSpan.textContent = '$' + minimoActual.toFixed(2);
+            deliverySpan.textContent = '$' + deliveryCost.toFixed(2);
+            
+            const total = subtotal + deliveryCost;
+            totalSpan.textContent = '$' + total.toFixed(2);
+        }
+
         function renderizarCarrito() {
             const carrito = obtenerCarrito();
             const cartContainer = document.getElementById('cartItems');
             const itemCountSpan = document.getElementById('itemCount');
-            const subtotalSpan = document.getElementById('subtotal');
-            const totalSpan = document.getElementById('total');
 
             if (!todosLosProductos.length) return;
 
             if (carrito.items.length === 0) {
                 cartContainer.innerHTML = '<div class="text-center text-on-surface-variant py-8">Tu carrito está vacío</div>';
                 itemCountSpan.textContent = '0 ARTÍCULOS';
-                subtotalSpan.textContent = '$0.00';
-                totalSpan.textContent = '$0.00';
+                actualizarTotales();
                 return;
             }
 
-            let subtotal = 0;
             let itemsHtml = '';
 
             carrito.items.forEach(item => {
                 const producto = todosLosProductos.find(p => p.id === item.id);
                 if (producto) {
-                    const precioNumerico = extraerPrecio(producto);
-                    const itemTotal = precioNumerico * item.cantidad;
-                    subtotal += itemTotal;
-
                     itemsHtml += `
                         <div class="flex gap-4" data-id="${item.id}">
                             <div class="w-20 h-24 bg-surface-container-highest overflow-hidden rounded flex items-center justify-center p-1">
@@ -395,7 +493,7 @@
                                             <span class="material-symbols-outlined text-sm">add</span>
                                         </button>
                                     </div>
-                                    <span class="font-headline font-bold text-primary">$${itemTotal.toFixed(2)}</span>
+                                    <span class="font-headline font-bold text-primary">$${(extraerPrecio(producto) * item.cantidad).toFixed(2)}</span>
                                 </div>
                             </div>
                         </div>
@@ -406,8 +504,7 @@
             cartContainer.innerHTML = itemsHtml;
             const totalItems = carrito.items.reduce((total, item) => total + item.cantidad, 0);
             itemCountSpan.textContent = totalItems + ' ' + (totalItems === 1 ? 'ARTÍCULO' : 'ARTÍCULOS');
-            subtotalSpan.textContent = '$' + subtotal.toFixed(2);
-            totalSpan.textContent = '$' + subtotal.toFixed(2);
+            actualizarTotales();
         }
 
         window.cambiarCantidad = function(id, delta) {
@@ -449,9 +546,10 @@
             const remitenteNombre = document.getElementById('remitente_nombre').value.trim();
             const remitenteApellidos = document.getElementById('remitente_apellidos').value.trim();
             const remitenteTelefono = document.getElementById('remitente_telefono').value.trim();
+            const localidad = document.getElementById('localidad').value;
 
             if (!idCard || !firstName || !lastNames || !phone || !address || 
-                !remitenteNombre || !remitenteApellidos || !remitenteTelefono) {
+                !remitenteNombre || !remitenteApellidos || !remitenteTelefono || !localidad) {
                 return false;
             }
             return true;
@@ -466,7 +564,8 @@
                 address: document.getElementById('address').value.trim(),
                 remitente_nombre: document.getElementById('remitente_nombre').value.trim(),
                 remitente_apellidos: document.getElementById('remitente_apellidos').value.trim(),
-                remitente_telefono: document.getElementById('remitente_telefono').value.trim()
+                remitente_telefono: document.getElementById('remitente_telefono').value.trim(),
+                localidad: document.getElementById('localidad').value
             };
         }
 
@@ -485,6 +584,11 @@
             resumenHtml += '<p class="text-sm">✏️ ' + cliente.remitente_nombre + ' ' + cliente.remitente_apellidos + '</p>';
             resumenHtml += '<p class="text-sm">📞 ' + cliente.remitente_telefono + '</p>';
 
+            resumenHtml += '<p class="font-bold text-primary mt-4">🚚 DELIVERY:</p>';
+            resumenHtml += '<p class="text-sm">📍 Localidad: ' + cliente.localidad + '</p>';
+            resumenHtml += '<p class="text-sm">💰 Mínimo: $' + minimoActual.toFixed(2) + '</p>';
+            resumenHtml += '<p class="text-sm">💰 Delivery: $' + deliveryCost.toFixed(2) + '</p>';
+
             resumenHtml += '<p class="font-bold text-primary mt-4">🛒 PRODUCTOS:</p>';
             let subtotal = 0;
 
@@ -498,7 +602,8 @@
                 }
             });
 
-            resumenHtml += '<p class="border-t border-outline-variant/30 pt-2 mt-2 font-bold">💰 TOTAL: $' + subtotal.toFixed(2) + '</p></div>';
+            resumenHtml += '<p class="border-t border-outline-variant/30 pt-2 mt-2">🚚 Delivery: <span class="text-primary font-bold">$' + deliveryCost.toFixed(2) + '</span></p>';
+            resumenHtml += '<p class="font-bold">💰 TOTAL: $' + (subtotal + deliveryCost).toFixed(2) + '</p></div>';
             return resumenHtml;
         }
 
@@ -520,6 +625,10 @@
             mensaje += '✏️ Nombre: ' + cliente.remitente_nombre + '%0A';
             mensaje += '📝 Apellidos: ' + cliente.remitente_apellidos + '%0A';
             mensaje += '📞 Teléfono: ' + cliente.remitente_telefono + '%0A%0A';
+            mensaje += '🚚 *DATOS DEL DELIVERY:*%0A';
+            mensaje += '📍 Localidad: ' + cliente.localidad + '%0A';
+            mensaje += '💰 Mínimo: $' + minimoActual.toFixed(2) + '%0A';
+            mensaje += '💰 Costo de envío: $' + deliveryCost.toFixed(2) + '%0A%0A';
             mensaje += '📦 *PRODUCTOS SOLICITADOS:*%0A';
 
             let subtotal = 0;
@@ -533,8 +642,8 @@
                 }
             });
 
-            mensaje += '%0A💰 *TOTAL DEL PEDIDO: $' + subtotal.toFixed(2) + '*%0A%0A';
-            mensaje += '🚚 *Domicilio: (Costo adicional)*%0A%0A';
+            mensaje += '%0A🚚 *Delivery: $' + deliveryCost.toFixed(2) + '*%0A';
+            mensaje += '💰 *TOTAL DEL PEDIDO: $' + (subtotal + deliveryCost).toFixed(2) + '*%0A%0A';
             
             // Enlace de WhatsApp para contactar al remitente
             if (telefonoLimpio) {
@@ -653,7 +762,13 @@
                 }
 
                 if (!validarFormulario()) {
-                    mostrarError('Por favor completa todos los campos del formulario (incluyendo los datos del remitente) antes de continuar.');
+                    mostrarError('Por favor completa todos los campos del formulario (incluyendo los datos del remitente y la localidad) antes de continuar.');
+                    return;
+                }
+
+                // Verificar si el subtotal cumple con el mínimo
+                if (subtotalActual < minimoActual) {
+                    mostrarError('El subtotal de tu pedido ($' + subtotalActual.toFixed(2) + ') no alcanza el monto mínimo de $' + minimoActual.toFixed(2) + ' para la localidad seleccionada.');
                     return;
                 }
 
@@ -693,7 +808,7 @@
                 mostrarLoading();
                 
                 try {
-                    // Enviar el pedido (no importa si falla o no)
+                    // Enviar el pedido
                     await enviarPedidoTelegram();
                     
                     // Siempre mostrar éxito
@@ -747,6 +862,8 @@
         // Crear entrada en el historial para activar popstate
         window.history.pushState({ page: 'carrito' }, '', window.location.href);
 
+        // Cargar datos
+        cargarDelivery();
         cargarProductos();
     </script>
 </body>
