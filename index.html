@@ -83,35 +83,6 @@
         .tonal-transition {
             background: linear-gradient(to bottom, #131313, rgba(19, 19, 19, 0));
         }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            z-index: 100;
-            overflow: hidden;
-        }
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
-        }
-        .whatsapp-float img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        @media (max-width: 768px) {
-            .whatsapp-float {
-                bottom: 80px;
-            }
-        }
         .quantity-selector {
             display: flex;
             align-items: center;
@@ -290,10 +261,6 @@
             <!-- Tarjetas de categorías o productos se renderizan dinámicamente -->
         </div>
     </main>
-
-    <a href="https://wa.me/5350987817" target="_blank" rel="noopener noreferrer" class="whatsapp-float">
-        <img src="img/whatsap.webp" alt="WhatsApp">
-    </a>
 
     <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-6 bg-[#131313]/80 backdrop-blur-md z-50 border-t border-[#E5E2E1]/10 tonal-transition">
         <a href="#" class="flex flex-col items-center justify-center text-[#E5E2E1]/40 transition-all duration-300 ease-out">
