@@ -21,6 +21,13 @@
         "Categoria": "Cárnicos y embutidos"
     },
     {
+        "Codigo": 5,
+        "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
+        "Precio": 12.0,
+        "Cantidad": 32.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
         "Codigo": 9,
         "Nombre": "Hígado de pollo 1kg",
         "Precio": 2.5,
@@ -101,7 +108,7 @@
         "Codigo": 46,
         "Nombre": "Bombones 1kg",
         "Precio": 8.0,
-        "Cantidad": 10.0,
+        "Cantidad": 9.0,
         "Categoria": "Confituras"
     },
     {
@@ -164,7 +171,7 @@
         "Codigo": 59,
         "Nombre": "Caja 24 dulces importados",
         "Precio": 8.0,
-        "Cantidad": 15.0,
+        "Cantidad": 14.0,
         "Categoria": "Confituras"
     },
     {
@@ -301,6 +308,13 @@
         "Categoria": "Básicos"
     },
     {
+        "Codigo": 90,
+        "Nombre": "Arroz 50lb saco",
+        "Precio": 35.0,
+        "Cantidad": 7.0,
+        "Categoria": "Básicos"
+    },
+    {
         "Codigo": 91,
         "Nombre": "Macarrones 500g",
         "Precio": 0.8,
@@ -337,14 +351,14 @@
     },
     {
         "Codigo": 99,
-        "Nombre": "Cake cuquita",
+        "Nombre": "Cake relleno cuquita cover merengue",
         "Precio": 12.0,
         "Cantidad": 2.0,
         "Categoria": "Especiales para fiestas"
     },
     {
         "Codigo": 100,
-        "Nombre": "Cake 3 leches",
+        "Nombre": "Cake 3 leches y merengue",
         "Precio": 12.0,
         "Cantidad": 2.0,
         "Categoria": "Especiales para fiestas"
@@ -612,7 +626,7 @@
         "Codigo": 163,
         "Nombre": "Jabón de baño",
         "Precio": 0.6,
-        "Cantidad": 82.0,
+        "Cantidad": 72.0,
         "Categoria": "Aseo"
     },
     {
@@ -654,13 +668,6 @@
         "Codigo": 173,
         "Nombre": "Sandwichera tostadora",
         "Precio": 23.0,
-        "Cantidad": 1.0,
-        "Categoria": "Equipos"
-    },
-    {
-        "Codigo": 174,
-        "Nombre": "Hornilla Eléctrica doble",
-        "Precio": 22.0,
         "Cantidad": 1.0,
         "Categoria": "Útiles para el hogar"
     },
@@ -740,6 +747,13 @@
         "Precio": 1.8,
         "Cantidad": 12.0,
         "Categoria": "Confituras"
+    },
+    {
+        "Codigo": 183,
+        "Nombre": "Manzanas C88",
+        "Precio": 0.8,
+        "Cantidad": 10.0,
+        "Categoria": "Frutas frescas"
     },
     {
         "Codigo": 189,
@@ -970,7 +984,7 @@
         "Nombre": "Pizza familiar especial de queso",
         "Precio": 12.0,
         "Cantidad": 1.0,
-        "Categoria": "Bebidas"
+        "Categoria": "Especiales para fiestas"
     },
     {
         "Codigo": 256,
@@ -1011,7 +1025,7 @@
         "Codigo": 262,
         "Nombre": "Caja sazón Fresko 36 sobres",
         "Precio": 4.0,
-        "Cantidad": 13.0,
+        "Cantidad": 12.0,
         "Categoria": "Para la cocina"
     },
     {
@@ -1040,7 +1054,7 @@
         "Nombre": "Colchón EKO",
         "Precio": 200.0,
         "Cantidad": 2.0,
-        "Categoria": "Equipos"
+        "Categoria": "Útiles para el hogar"
     },
     {
         "Codigo": 275,
@@ -1065,9 +1079,9 @@
     },
     {
         "Codigo": 283,
-        "Nombre": "Desodorante spray",
+        "Nombre": "Desodorante spray hombre",
         "Precio": 3.8,
-        "Cantidad": 6.0,
+        "Cantidad": 3.0,
         "Categoria": "Aseo"
     },
     {
@@ -1079,7 +1093,7 @@
     },
     {
         "Codigo": 284,
-        "Nombre": "Cake de cobertura",
+        "Nombre": "Cake de cobertura chocolate",
         "Precio": 15.0,
         "Cantidad": 1.0,
         "Categoria": "Especiales para fiestas"
@@ -1099,24 +1113,17 @@
         "Categoria": "Confituras"
     },
     {
-        "Codigo": 290,
-        "Nombre": "Galletas Amori 35g fresa",
-        "Precio": 0.25,
-        "Cantidad": 11.0,
-        "Categoria": "Confituras"
-    },
-    {
         "Codigo": 291,
         "Nombre": "Galletas Amori 35g chocolate",
         "Precio": 0.25,
-        "Cantidad": 10.0,
+        "Cantidad": 28.0,
         "Categoria": "Confituras"
     },
     {
         "Codigo": 292,
         "Nombre": "Sorbetos Amori 80g fresa",
         "Precio": 0.7,
-        "Cantidad": 17.0,
+        "Cantidad": 123.0,
         "Categoria": "Confituras"
     },
     {
@@ -1200,14 +1207,14 @@
         "Codigo": 318,
         "Nombre": "Caja 27 jugo melocotón 200ml",
         "Precio": 13.0,
-        "Cantidad": 4.0,
+        "Cantidad": 3.0,
         "Categoria": "Bebidas"
     },
     {
         "Codigo": 148,
         "Nombre": "1/2 Queso Gouda",
         "Precio": 17.0,
-        "Cantidad": 6.0,
+        "Cantidad": 18.0,
         "Categoria": "Lácteos"
     },
     {
@@ -1277,7 +1284,7 @@
         "Codigo": 25,
         "Nombre": "Paquete de 10 colas de langosta",
         "Precio": 18.0,
-        "Cantidad": 4.0,
+        "Cantidad": 7.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1302,13 +1309,6 @@
         "Categoria": "Cárnicos y embutidos"
     },
     {
-        "Codigo": 8,
-        "Nombre": "Pollo entero ahumado 2.2 a 2.6lb",
-        "Precio": 8.0,
-        "Cantidad": 7.0,
-        "Categoria": "Cárnicos y embutidos"
-    },
-    {
         "Codigo": 73,
         "Nombre": "Aceite 900ml",
         "Precio": 7.0,
@@ -1326,7 +1326,7 @@
         "Codigo": 330,
         "Nombre": "Salchichas Jumbo 1lb",
         "Precio": 2.5,
-        "Cantidad": 18.0,
+        "Cantidad": 42.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1433,5 +1433,19 @@
         "Precio": 20.0,
         "Cantidad": 1.0,
         "Categoria": "Útiles para el hogar"
+    },
+    {
+        "Codigo": 343,
+        "Nombre": "Helado Cid 4L naranja piña",
+        "Precio": 14.0,
+        "Cantidad": 3.0,
+        "Categoria": "Lácteos"
+    },
+    {
+        "Codigo": 344,
+        "Nombre": "Desodorante spray mujer",
+        "Precio": 3.8,
+        "Cantidad": 3.0,
+        "Categoria": "Aseo"
     }
 ]
