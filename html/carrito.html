@@ -537,6 +537,9 @@
             }
         }
 
+        // ============================================================
+        // ✅ FUNCIÓN DE VALIDACIÓN - REUTILIZABLE
+        // ============================================================
         function validarFormulario() {
             const idCard = document.getElementById('id_card').value.trim();
             const firstName = document.getElementById('first_name').value.trim();
@@ -742,7 +745,10 @@
             document.body.style.overflow = 'auto';
         }
 
-        // --- EVENTOS ---
+        // ============================================================
+        // ✅ EVENTOS PRINCIPALES
+        // ============================================================
+
         const openBtn = document.getElementById('open-modal');
         const closeBtn = document.getElementById('close-modal');
         const modal = document.getElementById('confirm-modal');
@@ -753,6 +759,7 @@
         const closeSuccessBtn = document.getElementById('close-success-modal');
         const successModal = document.getElementById('success-modal');
 
+        // --- BOTÓN "REALIZAR PEDIDO" (primera validación) ---
         if (openBtn) {
             openBtn.addEventListener('click', function() {
                 const carrito = obtenerCarrito();
@@ -780,6 +787,7 @@
             });
         }
 
+        // --- BOTÓN "CANCELAR" ---
         if (closeBtn) {
             closeBtn.addEventListener('click', function() {
                 modal.classList.add('hidden');
@@ -788,6 +796,7 @@
             });
         }
 
+        // --- CERRAR MODAL CLIC FUERA ---
         if (modal) {
             modal.addEventListener('click', function(e) {
                 if (e.target === modal.children[0]) {
@@ -796,31 +805,60 @@
             });
         }
 
+        // --- BOTÓN "VACIAR CARRITO" ---
         if (vaciarBtn) {
             vaciarBtn.addEventListener('click', vaciarCarrito);
         }
 
+        // ============================================================
+        // ✅ BOTÓN "ENVIAR" - SEGUNDA VALIDACIÓN (NUEVO)
+        // ============================================================
         if (confirmarTelegram) {
             confirmarTelegram.addEventListener('click', async function() {
-                // Mostrar loading
+                // 🔒 SEGUNDA VALIDACIÓN - Verificar que todos los campos sigan completos
+                if (!validarFormulario()) {
+                    mostrarError('Por favor completa todos los campos del formulario (incluyendo los datos del remitente y la localidad) antes de continuar.');
+                    return;
+                }
+
+                // Verificar que el carrito no esté vacío
+                const carrito = obtenerCarrito();
+                if (carrito.items.length === 0) {
+                    mostrarError('Tu carrito está vacío. No puedes enviar un pedido sin productos.');
+                    return;
+                }
+
+                // Verificar subtotal mínimo
+                if (subtotalActual < minimoActual) {
+                    mostrarError('El subtotal de tu pedido ($' + subtotalActual.toFixed(2) + ') no alcanza el monto mínimo de $' + minimoActual.toFixed(2) + ' para la localidad seleccionada.');
+                    return;
+                }
+
+                // Cerrar modal y mostrar loading
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
+                document.body.style.overflow = 'auto';
                 mostrarLoading();
-                
+
                 try {
                     // Enviar el pedido
-                    await enviarPedidoTelegram();
-                    
-                    // Siempre mostrar éxito
+                    const resultado = await enviarPedidoTelegram();
+
+                    // Ocultar loading
                     ocultarLoading();
+
+                    // Vaciar carrito
                     guardarCarrito({ items: [] });
                     renderizarCarrito();
+
+                    // Mostrar éxito siempre (incluso si algún admin falló)
                     mostrarExito();
-                    
+
                 } catch (error) {
-                    console.error('Error:', error);
-                    // Incluso si hay error, mostramos éxito
+                    console.error('Error al enviar:', error);
                     ocultarLoading();
+                    
+                    // Aún así vaciar carrito y mostrar éxito
                     guardarCarrito({ items: [] });
                     renderizarCarrito();
                     mostrarExito();
@@ -828,6 +866,7 @@
             });
         }
 
+        // --- ERROR MODAL ---
         if (closeErrorBtn) {
             closeErrorBtn.addEventListener('click', function() {
                 errorModal.classList.add('hidden');
@@ -842,6 +881,7 @@
             });
         }
 
+        // --- SUCCESS MODAL ---
         if (closeSuccessBtn) {
             closeSuccessBtn.addEventListener('click', function() {
                 ocultarExito();
