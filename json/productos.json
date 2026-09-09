@@ -24,7 +24,7 @@
         "Codigo": 5,
         "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
         "Precio": 12.0,
-        "Cantidad": 28.0,
+        "Cantidad": 27.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -38,7 +38,7 @@
         "Codigo": 11,
         "Nombre": "File de huevos 30u",
         "Precio": 9.0,
-        "Cantidad": 26.0,
+        "Cantidad": 25.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -633,7 +633,7 @@
         "Codigo": 166,
         "Nombre": "Papel Sanitario 4 rollos",
         "Precio": 1.5,
-        "Cantidad": 10.0,
+        "Cantidad": 50.0,
         "Categoria": "Aseo"
     },
     {
@@ -675,7 +675,7 @@
         "Codigo": 61,
         "Nombre": "Galleta Soda 7 tacos",
         "Precio": 3.2,
-        "Cantidad": 70.0,
+        "Cantidad": 69.0,
         "Categoria": "Confituras"
     },
     {
@@ -850,14 +850,14 @@
         "Codigo": 209,
         "Nombre": "Mayonesa Holland Park 500g",
         "Precio": 4.5,
-        "Cantidad": 12.0,
+        "Cantidad": 11.0,
         "Categoria": "Confituras"
     },
     {
         "Codigo": 210,
         "Nombre": "Caja 4 hamburguesas Cerdo",
         "Precio": 2.0,
-        "Cantidad": 9.0,
+        "Cantidad": 7.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1116,7 +1116,7 @@
         "Codigo": 291,
         "Nombre": "Galletas Amori 35g chocolate",
         "Precio": 0.25,
-        "Cantidad": 22.0,
+        "Cantidad": 21.0,
         "Categoria": "Confituras"
     },
     {
@@ -1151,7 +1151,14 @@
         "Codigo": 298,
         "Nombre": "Lomo Ahumado xlb",
         "Precio": 3.5,
-        "Cantidad": 37.0,
+        "Cantidad": 237.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 302,
+        "Nombre": "Vicky bolito 1.4lb",
+        "Precio": 3.0,
+        "Cantidad": 50.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1162,10 +1169,24 @@
         "Categoria": "Cárnicos y embutidos"
     },
     {
+        "Codigo": 307,
+        "Nombre": "Hamburguesa de pollo 3u",
+        "Precio": 1.8,
+        "Cantidad": 50.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
         "Codigo": 308,
         "Nombre": "Chorizo Vela",
         "Precio": 5.0,
         "Cantidad": 3.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 309,
+        "Nombre": "Recortería mixta",
+        "Precio": 2.0,
+        "Cantidad": 30.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1256,7 +1277,7 @@
         "Codigo": 325,
         "Nombre": "Caja 12 pqt galletas Dark Chocolate Crookies 360g",
         "Precio": 3.0,
-        "Cantidad": 9.0,
+        "Cantidad": 8.0,
         "Categoria": "Confituras"
     },
     {
@@ -1433,5 +1454,54 @@
         "Precio": 3.8,
         "Cantidad": 3.0,
         "Categoria": "Aseo"
+    },
+    {
+        "Codigo": 345,
+        "Nombre": "Salami medio",
+        "Precio": 3.0,
+        "Cantidad": 40.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 346,
+        "Nombre": "Jamón prensado natural 6 a 6.2lb",
+        "Precio": 14.0,
+        "Cantidad": 15.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 347,
+        "Nombre": "Jamón prensado ahumado 2.8lb",
+        "Precio": 7.0,
+        "Cantidad": 15.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 348,
+        "Nombre": "Jamón Vicky medio 1.5 a 1.6lb",
+        "Precio": 3.8,
+        "Cantidad": 40.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 349,
+        "Nombre": "Mortadella especial 7lb",
+        "Precio": 11.0,
+        "Cantidad": 15.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 350,
+        "Nombre": "Jamón embuchado ahumado 2.10 a 2.20lb",
+        "Precio": 9.0,
+        "Cantidad": 15.0,
+        "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 351,
+        "Nombre": "Mortadella media 1.4 a 1.5lb",
+        "Precio": 3.0,
+        "Cantidad": 40.0,
+        "Categoria": "Cárnicos y embutidos"
     }
 ]
