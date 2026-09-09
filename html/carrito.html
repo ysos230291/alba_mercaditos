@@ -793,6 +793,16 @@
         }
 
         // ============================================================
+        // ✅ ESCAPE DE MARKDOWN
+        // ============================================================
+        // Evita que símbolos que el cliente escriba libremente (_, *, `, [)
+        // rompan el formato Markdown del mensaje en Telegram.
+        function escaparMarkdown(texto) {
+            if (texto === null || texto === undefined) return '';
+            return texto.toString().replace(/([_*`\[])/g, '\\$1');
+        }
+
+        // ============================================================
         // ✅ GENERAR MENSAJE TELEGRAM - CORREGIDO
         // ============================================================
         function generarMensajeTelegram() {
@@ -806,22 +816,22 @@
             // Ej: +5355555555 → 5355555555
             const telefonoWhatsApp = telefonoCompleto.replace(/[^0-9]/g, '');
             
-            let mensaje = '🛍️ *NUEVO PEDIDO - ALBA MERCADITO* 🛍️%0A%0A';
-            mensaje += '👤 *DATOS DE QUIEN RECIBE:*%0A';
-            mensaje += '📄 CI: ' + cliente.id_card + '%0A';
-            mensaje += '✏️ Nombre: ' + cliente.first_name + '%0A';
-            mensaje += '📝 Apellidos: ' + cliente.last_names + '%0A';
-            mensaje += '📞 Teléfono: ' + cliente.phone + '%0A';
-            mensaje += '📍 Dirección: ' + cliente.address + '%0A%0A';
-            mensaje += '📤 *DATOS DE QUIEN ENVÍA (REMITENTE):*%0A';
-            mensaje += '✏️ Nombre: ' + cliente.remitente_nombre + '%0A';
-            mensaje += '📝 Apellidos: ' + cliente.remitente_apellidos + '%0A';
-            mensaje += '📞 Teléfono: ' + telefonoCompleto + '%0A%0A';
-            mensaje += '🚚 *DATOS DEL DELIVERY:*%0A';
-            mensaje += '📍 Localidad: ' + cliente.localidad + '%0A';
-            mensaje += '💰 Mínimo: $' + minimoActual.toFixed(2) + '%0A';
-            mensaje += '💰 Costo de envío: $' + deliveryCost.toFixed(2) + '%0A%0A';
-            mensaje += '📦 *PRODUCTOS SOLICITADOS:*%0A';
+            let mensaje = '🛍️ *NUEVO PEDIDO - ALBA MERCADITO* 🛍️\n\n';
+            mensaje += '👤 *DATOS DE QUIEN RECIBE:*\n';
+            mensaje += '📄 CI: ' + escaparMarkdown(cliente.id_card) + '\n';
+            mensaje += '✏️ Nombre: ' + escaparMarkdown(cliente.first_name) + '\n';
+            mensaje += '📝 Apellidos: ' + escaparMarkdown(cliente.last_names) + '\n';
+            mensaje += '📞 Teléfono: ' + cliente.phone + '\n';
+            mensaje += '📍 Dirección: ' + escaparMarkdown(cliente.address) + '\n\n';
+            mensaje += '📤 *DATOS DE QUIEN ENVÍA (REMITENTE):*\n';
+            mensaje += '✏️ Nombre: ' + escaparMarkdown(cliente.remitente_nombre) + '\n';
+            mensaje += '📝 Apellidos: ' + escaparMarkdown(cliente.remitente_apellidos) + '\n';
+            mensaje += '📞 Teléfono: ' + telefonoCompleto + '\n\n';
+            mensaje += '🚚 *DATOS DEL DELIVERY:*\n';
+            mensaje += '📍 Localidad: ' + escaparMarkdown(cliente.localidad) + '\n';
+            mensaje += '💰 Mínimo: $' + minimoActual.toFixed(2) + '\n';
+            mensaje += '💰 Costo de envío: $' + deliveryCost.toFixed(2) + '\n\n';
+            mensaje += '📦 *PRODUCTOS SOLICITADOS:*\n';
 
             let subtotal = 0;
             carrito.items.forEach(item => {
@@ -830,17 +840,17 @@
                     const precioNumerico = extraerPrecio(producto);
                     const itemTotal = precioNumerico * item.cantidad;
                     subtotal += itemTotal;
-                    mensaje += '• ' + producto.nombre + ' - ' + item.cantidad + ' x ' + producto.precio + ' = *$' + itemTotal.toFixed(2) + '*%0A';
+                    mensaje += '• ' + escaparMarkdown(producto.nombre) + ' - ' + item.cantidad + ' x ' + producto.precio + ' = *$' + itemTotal.toFixed(2) + '*\n';
                 }
             });
 
-            mensaje += '%0A🚚 *Delivery: $' + deliveryCost.toFixed(2) + '*%0A';
-            mensaje += '💰 *TOTAL DEL PEDIDO: $' + (subtotal + deliveryCost).toFixed(2) + '*%0A%0A';
+            mensaje += '\n🚚 *Delivery: $' + deliveryCost.toFixed(2) + '*\n';
+            mensaje += '💰 *TOTAL DEL PEDIDO: $' + (subtotal + deliveryCost).toFixed(2) + '*\n\n';
             
             // 📱 Enlace de WhatsApp - SOLO DÍGITOS, sin +
             if (telefonoWhatsApp) {
-                mensaje += '📱 *Contactar al remitente por WhatsApp:*%0A';
-                mensaje += 'https://wa.me/' + telefonoWhatsApp + '%0A%0A';
+                mensaje += '📱 *Contactar al remitente por WhatsApp:*\n';
+                mensaje += 'https://wa.me/' + telefonoWhatsApp + '\n\n';
             }
             
             mensaje += '🙏 ¡Gracias por su compra!';
@@ -849,11 +859,43 @@
         }
 
         // --- FUNCIONES TELEGRAM ---
+        // ✅ Envío por POST con body en JSON: no importa qué símbolos escriba
+        // el cliente (&, #, comillas, emojis, tildes, etc.), el mensaje llega completo
+        // porque ya no se arma como texto crudo dentro de una URL.
         async function enviarAUnAdmin(chatId, mensaje) {
-            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${chatId}&text=${mensaje}&parse_mode=Markdown`;
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+            async function intentarEnvio(conFormato) {
+                const body = {
+                    chat_id: chatId,
+                    text: mensaje
+                };
+                if (conFormato) {
+                    body.parse_mode = 'Markdown';
+                }
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                });
+                return await response.json();
+            }
+
             try {
-                const response = await fetch(url);
-                const data = await response.json();
+                let data = await intentarEnvio(true);
+
+                // Si Telegram rechaza el formato Markdown (por algún símbolo suelto
+                // como *, _ o ` mal balanceado), reintentamos en texto plano para
+                // garantizar que el mensaje completo llegue igual.
+                if (data.ok !== true) {
+                    console.warn('Fallo con Markdown, reintentando en texto plano:', data);
+                    data = await intentarEnvio(false);
+                }
+
+                if (data.ok !== true) {
+                    console.error('Telegram rechazó el mensaje:', chatId, data);
+                }
+
                 return data.ok === true;
             } catch (error) {
                 console.error('Error enviando a admin:', chatId, error);
