@@ -122,6 +122,111 @@
         select option {
             background: #131313;
             color: #e5e2e1;
+            padding: 8px 4px;
+        }
+
+        /* ============================================================
+           ESTILOS PARA TELÉFONO CON CÓDIGO DE PAÍS
+           ============================================================ */
+        .phone-container {
+            position: relative;
+            padding-top: 6px;
+        }
+        .phone-container label {
+            position: absolute;
+            left: 0;
+            top: -6px;
+            font-size: 12px;
+            color: #d0c5af;
+            pointer-events: none;
+            transition: all 0.2s ease;
+        }
+        .phone-container label.active {
+            color: #f2ca50;
+        }
+        .phone-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .phone-row .country-select {
+            flex-shrink: 0;
+            min-width: 110px;
+            padding: 10px 24px 10px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #4d4635;
+            color: #e5e2e1;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: border-color 0.3s ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+        .phone-row .country-select:focus {
+            outline: none;
+            border-color: #f2ca50;
+        }
+        .phone-row .country-select option {
+            background: #131313;
+            color: #e5e2e1;
+            padding: 8px 4px;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        .phone-row .phone-input {
+            flex: 1;
+            padding: 10px 0;
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #4d4635;
+            color: #e5e2e1;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+            min-width: 0;
+            letter-spacing: 1px;
+        }
+        .phone-row .phone-input:focus {
+            outline: none;
+            border-color: #f2ca50;
+        }
+        .phone-row .phone-input::placeholder {
+            color: #6b6b6b;
+            letter-spacing: 0;
+            font-size: 14px;
+        }
+        .phone-container .select-arrow {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            color: #4d4635;
+            pointer-events: none;
+            font-size: 20px;
+        }
+        .phone-container:focus-within .select-arrow {
+            color: #f2ca50;
+        }
+        .phone-container .country-select-wrapper {
+            position: relative;
+            flex-shrink: 0;
+            min-width: 120px;
+        }
+        .phone-container .country-select-wrapper .select-arrow {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            color: #4d4635;
+            pointer-events: none;
+            font-size: 20px;
+        }
+        .country-select {
+            font-size: 15px;
+        }
+        .country-select option {
+            font-size: 15px;
+            padding: 6px 4px;
         }
     </style>
 </head>
@@ -163,10 +268,23 @@
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="last_names" name="last_names" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="last_names">Apellidos (2) *</label>
                         </div>
-                        <div class="relative group">
-                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="phone" name="phone" placeholder=" " type="tel"/>
-                            <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="phone">Teléfono *</label>
+
+                        <!-- Teléfono con código de país -->
+                        <div class="relative group md:col-span-2">
+                            <div class="phone-container" id="phoneContainer">
+                                <label for="phone_country" id="phoneLabel">Teléfono *</label>
+                                <div class="phone-row">
+                                    <div class="country-select-wrapper">
+                                        <select class="country-select" id="phone_country">
+                                            <!-- Se llena con JavaScript -->
+                                        </select>
+                                        <span class="material-symbols-outlined select-arrow">expand_more</span>
+                                    </div>
+                                    <input class="phone-input" id="phone" name="phone" type="tel" placeholder="Número de teléfono" inputmode="numeric" pattern="[0-9]*"/>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="relative group md:col-span-2">
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="address" name="address" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="address">Dirección *</label>
@@ -187,9 +305,21 @@
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_apellidos" name="remitente_apellidos" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_apellidos">Apellidos del remitente (2) *</label>
                         </div>
+
+                        <!-- Teléfono del remitente con código de país -->
                         <div class="relative group md:col-span-2">
-                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_telefono" name="remitente_telefono" placeholder=" " type="tel"/>
-                            <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_telefono">Teléfono del remitente *</label>
+                            <div class="phone-container" id="remitentePhoneContainer">
+                                <label for="remitente_phone_country" id="remitentePhoneLabel">Teléfono del remitente *</label>
+                                <div class="phone-row">
+                                    <div class="country-select-wrapper">
+                                        <select class="country-select" id="remitente_phone_country">
+                                            <!-- Se llena con JavaScript -->
+                                        </select>
+                                        <span class="material-symbols-outlined select-arrow">expand_more</span>
+                                    </div>
+                                    <input class="phone-input" id="remitente_telefono" name="remitente_telefono" type="tel" placeholder="Número de teléfono" inputmode="numeric" pattern="[0-9]*"/>
+                                </div>
+                            </div>
                         </div>
                     </form>
 
@@ -327,14 +457,12 @@
         // 🚀 CONFIGURACIÓN - SOLO CAMBIA ESTOS VALORES
         // ============================================================
         
-        const TELEGRAM_BOT_TOKEN = '8820451688:AAEfzeGBbJgN41sdkyZZiwVu28CCHY44aHw';  // Token de @AlbaMercaditoBot
+        const TELEGRAM_BOT_TOKEN = '8820451688:AAEfzeGBbJgN41sdkyZZiwVu28CCHY44aHw';
         
-        // 👇 ADMINISTRADORES - IDS DE TELEGRAM
-        // (Los obtienes con @userinfobot)
         const ADMINISTRADORES = [
-            '1123398150',        // ✅ ACTIVO - Administrador 1
-            '6355103438',        // Administrador 2
-            '1282893866',        // Administrador 3
+            '1123398150',
+            '6355103438',
+            '1282893866',
         ];
         
         // ============================================================
@@ -347,7 +475,9 @@
         let deliveryCost = 0;
         let minimoActual = 0;
         let subtotalActual = 0;
+        let paisesData = [];
 
+        // --- FUNCIONES DE CARRITO ---
         function obtenerCarrito() {
             const carritoGuardado = localStorage.getItem(CARRITO_STORAGE_KEY);
             if (carritoGuardado) {
@@ -366,6 +496,60 @@
             return parseFloat(precioStr.replace(/[^0-9.-]/g, ''));
         }
 
+        // --- CARGAR PAÍSES ---
+        async function cargarPaises() {
+            try {
+                const response = await fetch('../json/paises.json?nocache=' + Date.now());
+                paisesData = await response.json();
+                llenarSelectoresPaises();
+            } catch (error) {
+                console.error('Error cargando países:', error);
+                paisesData = [
+                    { codigo: "+53", nombre: "Cuba", bandera: "🇨🇺" },
+                    { codigo: "+1", nombre: "EE.UU.", bandera: "🇺🇸" },
+                    { codigo: "+34", nombre: "España", bandera: "🇪🇸" },
+                    { codigo: "+52", nombre: "México", bandera: "🇲🇽" },
+                ];
+                llenarSelectoresPaises();
+            }
+        }
+
+        function llenarSelectoresPaises() {
+            const selectores = ['phone_country', 'remitente_phone_country'];
+            
+            selectores.forEach(selectorId => {
+                const select = document.getElementById(selectorId);
+                if (!select) return;
+                
+                select.innerHTML = '';
+                paisesData.forEach(pais => {
+                    const option = document.createElement('option');
+                    option.value = pais.codigo;
+                    option.textContent = pais.bandera + ' ' + pais.codigo + ' ' + pais.nombre;
+                    select.appendChild(option);
+                });
+
+                const cubaIndex = paisesData.findIndex(p => p.codigo === '+53');
+                if (cubaIndex !== -1) {
+                    select.selectedIndex = cubaIndex;
+                }
+            });
+        }
+
+        // --- OBTENER TELÉFONO COMPLETO ---
+        function obtenerTelefonoCompleto(idPaisSelect, idTelefonoInput) {
+            const select = document.getElementById(idPaisSelect);
+            const input = document.getElementById(idTelefonoInput);
+            const codigo = select ? select.value : '';
+            const numero = input ? input.value.trim() : '';
+            const numeroLimpio = numero.replace(/[^0-9]/g, '');
+            if (numeroLimpio) {
+                return codigo + numeroLimpio;
+            }
+            return '';
+        }
+
+        // --- CARGAR PRODUCTOS ---
         async function cargarProductos() {
             try {
                 const response = await fetch('../json/productos.json?nocache=' + Date.now());
@@ -385,6 +569,7 @@
             }
         }
 
+        // --- CARGAR DELIVERY ---
         async function cargarDelivery() {
             try {
                 const response = await fetch('../json/delivery.json?nocache=' + Date.now());
@@ -398,7 +583,6 @@
 
         function llenarSelectLocalidades() {
             const select = document.getElementById('localidad');
-            // Limpiar opciones excepto la primera
             while (select.options.length > 1) {
                 select.remove(1);
             }
@@ -410,7 +594,6 @@
                 select.appendChild(option);
             });
 
-            // Evento para actualizar el costo de delivery y mínimo
             select.addEventListener('change', function() {
                 actualizarDatosDelivery(this.value);
             });
@@ -434,7 +617,6 @@
             const deliverySpan = document.getElementById('deliveryCost');
             const totalSpan = document.getElementById('total');
 
-            // Calcular subtotal
             const carrito = obtenerCarrito();
             let subtotal = 0;
             carrito.items.forEach(item => {
@@ -538,17 +720,17 @@
         }
 
         // ============================================================
-        // ✅ FUNCIÓN DE VALIDACIÓN - REUTILIZABLE
+        // ✅ VALIDACIÓN
         // ============================================================
         function validarFormulario() {
             const idCard = document.getElementById('id_card').value.trim();
             const firstName = document.getElementById('first_name').value.trim();
             const lastNames = document.getElementById('last_names').value.trim();
-            const phone = document.getElementById('phone').value.trim();
+            const phone = obtenerTelefonoCompleto('phone_country', 'phone');
             const address = document.getElementById('address').value.trim();
             const remitenteNombre = document.getElementById('remitente_nombre').value.trim();
             const remitenteApellidos = document.getElementById('remitente_apellidos').value.trim();
-            const remitenteTelefono = document.getElementById('remitente_telefono').value.trim();
+            const remitenteTelefono = obtenerTelefonoCompleto('remitente_phone_country', 'remitente_telefono');
             const localidad = document.getElementById('localidad').value;
 
             if (!idCard || !firstName || !lastNames || !phone || !address || 
@@ -563,11 +745,11 @@
                 id_card: document.getElementById('id_card').value.trim(),
                 first_name: document.getElementById('first_name').value.trim(),
                 last_names: document.getElementById('last_names').value.trim(),
-                phone: document.getElementById('phone').value.trim(),
+                phone: obtenerTelefonoCompleto('phone_country', 'phone'),
                 address: document.getElementById('address').value.trim(),
                 remitente_nombre: document.getElementById('remitente_nombre').value.trim(),
                 remitente_apellidos: document.getElementById('remitente_apellidos').value.trim(),
-                remitente_telefono: document.getElementById('remitente_telefono').value.trim(),
+                remitente_telefono: obtenerTelefonoCompleto('remitente_phone_country', 'remitente_telefono'),
                 localidad: document.getElementById('localidad').value
             };
         }
@@ -610,12 +792,19 @@
             return resumenHtml;
         }
 
+        // ============================================================
+        // ✅ GENERAR MENSAJE TELEGRAM - CORREGIDO
+        // ============================================================
         function generarMensajeTelegram() {
             const carrito = obtenerCarrito();
             const cliente = obtenerDatosCliente();
             
-            // Limpiar el teléfono (quitar espacios, guiones, etc.)
-            const telefonoLimpio = cliente.remitente_telefono.replace(/[^0-9+]/g, '');
+            // Obtener el teléfono completo con + (ej: +5355555555)
+            const telefonoCompleto = cliente.remitente_telefono;
+            
+            // Para WhatsApp: eliminar el + y cualquier otro carácter no numérico
+            // Ej: +5355555555 → 5355555555
+            const telefonoWhatsApp = telefonoCompleto.replace(/[^0-9]/g, '');
             
             let mensaje = '🛍️ *NUEVO PEDIDO - ALBA MERCADITO* 🛍️%0A%0A';
             mensaje += '👤 *DATOS DE QUIEN RECIBE:*%0A';
@@ -627,7 +816,7 @@
             mensaje += '📤 *DATOS DE QUIEN ENVÍA (REMITENTE):*%0A';
             mensaje += '✏️ Nombre: ' + cliente.remitente_nombre + '%0A';
             mensaje += '📝 Apellidos: ' + cliente.remitente_apellidos + '%0A';
-            mensaje += '📞 Teléfono: ' + cliente.remitente_telefono + '%0A%0A';
+            mensaje += '📞 Teléfono: ' + telefonoCompleto + '%0A%0A';
             mensaje += '🚚 *DATOS DEL DELIVERY:*%0A';
             mensaje += '📍 Localidad: ' + cliente.localidad + '%0A';
             mensaje += '💰 Mínimo: $' + minimoActual.toFixed(2) + '%0A';
@@ -648,10 +837,10 @@
             mensaje += '%0A🚚 *Delivery: $' + deliveryCost.toFixed(2) + '*%0A';
             mensaje += '💰 *TOTAL DEL PEDIDO: $' + (subtotal + deliveryCost).toFixed(2) + '*%0A%0A';
             
-            // Enlace de WhatsApp para contactar al remitente
-            if (telefonoLimpio) {
+            // 📱 Enlace de WhatsApp - SOLO DÍGITOS, sin +
+            if (telefonoWhatsApp) {
                 mensaje += '📱 *Contactar al remitente por WhatsApp:*%0A';
-                mensaje += 'https://wa.me/' + telefonoLimpio + '%0A%0A';
+                mensaje += 'https://wa.me/' + telefonoWhatsApp + '%0A%0A';
             }
             
             mensaje += '🙏 ¡Gracias por su compra!';
@@ -659,10 +848,9 @@
             return mensaje;
         }
 
-        // --- FUNCIÓN PARA ENVIAR A UN ADMINISTRADOR ---
+        // --- FUNCIONES TELEGRAM ---
         async function enviarAUnAdmin(chatId, mensaje) {
             const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${chatId}&text=${mensaje}&parse_mode=Markdown`;
-            
             try {
                 const response = await fetch(url);
                 const data = await response.json();
@@ -673,16 +861,12 @@
             }
         }
 
-        // --- FUNCIÓN PARA ENVIAR A TODOS LOS ADMINISTRADORES ---
         async function enviarPedidoTelegram() {
             const mensaje = generarMensajeTelegram();
-            
-            // Verificar que hay al menos un administrador
             if (ADMINISTRADORES.length === 0) {
                 throw new Error('No hay administradores configurados');
             }
 
-            // Enviar a todos los administradores
             const resultados = [];
             for (const adminId of ADMINISTRADORES) {
                 if (adminId && adminId.trim() !== '') {
@@ -691,9 +875,7 @@
                 }
             }
 
-            // Verificar si todos fueron exitosos
             const todosExitosos = resultados.every(r => r.exito === true);
-            
             if (!todosExitosos) {
                 const fallaron = resultados.filter(r => !r.exito).map(r => r.adminId);
                 console.warn('Fallaron los envíos a:', fallaron);
@@ -707,7 +889,7 @@
             };
         }
 
-        // --- FUNCIONES PARA MODALES ---
+        // --- MODALES ---
         function mostrarError(mensaje) {
             const errorModal = document.getElementById('error-modal');
             const errorMsg = document.getElementById('error-message');
@@ -746,7 +928,7 @@
         }
 
         // ============================================================
-        // ✅ EVENTOS PRINCIPALES
+        // ✅ EVENTOS
         // ============================================================
 
         const openBtn = document.getElementById('open-modal');
@@ -759,7 +941,6 @@
         const closeSuccessBtn = document.getElementById('close-success-modal');
         const successModal = document.getElementById('success-modal');
 
-        // --- BOTÓN "REALIZAR PEDIDO" (primera validación) ---
         if (openBtn) {
             openBtn.addEventListener('click', function() {
                 const carrito = obtenerCarrito();
@@ -773,7 +954,6 @@
                     return;
                 }
 
-                // Verificar si el subtotal cumple con el mínimo
                 if (subtotalActual < minimoActual) {
                     mostrarError('El subtotal de tu pedido ($' + subtotalActual.toFixed(2) + ') no alcanza el monto mínimo de $' + minimoActual.toFixed(2) + ' para la localidad seleccionada.');
                     return;
@@ -787,7 +967,6 @@
             });
         }
 
-        // --- BOTÓN "CANCELAR" ---
         if (closeBtn) {
             closeBtn.addEventListener('click', function() {
                 modal.classList.add('hidden');
@@ -796,7 +975,6 @@
             });
         }
 
-        // --- CERRAR MODAL CLIC FUERA ---
         if (modal) {
             modal.addEventListener('click', function(e) {
                 if (e.target === modal.children[0]) {
@@ -805,60 +983,42 @@
             });
         }
 
-        // --- BOTÓN "VACIAR CARRITO" ---
         if (vaciarBtn) {
             vaciarBtn.addEventListener('click', vaciarCarrito);
         }
 
-        // ============================================================
-        // ✅ BOTÓN "ENVIAR" - SEGUNDA VALIDACIÓN (NUEVO)
-        // ============================================================
         if (confirmarTelegram) {
             confirmarTelegram.addEventListener('click', async function() {
-                // 🔒 SEGUNDA VALIDACIÓN - Verificar que todos los campos sigan completos
                 if (!validarFormulario()) {
                     mostrarError('Por favor completa todos los campos del formulario (incluyendo los datos del remitente y la localidad) antes de continuar.');
                     return;
                 }
 
-                // Verificar que el carrito no esté vacío
                 const carrito = obtenerCarrito();
                 if (carrito.items.length === 0) {
                     mostrarError('Tu carrito está vacío. No puedes enviar un pedido sin productos.');
                     return;
                 }
 
-                // Verificar subtotal mínimo
                 if (subtotalActual < minimoActual) {
                     mostrarError('El subtotal de tu pedido ($' + subtotalActual.toFixed(2) + ') no alcanza el monto mínimo de $' + minimoActual.toFixed(2) + ' para la localidad seleccionada.');
                     return;
                 }
 
-                // Cerrar modal y mostrar loading
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
                 document.body.style.overflow = 'auto';
                 mostrarLoading();
 
                 try {
-                    // Enviar el pedido
-                    const resultado = await enviarPedidoTelegram();
-
-                    // Ocultar loading
+                    await enviarPedidoTelegram();
                     ocultarLoading();
-
-                    // Vaciar carrito
                     guardarCarrito({ items: [] });
                     renderizarCarrito();
-
-                    // Mostrar éxito siempre (incluso si algún admin falló)
                     mostrarExito();
-
                 } catch (error) {
                     console.error('Error al enviar:', error);
                     ocultarLoading();
-                    
-                    // Aún así vaciar carrito y mostrar éxito
                     guardarCarrito({ items: [] });
                     renderizarCarrito();
                     mostrarExito();
@@ -866,7 +1026,6 @@
             });
         }
 
-        // --- ERROR MODAL ---
         if (closeErrorBtn) {
             closeErrorBtn.addEventListener('click', function() {
                 errorModal.classList.add('hidden');
@@ -881,7 +1040,6 @@
             });
         }
 
-        // --- SUCCESS MODAL ---
         if (closeSuccessBtn) {
             closeSuccessBtn.addEventListener('click', function() {
                 ocultarExito();
@@ -894,15 +1052,14 @@
             });
         }
 
-        // Manejar el botón de atrás en el teléfono
         window.addEventListener('popstate', function(event) {
             window.location.href = '../index.html';
         });
 
-        // Crear entrada en el historial para activar popstate
         window.history.pushState({ page: 'carrito' }, '', window.location.href);
 
-        // Cargar datos
+        // --- INICIALIZAR ---
+        cargarPaises();
         cargarDelivery();
         cargarProductos();
     </script>
