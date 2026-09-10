@@ -24,7 +24,7 @@
         "Codigo": 5,
         "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
         "Precio": 12.5,
-        "Cantidad": 12.0,
+        "Cantidad": 19.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -38,7 +38,7 @@
         "Codigo": 11,
         "Nombre": "File de huevos 30u",
         "Precio": 9.0,
-        "Cantidad": 16.0,
+        "Cantidad": 15.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -171,7 +171,7 @@
         "Codigo": 59,
         "Nombre": "Caja 24 dulces importados",
         "Precio": 8.0,
-        "Cantidad": 14.0,
+        "Cantidad": 13.0,
         "Categoria": "Confituras"
     },
     {
@@ -193,6 +193,13 @@
         "Nombre": "Café Nezca 250g",
         "Precio": 4.5,
         "Cantidad": 71.0,
+        "Categoria": "Café"
+    },
+    {
+        "Codigo": 69,
+        "Nombre": "Café Villa Rica 250g",
+        "Precio": 4.8,
+        "Cantidad": 60.0,
         "Categoria": "Café"
     },
     {
@@ -228,6 +235,13 @@
         "Nombre": "Azúcar blanca 1kg",
         "Precio": 2.0,
         "Cantidad": 41.0,
+        "Categoria": "Para la cocina"
+    },
+    {
+        "Codigo": 77,
+        "Nombre": "Vinagre 1L",
+        "Precio": 1.0,
+        "Cantidad": 23.0,
         "Categoria": "Para la cocina"
     },
     {
@@ -311,14 +325,14 @@
         "Codigo": 94,
         "Nombre": "Sopa pollo instantánea",
         "Precio": 0.6,
-        "Cantidad": 46.0,
+        "Cantidad": 64.0,
         "Categoria": "Básicos"
     },
     {
         "Codigo": 95,
         "Nombre": "Sopa res instantánea",
         "Precio": 0.6,
-        "Cantidad": 26.0,
+        "Cantidad": 50.0,
         "Categoria": "Básicos"
     },
     {
@@ -612,7 +626,7 @@
         "Codigo": 164,
         "Nombre": "Detergente 500g",
         "Precio": 1.6,
-        "Cantidad": 3.0,
+        "Cantidad": 43.0,
         "Categoria": "Aseo"
     },
     {
@@ -780,8 +794,15 @@
         "Codigo": 200,
         "Nombre": "Bandeja bistec cerdo 4lb",
         "Precio": 15.0,
-        "Cantidad": 13.0,
+        "Cantidad": 12.0,
         "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 202,
+        "Nombre": "Queso Yaguajay 1.5lb aprox",
+        "Precio": 4.0,
+        "Cantidad": 10.0,
+        "Categoria": "Lácteos"
     },
     {
         "Codigo": 203,
@@ -852,6 +873,13 @@
         "Precio": 2.8,
         "Cantidad": 6.0,
         "Categoria": "Bebidas"
+    },
+    {
+        "Codigo": 220,
+        "Nombre": "Muslo de pollo 10lb",
+        "Precio": 12.5,
+        "Cantidad": 24.0,
+        "Categoria": "Cárnicos y embutidos"
     },
     {
         "Codigo": 222,
@@ -983,7 +1011,7 @@
         "Codigo": 262,
         "Nombre": "Caja sazón Fresko 36 sobres",
         "Precio": 4.0,
-        "Cantidad": 12.0,
+        "Cantidad": 11.0,
         "Categoria": "Para la cocina"
     },
     {
@@ -1123,7 +1151,7 @@
         "Codigo": 302,
         "Nombre": "Vicky bolito 1.4lb",
         "Precio": 3.0,
-        "Cantidad": 48.0,
+        "Cantidad": 47.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1137,7 +1165,7 @@
         "Codigo": 307,
         "Nombre": "Hamburguesa de pollo 3u",
         "Precio": 1.8,
-        "Cantidad": 50.0,
+        "Cantidad": 49.0,
         "Categoria": "Cárnicos y embutidos"
     },
     {
@@ -1207,7 +1235,7 @@
         "Codigo": 148,
         "Nombre": "1/2 Queso Gouda",
         "Precio": 17.0,
-        "Cantidad": 14.0,
+        "Cantidad": 13.0,
         "Categoria": "Lácteos"
     },
     {
@@ -1249,7 +1277,7 @@
         "Codigo": 325,
         "Nombre": "Caja 12 pqt galletas Dark Chocolate Crookies 360g",
         "Precio": 3.0,
-        "Cantidad": 8.0,
+        "Cantidad": 7.0,
         "Categoria": "Confituras"
     },
     {
@@ -1354,7 +1382,7 @@
         "Codigo": 336,
         "Nombre": "Café Bustelo 283g",
         "Precio": 8.0,
-        "Cantidad": 72.0,
+        "Cantidad": 71.0,
         "Categoria": "Café"
     },
     {
@@ -1454,5 +1482,12 @@
         "Precio": 3.0,
         "Cantidad": 38.0,
         "Categoria": "Cárnicos y embutidos"
+    },
+    {
+        "Codigo": 352,
+        "Nombre": "Pasta de tomate 800g",
+        "Precio": 1.8,
+        "Cantidad": 24.0,
+        "Categoria": "Para la cocina"
     }
 ]
