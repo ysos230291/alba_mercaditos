@@ -535,12 +535,16 @@
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const data = await response.json();
                 
-                if (!Array.isArray(data)) {
-                    throw new Error('Formato JSON inválido: se esperaba un array');
+                // Compatibilidad: el JSON puede ser un array plano (formato antiguo)
+                // o un objeto con la clave "productos" (formato nuevo)
+                const listaProductos = Array.isArray(data) ? data : (data.productos || []);
+                
+                if (!Array.isArray(listaProductos)) {
+                    throw new Error('Formato JSON inválido: no se encontró la lista de productos');
                 }
                 
                 // Filtrar productos con cantidad > 0
-                const productosFiltrados = data.filter(item => item.Cantidad > 0);
+                const productosFiltrados = listaProductos.filter(item => item.Cantidad > 0);
                 
                 // Transformar los datos del JSON al formato que usa el código
                 todosLosProductos = productosFiltrados.map(item => ({
