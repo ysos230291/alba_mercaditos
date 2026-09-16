@@ -1,0 +1,11 @@
+{
+  "promociones": [
+    {
+      "id": 1,
+      "titulo": "Ysos",
+      "descripcion": "!!Tu puedes tener páginas como esta en tu negocio!!",
+      "imagen": "img/promo.webp",
+      "whatsapp": "+5350987817"
+    }
+  ]
+}
