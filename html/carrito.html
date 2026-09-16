@@ -228,6 +228,50 @@
             font-size: 15px;
             padding: 6px 4px;
         }
+
+        /* ============================================================
+           AUTOCOMPLETADO
+           ============================================================ */
+        .autocomplete-dropdown {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            margin-top: 4px;
+            background: #2a2a2a;
+            border: 1px solid rgba(77, 70, 53, 0.4);
+            border-radius: 0.25rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            z-index: 60;
+            max-height: 240px;
+            overflow-y: auto;
+        }
+        .autocomplete-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            border-bottom: 1px solid rgba(77, 70, 53, 0.2);
+            transition: background-color 0.15s ease;
+        }
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+        .autocomplete-item:hover,
+        .autocomplete-item.active {
+            background: rgba(242, 202, 80, 0.12);
+        }
+        .autocomplete-item .ac-nombre {
+            font-size: 14px;
+            font-weight: 500;
+            color: #e5e2e1;
+        }
+        .autocomplete-item .ac-detalle {
+            font-size: 11px;
+            color: rgba(208, 197, 175, 0.7);
+            margin-top: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary overflow-x-hidden">
@@ -257,14 +301,10 @@
                     </div>
                     <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10" id="clienteForm">
                         <div class="relative group">
-                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="id_card" name="id_card" placeholder=" " type="text"/>
-                            <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="id_card">Carnet de Identidad *</label>
-                        </div>
-                        <div class="relative group">
-                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="first_name" name="first_name" placeholder=" " type="text"/>
+                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="first_name" name="receptor_alias_1" placeholder=" " type="text" autocomplete="new-password" autocorrect="off" autocapitalize="off" spellcheck="false" data-form-type="other"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="first_name">Nombre *</label>
                         </div>
-                        <div class="relative group md:col-span-2">
+                        <div class="relative group">
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="last_names" name="last_names" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="last_names">Apellidos (2) *</label>
                         </div>
@@ -289,6 +329,15 @@
                             <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="address" name="address" placeholder=" " type="text"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="address">Dirección *</label>
                         </div>
+
+                        <!-- Botón Guardar Perfil - Receptor -->
+                        <div class="md:col-span-2 flex justify-end pt-2">
+                            <button type="button" id="guardar-perfil-receptor"
+                                class="group inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-label text-xs uppercase tracking-widest hover:bg-primary/10 hover:border-primary active:scale-[0.98] transition-all duration-300 rounded">
+                                <span class="material-symbols-outlined text-base">save</span>
+                                <span>Guardar perfil</span>
+                            </button>
+                        </div>
                     </form>
 
                     <!-- Sección: Datos de quien ENVÍA (REMITENTE) -->
@@ -298,7 +347,7 @@
                     </div>
                     <form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10" id="remitenteForm">
                         <div class="relative group">
-                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_nombre" name="remitente_nombre" placeholder=" " type="text"/>
+                            <input class="block w-full px-0 py-2 bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary text-on-surface transition-all" id="remitente_nombre" name="remitente_alias_1" placeholder=" " type="text" autocomplete="new-password" autocorrect="off" autocapitalize="off" spellcheck="false" data-form-type="other"/>
                             <label class="absolute left-0 top-2 text-on-surface-variant transition-all pointer-events-none origin-left" for="remitente_nombre">Nombre del remitente *</label>
                         </div>
                         <div class="relative group">
@@ -320,6 +369,15 @@
                                     <input class="phone-input" id="remitente_telefono" name="remitente_telefono" type="tel" placeholder="Número de teléfono" inputmode="numeric" pattern="[0-9]*"/>
                                 </div>
                             </div>
+                        </div>
+
+                        <!-- Botón Guardar Perfil - Remitente -->
+                        <div class="md:col-span-2 flex justify-end pt-2">
+                            <button type="button" id="guardar-perfil-remitente"
+                                class="group inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-label text-xs uppercase tracking-widest hover:bg-primary/10 hover:border-primary active:scale-[0.98] transition-all duration-300 rounded">
+                                <span class="material-symbols-outlined text-base">save</span>
+                                <span>Guardar perfil</span>
+                            </button>
                         </div>
                     </form>
 
@@ -423,7 +481,7 @@
         </div>
     </div>
 
-    <!-- Modal de Éxito -->
+    <!-- Modal de Éxito (Pedido) -->
     <div class="fixed inset-0 z-[130] hidden items-center justify-center px-6" id="success-modal">
         <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
         <div class="relative bg-surface-container-low border border-primary/30 w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
@@ -433,6 +491,31 @@
             <h2 class="font-headline text-xl font-bold mb-2 text-primary">¡Pedido Enviado!</h2>
             <p class="font-body text-on-surface-variant/80 mb-6">Tu pedido ha sido enviado correctamente a los administradores.</p>
             <button class="px-6 py-3 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-opacity" id="close-success-modal">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Modal de Éxito (Perfil) -->
+    <div class="fixed inset-0 z-[140] hidden items-center justify-center px-6" id="perfil-success-modal">
+        <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
+        <div class="relative bg-surface-container-low border border-primary/30 w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 border border-primary/30 mb-6">
+                <span class="material-symbols-outlined text-primary text-4xl">save</span>
+            </div>
+            <h2 class="font-headline text-xl font-bold mb-2 text-primary">¡Perfil Guardado!</h2>
+            <p class="font-body text-on-surface-variant/80 mb-6" id="perfil-success-message">Los datos del perfil han sido enviados correctamente.</p>
+            <button class="px-6 py-3 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs rounded hover:opacity-90 transition-opacity" id="close-perfil-success-modal">Entendido</button>
+        </div>
+    </div>
+
+    <!-- Modal de Cargando (Perfil) -->
+    <div class="fixed inset-0 z-[145] hidden items-center justify-center px-6" id="perfil-loading-modal">
+        <div class="absolute inset-0 bg-surface/90 backdrop-blur-md"></div>
+        <div class="relative bg-surface-container-low border border-outline-variant/30 w-full max-w-md p-8 text-center shadow-2xl rounded-lg">
+            <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-surface-container-highest border border-primary/20 mb-6">
+                <span class="material-symbols-outlined text-primary text-4xl animate-spin">progress_activity</span>
+            </div>
+            <h2 class="font-headline text-xl font-bold mb-2">Guardando perfil...</h2>
+            <p class="font-body text-on-surface-variant/80">Por favor espera un momento</p>
         </div>
     </div>
 
@@ -476,6 +559,8 @@
         let minimoActual = 0;
         let subtotalActual = 0;
         let paisesData = [];
+        let listaRemitentes = [];
+        let listaReceptores = [];
 
         // --- FUNCIONES DE CARRITO ---
         function obtenerCarrito() {
@@ -549,12 +634,25 @@
             return '';
         }
 
-        // --- CARGAR PRODUCTOS ---
+        // --- SEPARAR TELÉFONO EN CÓDIGO PAÍS + NÚMERO ---
+        function separarTelefono(telefono) {
+            if (!telefono) return { codigo: '+53', numero: '' };
+            const tel = telefono.toString().trim();
+            const codigosOrdenados = [...paisesData].sort((a, b) => b.codigo.length - a.codigo.length);
+            for (const pais of codigosOrdenados) {
+                if (tel.startsWith(pais.codigo)) {
+                    return { codigo: pais.codigo, numero: tel.slice(pais.codigo.length).replace(/[^0-9]/g, '') };
+                }
+            }
+            return { codigo: '+53', numero: tel.replace(/[^0-9]/g, '') };
+        }
+
+        // --- CARGAR PRODUCTOS (incluye remitentes y receptores) ---
         async function cargarProductos() {
             try {
                 const response = await fetch('../json/productos.json?nocache=' + Date.now());
                 const data = await response.json();
-                todosLosProductos = data.map(item => ({
+                todosLosProductos = (data.productos || []).map(item => ({
                     id: item.Codigo,
                     nombre: item.Nombre,
                     precio: '$' + item.Precio.toFixed(2),
@@ -562,6 +660,8 @@
                     familia: item.Categoria || "Sin categoría",
                     cantidad: item.Cantidad
                 }));
+                listaRemitentes = data.remitentes || [];
+                listaReceptores = data.receptores || [];
                 renderizarCarrito();
             } catch (error) {
                 console.error('Error cargando productos:', error);
@@ -723,7 +823,6 @@
         // ✅ VALIDACIÓN
         // ============================================================
         function validarFormulario() {
-            const idCard = document.getElementById('id_card').value.trim();
             const firstName = document.getElementById('first_name').value.trim();
             const lastNames = document.getElementById('last_names').value.trim();
             const phone = obtenerTelefonoCompleto('phone_country', 'phone');
@@ -733,16 +832,32 @@
             const remitenteTelefono = obtenerTelefonoCompleto('remitente_phone_country', 'remitente_telefono');
             const localidad = document.getElementById('localidad').value;
 
-            if (!idCard || !firstName || !lastNames || !phone || !address || 
+            if (!firstName || !lastNames || !phone || !address || 
                 !remitenteNombre || !remitenteApellidos || !remitenteTelefono || !localidad) {
                 return false;
             }
             return true;
         }
 
+        function validarSeccionReceptor() {
+            const firstName = document.getElementById('first_name').value.trim();
+            const lastNames = document.getElementById('last_names').value.trim();
+            const phone = obtenerTelefonoCompleto('phone_country', 'phone');
+            const address = document.getElementById('address').value.trim();
+
+            return !!(firstName && lastNames && phone && address);
+        }
+
+        function validarSeccionRemitente() {
+            const remitenteNombre = document.getElementById('remitente_nombre').value.trim();
+            const remitenteApellidos = document.getElementById('remitente_apellidos').value.trim();
+            const remitenteTelefono = obtenerTelefonoCompleto('remitente_phone_country', 'remitente_telefono');
+
+            return !!(remitenteNombre && remitenteApellidos && remitenteTelefono);
+        }
+
         function obtenerDatosCliente() {
             return {
-                id_card: document.getElementById('id_card').value.trim(),
                 first_name: document.getElementById('first_name').value.trim(),
                 last_names: document.getElementById('last_names').value.trim(),
                 phone: obtenerTelefonoCompleto('phone_country', 'phone'),
@@ -760,7 +875,6 @@
             let resumenHtml = '<div class="space-y-2">';
 
             resumenHtml += '<p class="font-bold text-primary">👤 RECIBE:</p>';
-            resumenHtml += '<p class="text-sm">📄 CI: ' + cliente.id_card + '</p>';
             resumenHtml += '<p class="text-sm">✏️ ' + cliente.first_name + ' ' + cliente.last_names + '</p>';
             resumenHtml += '<p class="text-sm">📞 ' + cliente.phone + '</p>';
             resumenHtml += '<p class="text-sm">📍 ' + cliente.address + '</p>';
@@ -795,30 +909,23 @@
         // ============================================================
         // ✅ ESCAPE DE MARKDOWN
         // ============================================================
-        // Evita que símbolos que el cliente escriba libremente (_, *, `, [)
-        // rompan el formato Markdown del mensaje en Telegram.
         function escaparMarkdown(texto) {
             if (texto === null || texto === undefined) return '';
             return texto.toString().replace(/([_*`\[])/g, '\\$1');
         }
 
         // ============================================================
-        // ✅ GENERAR MENSAJE TELEGRAM - CORREGIDO
+        // ✅ GENERAR MENSAJE TELEGRAM
         // ============================================================
         function generarMensajeTelegram() {
             const carrito = obtenerCarrito();
             const cliente = obtenerDatosCliente();
             
-            // Obtener el teléfono completo con + (ej: +5355555555)
             const telefonoCompleto = cliente.remitente_telefono;
-            
-            // Para WhatsApp: eliminar el + y cualquier otro carácter no numérico
-            // Ej: +5355555555 → 5355555555
             const telefonoWhatsApp = telefonoCompleto.replace(/[^0-9]/g, '');
             
             let mensaje = '🛍️ *NUEVO PEDIDO - ALBA MERCADITO* 🛍️\n\n';
             mensaje += '👤 *DATOS DE QUIEN RECIBE:*\n';
-            mensaje += '📄 CI: ' + escaparMarkdown(cliente.id_card) + '\n';
             mensaje += '✏️ Nombre: ' + escaparMarkdown(cliente.first_name) + '\n';
             mensaje += '📝 Apellidos: ' + escaparMarkdown(cliente.last_names) + '\n';
             mensaje += '📞 Teléfono: ' + cliente.phone + '\n';
@@ -847,7 +954,6 @@
             mensaje += '\n🚚 *Delivery: $' + deliveryCost.toFixed(2) + '*\n';
             mensaje += '💰 *TOTAL DEL PEDIDO: $' + (subtotal + deliveryCost).toFixed(2) + '*\n\n';
             
-            // 📱 Enlace de WhatsApp - SOLO DÍGITOS, sin +
             if (telefonoWhatsApp) {
                 mensaje += '📱 *Contactar al remitente por WhatsApp:*\n';
                 mensaje += 'https://wa.me/' + telefonoWhatsApp + '\n\n';
@@ -858,10 +964,7 @@
             return mensaje;
         }
 
-        // --- FUNCIONES TELEGRAM ---
-        // ✅ Envío por POST con body en JSON: no importa qué símbolos escriba
-        // el cliente (&, #, comillas, emojis, tildes, etc.), el mensaje llega completo
-        // porque ya no se arma como texto crudo dentro de una URL.
+        // --- FUNCIONES TELEGRAM (MENSAJE) ---
         async function enviarAUnAdmin(chatId, mensaje) {
             const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
 
@@ -884,9 +987,6 @@
             try {
                 let data = await intentarEnvio(true);
 
-                // Si Telegram rechaza el formato Markdown (por algún símbolo suelto
-                // como *, _ o ` mal balanceado), reintentamos en texto plano para
-                // garantizar que el mensaje completo llegue igual.
                 if (data.ok !== true) {
                     console.warn('Fallo con Markdown, reintentando en texto plano:', data);
                     data = await intentarEnvio(false);
@@ -921,6 +1021,71 @@
             if (!todosExitosos) {
                 const fallaron = resultados.filter(r => !r.exito).map(r => r.adminId);
                 console.warn('Fallaron los envíos a:', fallaron);
+            }
+
+            return {
+                success: todosExitosos,
+                total: resultados.length,
+                exitosos: resultados.filter(r => r.exito).length,
+                fallidos: resultados.filter(r => !r.exito).length
+            };
+        }
+
+        // ============================================================
+        // ✅ FUNCIONES PARA ENVIAR ARCHIVO JSON DE PERFIL
+        // ============================================================
+        async function enviarDocumentoAUnAdmin(chatId, blob, nombreArchivo, caption) {
+            const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendDocument`;
+            const formData = new FormData();
+            formData.append('chat_id', chatId);
+            formData.append('document', blob, nombreArchivo);
+            formData.append('caption', caption);
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                if (data.ok !== true) {
+                    console.error('Telegram rechazó el documento:', chatId, data);
+                }
+                return data.ok === true;
+            } catch (error) {
+                console.error('Error enviando documento a admin:', chatId, error);
+                return false;
+            }
+        }
+
+        async function enviarPerfilTelegram(seccion, datos) {
+            const payload = {
+                seccion: seccion,
+                datos: datos
+            };
+            const jsonString = JSON.stringify(payload, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+
+            const nombreArchivo = seccion === 'receptor' ? 'perfil_receptor.json' : 'perfil_remitente.json';
+            const caption = seccion === 'receptor'
+                ? '📥 NUEVO PERFIL — SECCIÓN: RECEPTOR'
+                : '📥 NUEVO PERFIL — SECCIÓN: REMITENTE';
+
+            if (ADMINISTRADORES.length === 0) {
+                throw new Error('No hay administradores configurados');
+            }
+
+            const resultados = [];
+            for (const adminId of ADMINISTRADORES) {
+                if (adminId && adminId.trim() !== '') {
+                    const exito = await enviarDocumentoAUnAdmin(adminId.trim(), blob, nombreArchivo, caption);
+                    resultados.push({ adminId, exito });
+                }
+            }
+
+            const todosExitosos = resultados.every(r => r.exito === true);
+            if (!todosExitosos) {
+                const fallaron = resultados.filter(r => !r.exito).map(r => r.adminId);
+                console.warn('Fallaron los envíos de perfil a:', fallaron);
             }
 
             return {
@@ -969,6 +1134,150 @@
             document.body.style.overflow = 'auto';
         }
 
+        function mostrarPerfilLoading() {
+            const modal = document.getElementById('perfil-loading-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function ocultarPerfilLoading() {
+            const modal = document.getElementById('perfil-loading-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        function mostrarPerfilExito(mensaje) {
+            const modal = document.getElementById('perfil-success-modal');
+            const msg = document.getElementById('perfil-success-message');
+            if (mensaje) msg.textContent = mensaje;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function ocultarPerfilExito() {
+            const modal = document.getElementById('perfil-success-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // ============================================================
+        // ✅ AUTOCOMPLETADO DE NOMBRES (RECEPTOR / REMITENTE)
+        // ============================================================
+        function activarAutocompletado(inputId, obtenerLista, seccion) {
+            const input = document.getElementById(inputId);
+            if (!input) return;
+
+            let dropdown = null;
+            let indiceActivo = -1;
+            let coincidencias = [];
+
+            function cerrarDropdown() {
+                if (dropdown) {
+                    dropdown.remove();
+                    dropdown = null;
+                }
+                indiceActivo = -1;
+                coincidencias = [];
+            }
+
+            function seleccionar(item) {
+                if (seccion === 'receptor') {
+                    document.getElementById('first_name').value = item.Nombre || '';
+                    document.getElementById('last_names').value = item.Apellidos || '';
+                    const tel = separarTelefono(item.Telefono);
+                    document.getElementById('phone_country').value = tel.codigo;
+                    document.getElementById('phone').value = tel.numero;
+                    document.getElementById('address').value = item.Direccion || '';
+                } else {
+                    document.getElementById('remitente_nombre').value = item.Nombre || '';
+                    document.getElementById('remitente_apellidos').value = item.Apellidos || '';
+                    const tel = separarTelefono(item.Telefono);
+                    document.getElementById('remitente_phone_country').value = tel.codigo;
+                    document.getElementById('remitente_telefono').value = tel.numero;
+                }
+                cerrarDropdown();
+            }
+
+            function renderDropdown() {
+                const contenedor = input.parentElement;
+                if (dropdown) dropdown.remove();
+                dropdown = null;
+
+                if (coincidencias.length === 0) return;
+
+                dropdown = document.createElement('div');
+                dropdown.className = 'autocomplete-dropdown';
+
+                coincidencias.forEach((item, idx) => {
+                    const div = document.createElement('div');
+                    div.className = 'autocomplete-item' + (idx === indiceActivo ? ' active' : '');
+
+                    let detalle = '';
+                    if (seccion === 'receptor') {
+                        detalle = (item.Apellidos || '') + ' — ' + (item.Telefono || '') + ' — ' + (item.Direccion || '');
+                    } else {
+                        detalle = (item.Apellidos || '') + ' — ' + (item.Telefono || '');
+                    }
+
+                    div.innerHTML = `
+                        <div class="ac-nombre">${item.Nombre || ''}</div>
+                        <div class="ac-detalle">${detalle}</div>
+                    `;
+
+                    div.addEventListener('mousedown', function(e) {
+                        e.preventDefault();
+                        seleccionar(item);
+                    });
+
+                    dropdown.appendChild(div);
+                });
+
+                contenedor.appendChild(dropdown);
+            }
+
+            input.addEventListener('input', function() {
+                const valor = this.value.trim().toLowerCase();
+                if (valor.length < 1) {
+                    cerrarDropdown();
+                    return;
+                }
+                const lista = obtenerLista();
+                coincidencias = lista.filter(item => 
+                    (item.Nombre || '').toLowerCase().includes(valor)
+                ).slice(0, 8);
+                indiceActivo = -1;
+                renderDropdown();
+            });
+
+            input.addEventListener('keydown', function(e) {
+                if (!dropdown) return;
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    indiceActivo = (indiceActivo + 1) % coincidencias.length;
+                    renderDropdown();
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    indiceActivo = (indiceActivo - 1 + coincidencias.length) % coincidencias.length;
+                    renderDropdown();
+                } else if (e.key === 'Enter') {
+                    if (indiceActivo >= 0 && coincidencias[indiceActivo]) {
+                        e.preventDefault();
+                        seleccionar(coincidencias[indiceActivo]);
+                    }
+                } else if (e.key === 'Escape') {
+                    cerrarDropdown();
+                }
+            });
+
+            input.addEventListener('blur', function() {
+                setTimeout(cerrarDropdown, 150);
+            });
+        }
+
         // ============================================================
         // ✅ EVENTOS
         // ============================================================
@@ -982,6 +1291,11 @@
         const errorModal = document.getElementById('error-modal');
         const closeSuccessBtn = document.getElementById('close-success-modal');
         const successModal = document.getElementById('success-modal');
+
+        const guardarPerfilReceptor = document.getElementById('guardar-perfil-receptor');
+        const guardarPerfilRemitente = document.getElementById('guardar-perfil-remitente');
+        const perfilSuccessModal = document.getElementById('perfil-success-modal');
+        const closePerfilSuccessBtn = document.getElementById('close-perfil-success-modal');
 
         if (openBtn) {
             openBtn.addEventListener('click', function() {
@@ -1094,16 +1408,86 @@
             });
         }
 
+        // --- EVENTO: GUARDAR PERFIL RECEPTOR ---
+        if (guardarPerfilReceptor) {
+            guardarPerfilReceptor.addEventListener('click', async function() {
+                if (!validarSeccionReceptor()) {
+                    mostrarError('Por favor completa todos los campos de la sección "Datos de quien recibe la compra" (Nombre, Apellidos, Teléfono y Dirección) antes de guardar el perfil.');
+                    return;
+                }
+
+                const datos = {
+                    first_name: document.getElementById('first_name').value.trim(),
+                    last_names: document.getElementById('last_names').value.trim(),
+                    phone: obtenerTelefonoCompleto('phone_country', 'phone'),
+                    address: document.getElementById('address').value.trim()
+                };
+
+                mostrarPerfilLoading();
+
+                try {
+                    await enviarPerfilTelegram('receptor', datos);
+                    ocultarPerfilLoading();
+                    mostrarPerfilExito('Los datos del receptor han sido guardados y enviados correctamente.');
+                } catch (error) {
+                    console.error('Error al guardar perfil receptor:', error);
+                    ocultarPerfilLoading();
+                    mostrarError('Hubo un problema al guardar el perfil. Intenta nuevamente.');
+                }
+            });
+        }
+
+        // --- EVENTO: GUARDAR PERFIL REMITENTE ---
+        if (guardarPerfilRemitente) {
+            guardarPerfilRemitente.addEventListener('click', async function() {
+                if (!validarSeccionRemitente()) {
+                    mostrarError('Por favor completa todos los campos de la sección "Datos de quien envía (remitente)" (Nombre, Apellidos y Teléfono) antes de guardar el perfil.');
+                    return;
+                }
+
+                const datos = {
+                    remitente_nombre: document.getElementById('remitente_nombre').value.trim(),
+                    remitente_apellidos: document.getElementById('remitente_apellidos').value.trim(),
+                    remitente_telefono: obtenerTelefonoCompleto('remitente_phone_country', 'remitente_telefono')
+                };
+
+                mostrarPerfilLoading();
+
+                try {
+                    await enviarPerfilTelegram('remitente', datos);
+                    ocultarPerfilLoading();
+                    mostrarPerfilExito('Los datos del remitente han sido guardados y enviados correctamente.');
+                } catch (error) {
+                    console.error('Error al guardar perfil remitente:', error);
+                    ocultarPerfilLoading();
+                    mostrarError('Hubo un problema al guardar el perfil. Intenta nuevamente.');
+                }
+            });
+        }
+
+        if (closePerfilSuccessBtn) {
+            closePerfilSuccessBtn.addEventListener('click', function() {
+                ocultarPerfilExito();
+            });
+
+            perfilSuccessModal.addEventListener('click', function(e) {
+                if (e.target === perfilSuccessModal.children[0]) {
+                    ocultarPerfilExito();
+                }
+            });
+        }
+
         window.addEventListener('popstate', function(event) {
             window.location.href = '../index.html';
         });
 
         window.history.pushState({ page: 'carrito' }, '', window.location.href);
 
-        // --- INICIALIZAR ---
-        cargarPaises();
-        cargarDelivery();
-        cargarProductos();
+        // --- INICIALIZAR (con autocompletado tras cargar todo) ---
+        Promise.all([cargarPaises(), cargarProductos(), cargarDelivery()]).then(() => {
+            activarAutocompletado('first_name', () => listaReceptores, 'receptor');
+            activarAutocompletado('remitente_nombre', () => listaRemitentes, 'remitente');
+        });
     </script>
 </body>
 </html>
