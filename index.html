@@ -201,6 +201,112 @@
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
+
+        /* ============================================================
+           PROMOCIÓN
+           ============================================================ */
+        #promoSection {
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+        }
+        .promo-card {
+            display: flex;
+            flex-direction: column;
+            background: #1c1b1b;
+            border: 1px solid rgba(242, 202, 80, 0.2);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            cursor: pointer;
+            transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .promo-card:hover {
+            border-color: rgba(242, 202, 80, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(242, 202, 80, 0.08);
+        }
+        @media (min-width: 768px) {
+            .promo-card {
+                flex-direction: row;
+            }
+        }
+        .promo-image-wrapper {
+            flex-shrink: 0;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            background: linear-gradient(135deg, #2a2a2a, #201f1f);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        @media (min-width: 768px) {
+            .promo-image-wrapper {
+                width: 40%;
+                aspect-ratio: auto;
+            }
+        }
+        .promo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        .promo-card:hover .promo-image {
+            transform: scale(1.05);
+        }
+        .promo-content {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0.75rem;
+        }
+        @media (min-width: 768px) {
+            .promo-content {
+                padding: 2.5rem 3rem;
+            }
+        }
+        .promo-titulo {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: #f2ca50;
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) {
+            .promo-titulo {
+                font-size: 2.25rem;
+            }
+        }
+        .promo-descripcion {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgba(208, 197, 175, 0.85);
+        }
+        .promo-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            color: #f2ca50;
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: gap 0.3s ease;
+        }
+        .promo-card:hover .promo-cta {
+            gap: 0.75rem;
+        }
+        .promo-cta .material-symbols-outlined {
+            font-size: 1.1rem;
+        }
     </style>
 </head>
 <body class="font-body selection:bg-primary selection:text-on-primary">
@@ -260,6 +366,9 @@
         <div id="productsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-12">
             <!-- Tarjetas de categorías o productos se renderizan dinámicamente -->
         </div>
+
+        <!-- Sección de Promoción (se llena dinámicamente desde promociones.json) -->
+        <section id="promoSection" class="hidden"></section>
     </main>
 
     <nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center py-4 px-6 bg-[#131313]/80 backdrop-blur-md z-50 border-t border-[#E5E2E1]/10 tonal-transition">
@@ -286,6 +395,7 @@
         let familiasUnicas = [];
         let familiaActiva = null;
         let busquedaActiva = false;
+        let promoActual = null;
 
         // Elementos DOM
         const productsGrid = document.getElementById('productsGrid');
@@ -297,6 +407,7 @@
         const refreshCacheBtn = document.getElementById('refreshCacheBtn');
         const refreshMessage = document.getElementById('refreshMessage');
         const searchResultsCount = document.getElementById('searchResultsCount');
+        const promoSection = document.getElementById('promoSection');
 
         // --- Funciones de carrito ---
         function obtenerCarrito() {
@@ -458,6 +569,90 @@
             }
         }
 
+        // ============================================================
+        // PROMOCIÓN
+        // ============================================================
+        async function cargarPromocion() {
+            try {
+                const url = `json/promociones.json?nocache=${Date.now()}`;
+                const response = await fetch(url, {
+                    cache: 'no-store',
+                    headers: {
+                        'Cache-Control': 'no-cache, no-store, must-revalidate',
+                        'Pragma': 'no-cache'
+                    }
+                });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                const data = await response.json();
+                const promos = data.promociones || [];
+                promoActual = promos.length > 0 ? promos[0] : null;
+            } catch (error) {
+                console.warn('No se pudo cargar la promoción:', error);
+                promoActual = null;
+            }
+        }
+
+        function renderPromocion() {
+            if (!promoActual) {
+                promoSection.classList.add('hidden');
+                promoSection.innerHTML = '';
+                return;
+            }
+
+            // Limpiar número de WhatsApp (quitar +, espacios, guiones)
+            const numeroLimpio = (promoActual.whatsapp || '').replace(/[^0-9]/g, '');
+            const urlWhatsApp = numeroLimpio ? `https://wa.me/${numeroLimpio}` : '#';
+
+            // Escapar HTML básico para evitar inyección
+            const escaparHtml = (texto) => {
+                if (!texto) return '';
+                return texto.toString()
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;')
+                    .replace(/"/g, '&quot;')
+                    .replace(/'/g, '&#39;');
+            };
+
+            const titulo = escaparHtml(promoActual.titulo);
+            const descripcion = escaparHtml(promoActual.descripcion);
+            const imagen = escaparHtml(promoActual.imagen || 'img/promo.webp');
+
+            promoSection.innerHTML = `
+                <a href="${urlWhatsApp}" target="_blank" rel="noopener noreferrer" class="promo-card">
+                    <div class="promo-image-wrapper">
+                        <img src="${imagen}" alt="${titulo}" class="promo-image" onerror="this.onerror=null; this.parentElement.innerHTML='<div style=&quot;display:flex;align-items:center;justify-content:center;width:100%;height:100%;&quot;><span class=&quot;material-symbols-outlined fallback-icon&quot;>local_offer</span></div>';"/>
+                    </div>
+                    <div class="promo-content">
+                        <h2 class="promo-titulo">${titulo}</h2>
+                        <p class="promo-descripcion">${descripcion}</p>
+                        <span class="promo-cta">
+                            <span class="material-symbols-outlined">chat</span>
+                            <span>Contáctanos por WhatsApp</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </span>
+                    </div>
+                </a>
+            `;
+            promoSection.classList.remove('hidden');
+        }
+
+        function actualizarVisibilidadPromocion() {
+            // La promo se muestra solo si:
+            // - No hay búsqueda activa
+            // - No hay una categoría seleccionada (estamos en vista de categorías)
+            // - Hay una promo cargada
+            const busqueda = searchInput.value.trim();
+            const mostrar = !busqueda && familiaActiva === null && promoActual !== null;
+
+            if (mostrar) {
+                renderPromocion();
+            } else {
+                promoSection.classList.add('hidden');
+                promoSection.innerHTML = '';
+            }
+        }
+
         // --- Vista actual ---
         function actualizarVistaSegunEstado() {
             const busqueda = searchInput.value.trim().toLowerCase();
@@ -478,6 +673,7 @@
                 backButtonContainer.classList.add('hidden');
                 
                 renderProductos(productosFiltrados);
+                actualizarVisibilidadPromocion();
                 return;
             }
             
@@ -497,13 +693,14 @@
                 backButtonContainer.classList.remove('hidden');
                 renderProductos(productosFamilia, null, true);
             }
+
+            actualizarVisibilidadPromocion();
         }
 
         function seleccionarFamilia(familia) {
             familiaActiva = familia;
             searchInput.value = '';
             actualizarVistaSegunEstado();
-            // Agregar estado al historial para que el botón atrás funcione
             window.history.pushState({ familia: familia }, '', window.location.href);
         }
 
@@ -511,7 +708,6 @@
             familiaActiva = null;
             searchInput.value = '';
             actualizarVistaSegunEstado();
-            // Reemplazar el estado del historial para evitar bucles
             window.history.replaceState({ pagina: 'categorias' }, '', window.location.href);
         }
 
@@ -535,18 +731,14 @@
                 if (!response.ok) throw new Error(`HTTP ${response.status}`);
                 const data = await response.json();
                 
-                // Compatibilidad: el JSON puede ser un array plano (formato antiguo)
-                // o un objeto con la clave "productos" (formato nuevo)
                 const listaProductos = Array.isArray(data) ? data : (data.productos || []);
                 
                 if (!Array.isArray(listaProductos)) {
                     throw new Error('Formato JSON inválido: no se encontró la lista de productos');
                 }
                 
-                // Filtrar productos con cantidad > 0
                 const productosFiltrados = listaProductos.filter(item => item.Cantidad > 0);
                 
-                // Transformar los datos del JSON al formato que usa el código
                 todosLosProductos = productosFiltrados.map(item => ({
                     id: item.Codigo,
                     nombre: item.Nombre,
@@ -556,10 +748,8 @@
                     cantidad: item.Cantidad
                 }));
                 
-                // Obtener categorías únicas y ordenarlas según el orden personalizado
                 const familiasSet = new Set(todosLosProductos.map(p => p.familia).filter(f => f && f.trim()));
                 
-                // Orden personalizado de categorías
                 const ordenPersonalizado = [
                     "Cárnicos y embutidos",
                     "Básicos",
@@ -573,20 +763,12 @@
                     "Equipos"
                 ];
                 
-                // Ordenar: primero las del orden personalizado, luego el resto alfabéticamente
                 familiasUnicas = Array.from(familiasSet).sort((a, b) => {
                     const indexA = ordenPersonalizado.indexOf(a);
                     const indexB = ordenPersonalizado.indexOf(b);
-                    
-                    // Si ambas están en el orden personalizado, ordenar por su índice
-                    if (indexA !== -1 && indexB !== -1) {
-                        return indexA - indexB;
-                    }
-                    // Si solo A está en el orden, A va primero
+                    if (indexA !== -1 && indexB !== -1) return indexA - indexB;
                     if (indexA !== -1) return -1;
-                    // Si solo B está en el orden, B va primero
                     if (indexB !== -1) return 1;
-                    // Si ninguna está en el orden, orden alfabético
                     return a.localeCompare(b);
                 });
                 
@@ -594,7 +776,6 @@
                 window.cantidadesProductos = {};
                 todosLosProductos.forEach(p => { window.cantidadesProductos[p.id] = 1; });
                 
-                // Resetear vista a categorías
                 familiaActiva = null;
                 searchInput.value = '';
                 actualizarVistaSegunEstado();
@@ -610,24 +791,18 @@
 
         // --- Función para borrar caché y recargar ---
         function borrarCacheYRecargar() {
-            // Mostrar mensaje
             const msgDiv = refreshMessage.querySelector('div');
             if (msgDiv) {
                 msgDiv.innerHTML = '<span class="material-symbols-outlined text-sm spinner">sync</span><span>Borrando caché y recargando...</span>';
             }
             refreshMessage.classList.remove('hidden');
             
-            // Deshabilitar botón
             refreshCacheBtn.disabled = true;
             refreshCacheBtn.style.opacity = '0.5';
             
-            // 1. Borrar localStorage
             localStorage.clear();
-            
-            // 2. Borrar sessionStorage
             sessionStorage.clear();
             
-            // 3. Borrar caché del navegador (Service Workers y Cache API)
             if ('caches' in window) {
                 caches.keys().then(function(names) {
                     for (let name of names) {
@@ -636,13 +811,11 @@
                 });
             }
             
-            // 4. Esperar 1 segundo y recargar la página desde cero
             setTimeout(() => {
                 window.location.reload(true);
             }, 1000);
         }
 
-        // --- Actualizar catálogo con borrado de caché ---
         async function actualizarCatalogo() {
             refreshMessage.classList.remove('hidden');
             refreshCacheBtn.disabled = true;
@@ -657,9 +830,7 @@
                     msgDiv.innerHTML = '<span class="material-symbols-outlined text-sm spinner">sync</span><span>Borrando caché y recargando...</span>';
                 }
                 
-                // Esperar 1 segundo para mostrar el mensaje
                 setTimeout(() => {
-                    // Borrar caché y recargar
                     borrarCacheYRecargar();
                 }, 1000);
                 
@@ -674,14 +845,11 @@
 
         // Manejar el botón de atrás en el teléfono
         window.addEventListener('popstate', function(event) {
-            // Si hay una categoría activa, volver a las categorías
             if (familiaActiva !== null) {
                 volverAFamilias();
             }
-            // Si ya estamos en la vista de categorías, dejar que el navegador maneje el atrás
         });
 
-        // Inicializar con un estado base en el historial
         window.history.replaceState({ pagina: 'categorias' }, '', window.location.href);
 
         // Event listeners
@@ -690,7 +858,10 @@
         refreshCacheBtn.addEventListener('click', actualizarCatalogo);
         
         // Inicializar
-        cargarProductos();
+        (async () => {
+            await cargarPromocion();
+            await cargarProductos();
+        })();
     </script>
 </body>
 </html>
