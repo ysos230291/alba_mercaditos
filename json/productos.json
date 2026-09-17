@@ -4,14 +4,14 @@
             "Codigo": 2,
             "Nombre": "Costillas de cerdo con piel, 5lb",
             "Precio": 13.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 21.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -25,7 +25,7 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 8.0,
-            "Cantidad": 33.0,
+            "Cantidad": 31.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -46,7 +46,7 @@
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 76.0,
+            "Cantidad": 74.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -60,7 +60,7 @@
             "Codigo": 24,
             "Nombre": "Atún desmanuzado en aceite 140g",
             "Precio": 1.3,
-            "Cantidad": 157.0,
+            "Cantidad": 152.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -172,7 +172,7 @@
             "Codigo": 65,
             "Nombre": "Pasta de bocaditos 500g",
             "Precio": 5.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Confituras"
         },
         {
@@ -193,7 +193,7 @@
             "Codigo": 70,
             "Nombre": "Café La LLave 284g",
             "Precio": 8.0,
-            "Cantidad": 23.0,
+            "Cantidad": 22.0,
             "Categoria": "Café"
         },
         {
@@ -207,7 +207,7 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 52.0,
+            "Cantidad": 48.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -221,7 +221,7 @@
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 60.0,
+            "Cantidad": 58.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -263,7 +263,7 @@
             "Codigo": 83,
             "Nombre": "Sazón completo Heiss 750g",
             "Precio": 3.5,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -298,35 +298,35 @@
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.5,
-            "Cantidad": 92.0,
+            "Cantidad": 84.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 91,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 66.0,
+            "Cantidad": 63.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 0.8,
-            "Cantidad": 128.0,
+            "Cantidad": 125.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 94,
             "Nombre": "Sopa pollo instantánea",
             "Precio": 0.6,
-            "Cantidad": 42.0,
+            "Cantidad": 32.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 95,
             "Nombre": "Sopa res instantánea",
             "Precio": 0.6,
-            "Cantidad": 42.0,
+            "Cantidad": 32.0,
             "Categoria": "Básicos"
         },
         {
@@ -459,7 +459,7 @@
             "Codigo": 122,
             "Nombre": "Refresco 1.5L cola",
             "Precio": 1.8,
-            "Cantidad": 21.0,
+            "Cantidad": 18.0,
             "Categoria": "Bebidas"
         },
         {
@@ -467,13 +467,6 @@
             "Nombre": "Refresco 1.5L limón",
             "Precio": 1.8,
             "Cantidad": 27.0,
-            "Categoria": "Bebidas"
-        },
-        {
-            "Codigo": 124,
-            "Nombre": "Refresco 1.5L mate",
-            "Precio": 1.8,
-            "Cantidad": 8.0,
             "Categoria": "Bebidas"
         },
         {
@@ -606,7 +599,7 @@
             "Codigo": 163,
             "Nombre": "Jabón de baño",
             "Precio": 0.6,
-            "Cantidad": 347.0,
+            "Cantidad": 337.0,
             "Categoria": "Aseo"
         },
         {
@@ -634,7 +627,7 @@
             "Codigo": 168,
             "Nombre": "Pasta Dental Coolwhite",
             "Precio": 1.2,
-            "Cantidad": 26.0,
+            "Cantidad": 21.0,
             "Categoria": "Aseo"
         },
         {
@@ -669,7 +662,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 30.0,
+            "Cantidad": 29.0,
             "Categoria": "Confituras"
         },
         {
@@ -697,7 +690,7 @@
             "Codigo": 181,
             "Nombre": "Bola de res 2.4 a 2.5 kg",
             "Precio": 28.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -767,7 +760,7 @@
             "Codigo": 196,
             "Nombre": "Detergente 400g",
             "Precio": 1.3,
-            "Cantidad": 21.0,
+            "Cantidad": 10.0,
             "Categoria": "Aseo"
         },
         {
@@ -844,7 +837,7 @@
             "Codigo": 220,
             "Nombre": "Muslo de pollo 10lb",
             "Precio": 12.5,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -866,13 +859,6 @@
             "Nombre": "Helado  CID 4L  frutos del bosque",
             "Precio": 14.0,
             "Cantidad": 3.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 251,
-            "Nombre": "Helado CID 4L Fresa",
-            "Precio": 14.0,
-            "Cantidad": 2.0,
             "Categoria": "Lácteos"
         },
         {
@@ -921,7 +907,7 @@
             "Codigo": 260,
             "Nombre": "Café Aroma 250g",
             "Precio": 5.0,
-            "Cantidad": 34.0,
+            "Cantidad": 33.0,
             "Categoria": "Café"
         },
         {
@@ -1040,7 +1026,7 @@
             "Codigo": 297,
             "Nombre": "Choricitos Ditú",
             "Precio": 2.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1054,14 +1040,14 @@
             "Codigo": 302,
             "Nombre": "Vicky bolito 1.4lb",
             "Precio": 3.0,
-            "Cantidad": 37.0,
+            "Cantidad": 34.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 307,
             "Nombre": "Hamburguesa de pollo 3u",
             "Precio": 1.8,
-            "Cantidad": 39.0,
+            "Cantidad": 36.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1089,7 +1075,7 @@
             "Codigo": 313,
             "Nombre": "Croquetas Bacalao 500g",
             "Precio": 4.2,
-            "Cantidad": 19.0,
+            "Cantidad": 16.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1124,7 +1110,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1215,14 +1201,14 @@
             "Codigo": 7,
             "Nombre": "Lomo deshuesado 5lb",
             "Precio": 14.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 7.0,
-            "Cantidad": 26.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
