@@ -32,7 +32,7 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 8.0,
-            "Cantidad": 19.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -60,7 +60,7 @@
             "Codigo": 24,
             "Nombre": "Atún desmanuzado en aceite 140g",
             "Precio": 1.3,
-            "Cantidad": 150.0,
+            "Cantidad": 142.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -88,7 +88,7 @@
             "Codigo": 33,
             "Nombre": "Galletas María ",
             "Precio": 0.8,
-            "Cantidad": 26.0,
+            "Cantidad": 25.0,
             "Categoria": "Confituras"
         },
         {
@@ -109,7 +109,7 @@
             "Codigo": 48,
             "Nombre": "Gelatina frutos rojos 40g",
             "Precio": 0.8,
-            "Cantidad": 47.0,
+            "Cantidad": 45.0,
             "Categoria": "Confituras"
         },
         {
@@ -165,7 +165,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 37.0,
+            "Cantidad": 36.0,
             "Categoria": "Confituras"
         },
         {
@@ -179,7 +179,7 @@
             "Codigo": 68,
             "Nombre": "Café Nezca 250g",
             "Precio": 4.5,
-            "Cantidad": 57.0,
+            "Cantidad": 55.0,
             "Categoria": "Café"
         },
         {
@@ -193,7 +193,7 @@
             "Codigo": 70,
             "Nombre": "Café La LLave 284g",
             "Precio": 8.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Café"
         },
         {
@@ -298,7 +298,7 @@
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.5,
-            "Cantidad": 82.0,
+            "Cantidad": 76.0,
             "Categoria": "Básicos"
         },
         {
@@ -319,14 +319,14 @@
             "Codigo": 94,
             "Nombre": "Sopa pollo instantánea",
             "Precio": 0.6,
-            "Cantidad": 27.0,
+            "Cantidad": 73.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 95,
             "Nombre": "Sopa res instantánea",
             "Precio": 0.6,
-            "Cantidad": 25.0,
+            "Cantidad": 71.0,
             "Categoria": "Básicos"
         },
         {
@@ -396,7 +396,7 @@
             "Codigo": 110,
             "Nombre": "Caja 24 compotas 90g pera",
             "Precio": 20.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Bebidas"
         },
         {
@@ -543,14 +543,14 @@
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.8,
-            "Cantidad": 46.0,
+            "Cantidad": 42.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 7.0,
-            "Cantidad": 48.0,
+            "Cantidad": 45.0,
             "Categoria": "Lácteos"
         },
         {
@@ -571,21 +571,21 @@
             "Codigo": 158,
             "Nombre": "Set 4 vasitos yogurt natural",
             "Precio": 2.5,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 159,
             "Nombre": "Set 4 vasitos yogurt plátano",
             "Precio": 2.5,
-            "Cantidad": 18.0,
+            "Cantidad": 17.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 160,
             "Nombre": "Set 4 vasitos yogurt macedonia",
             "Precio": 2.5,
-            "Cantidad": 22.0,
+            "Cantidad": 21.0,
             "Categoria": "Lácteos"
         },
         {
@@ -655,7 +655,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 28.0,
+            "Cantidad": 25.0,
             "Categoria": "Confituras"
         },
         {
@@ -697,7 +697,7 @@
             "Codigo": 180,
             "Nombre": "Gelatina naranja/mandarina 40g",
             "Precio": 0.8,
-            "Cantidad": 55.0,
+            "Cantidad": 53.0,
             "Categoria": "Confituras"
         },
         {
@@ -760,7 +760,7 @@
             "Codigo": 200,
             "Nombre": "Bandeja bistec cerdo 4lb",
             "Precio": 15.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -830,7 +830,7 @@
             "Codigo": 220,
             "Nombre": "Muslo de pollo 10lb",
             "Precio": 12.5,
-            "Cantidad": 22.0,
+            "Cantidad": 19.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -844,7 +844,7 @@
             "Codigo": 226,
             "Nombre": "Galletas Pica Pau vainilla 115g",
             "Precio": 0.6,
-            "Cantidad": 11.0,
+            "Cantidad": 9.0,
             "Categoria": "Confituras"
         },
         {
@@ -907,7 +907,7 @@
             "Codigo": 262,
             "Nombre": "Caja sazón Fresko 36 sobres",
             "Precio": 4.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -977,14 +977,14 @@
             "Codigo": 290,
             "Nombre": "Galletas Amori 35g fresa",
             "Precio": 0.25,
-            "Cantidad": 95.0,
+            "Cantidad": 127.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 291,
             "Nombre": "Galletas Amori 35g chocolate",
             "Precio": 0.25,
-            "Cantidad": 10.0,
+            "Cantidad": 42.0,
             "Categoria": "Confituras"
         },
         {
@@ -998,14 +998,14 @@
             "Codigo": 298,
             "Nombre": "Lomo Ahumado xlb",
             "Precio": 3.5,
-            "Cantidad": 212.0,
+            "Cantidad": 209.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 302,
             "Nombre": "Vicky bolito 1.4lb",
             "Precio": 3.0,
-            "Cantidad": 31.0,
+            "Cantidad": 28.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1047,7 +1047,7 @@
             "Codigo": 314,
             "Nombre": "Lata Butter Cookies",
             "Precio": 4.2,
-            "Cantidad": 4.0,
+            "Cantidad": 28.0,
             "Categoria": "Confituras"
         },
         {
@@ -1061,7 +1061,7 @@
             "Codigo": 316,
             "Nombre": "Caja 27 jugo manzana 200ml",
             "Precio": 13.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1075,7 +1075,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 2.0,
+            "Cantidad": 10.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1103,14 +1103,7 @@
             "Codigo": 323,
             "Nombre": "Pringles Mr Potato picante",
             "Precio": 2.5,
-            "Cantidad": 6.0,
-            "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 324,
-            "Nombre": "Pringles Mr Potato BBQ",
-            "Precio": 2.5,
-            "Cantidad": 3.0,
+            "Cantidad": 5.0,
             "Categoria": "Confituras"
         },
         {
@@ -1124,7 +1117,7 @@
             "Codigo": 326,
             "Nombre": "Sorbeto Amori 80g limón",
             "Precio": 0.7,
-            "Cantidad": 16.0,
+            "Cantidad": 14.0,
             "Categoria": "Confituras"
         },
         {
@@ -1152,7 +1145,7 @@
             "Codigo": 327,
             "Nombre": "Detergente 1kg",
             "Precio": 2.5,
-            "Cantidad": 20.0,
+            "Cantidad": 19.0,
             "Categoria": "Aseo"
         },
         {
@@ -1320,7 +1313,7 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 15.0,
-            "Cantidad": 7.0,
+            "Cantidad": 26.0,
             "Categoria": "Básicos"
         },
         {
@@ -1341,7 +1334,70 @@
             "Codigo": 361,
             "Nombre": "Nutella grande 400g",
             "Precio": 7.5,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 96,
+            "Nombre": "Miel de abejas 340g",
+            "Precio": 2.5,
+            "Cantidad": 48.0,
+            "Categoria": "Básicos"
+        },
+        {
+            "Codigo": 47,
+            "Nombre": "Botonetas tira de 24 pqticos",
+            "Precio": 2.8,
+            "Cantidad": 20.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 30,
+            "Nombre": "Galletas Roundy  chocolate",
+            "Precio": 1.0,
+            "Cantidad": 48.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 31,
+            "Nombre": "Galletas Roundy fresa",
+            "Precio": 1.0,
+            "Cantidad": 48.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 32,
+            "Nombre": "Galleticas Bourbon 33g",
+            "Precio": 0.25,
+            "Cantidad": 200.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 34,
+            "Nombre": "Galletas Nikito fresa",
+            "Precio": 0.7,
+            "Cantidad": 72.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 35,
+            "Nombre": "Galletas Nikito dulce de leche",
+            "Precio": 0.7,
+            "Cantidad": 72.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 57,
+            "Nombre": "Bote 50 dulcesitos fresa",
+            "Precio": 13.0,
+            "Cantidad": 5.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 60,
+            "Nombre": "Bote 50 dulcesitos vainilla",
+            "Precio": 13.0,
+            "Cantidad": 6.0,
             "Categoria": "Confituras"
         }
     ],
@@ -1505,6 +1561,13 @@
             "Apellidos": "Miranda Martínez",
             "Telefono": "+5353164084",
             "Direccion": "Calle 26 de julio entre 13 de marzo y calle A#17"
+        },
+        {
+            "Id": 15,
+            "Nombre": "Isauro",
+            "Apellidos": "Rodriguez",
+            "Telefono": "+5350016383",
+            "Direccion": "Calle Roldán #106 entre Celestino Pacheco y Vivo R"
         }
     ]
 }
