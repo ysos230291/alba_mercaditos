@@ -18,28 +18,28 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 13.0,
-            "Cantidad": 28.0,
+            "Cantidad": 23.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 9,
             "Nombre": "Hígado de pollo 1kg",
             "Precio": 2.5,
-            "Cantidad": 21.0,
+            "Cantidad": 20.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 7.0,
-            "Cantidad": 18.0,
+            "Cantidad": 14.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 16,
             "Nombre": "Picadillo mixto cocinerito 400g",
             "Precio": 1.5,
-            "Cantidad": 41.0,
+            "Cantidad": 35.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -53,7 +53,7 @@
             "Codigo": 24,
             "Nombre": "Atún desmanuzado en aceite 140g",
             "Precio": 1.2,
-            "Cantidad": 117.0,
+            "Cantidad": 111.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -200,21 +200,21 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 75.0,
+            "Cantidad": 74.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 75,
             "Nombre": "Pqt de sal 1kg",
             "Precio": 1.0,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 30.0,
+            "Cantidad": 29.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -256,14 +256,14 @@
             "Codigo": 83,
             "Nombre": "Sazón completo Heiss 750g",
             "Precio": 3.2,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 85,
             "Nombre": "Cajita 12 pastillas pollo",
             "Precio": 0.9,
-            "Cantidad": 22.0,
+            "Cantidad": 21.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -298,7 +298,7 @@
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 0.8,
-            "Cantidad": 71.0,
+            "Cantidad": 70.0,
             "Categoria": "Básicos"
         },
         {
@@ -410,7 +410,7 @@
             "Codigo": 115,
             "Nombre": "Cerveza Cristal caja 24u",
             "Precio": 24.0,
-            "Cantidad": 47.0,
+            "Cantidad": 46.0,
             "Categoria": "Bebidas"
         },
         {
@@ -529,7 +529,7 @@
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Lácteos"
         },
         {
@@ -592,7 +592,7 @@
             "Codigo": 163,
             "Nombre": "Jabón de baño",
             "Precio": 0.55,
-            "Cantidad": 270.0,
+            "Cantidad": 234.0,
             "Categoria": "Aseo"
         },
         {
@@ -620,7 +620,7 @@
             "Codigo": 168,
             "Nombre": "Pasta Dental Coolwhite",
             "Precio": 1.0,
-            "Cantidad": 68.0,
+            "Cantidad": 63.0,
             "Categoria": "Aseo"
         },
         {
@@ -663,13 +663,6 @@
             "Nombre": "Jamonilla de pollo lata 340g",
             "Precio": 2.3,
             "Cantidad": 28.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
-            "Codigo": 177,
-            "Nombre": "Tubo de chorizo aprox 2lb",
-            "Precio": 2.5,
-            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -743,13 +736,6 @@
             "Categoria": "Útiles para el hogar"
         },
         {
-            "Codigo": 200,
-            "Nombre": "Bandeja bistec cerdo 4lb",
-            "Precio": 15.0,
-            "Cantidad": 2.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
@@ -813,13 +799,6 @@
             "Categoria": "Confituras"
         },
         {
-            "Codigo": 226,
-            "Nombre": "Galletas Pica Pau vainilla 115g",
-            "Precio": 0.6,
-            "Cantidad": 9.0,
-            "Categoria": "Confituras"
-        },
-        {
             "Codigo": 103,
             "Nombre": "Pizza familiar especial de queso",
             "Precio": 10.0,
@@ -872,7 +851,7 @@
             "Codigo": 264,
             "Nombre": "Café Serrano 500g",
             "Precio": 10.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Café"
         },
         {
@@ -1089,14 +1068,14 @@
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 6.5,
-            "Cantidad": 4.0,
+            "Cantidad": 1.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 331,
             "Nombre": "Paquete de comino molido 150g",
             "Precio": 2.0,
-            "Cantidad": 8.0,
+            "Cantidad": 6.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1153,13 +1132,6 @@
             "Nombre": "Salami medio",
             "Precio": 3.0,
             "Cantidad": 16.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
-            "Codigo": 346,
-            "Nombre": "Jamón prensado natural 6 a 6.2lb",
-            "Precio": 14.0,
-            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1474,7 +1446,7 @@
             "Codigo": 391,
             "Nombre": "Flan instantáneo vainilla 60g",
             "Precio": 1.0,
-            "Cantidad": 36.0,
+            "Cantidad": 35.0,
             "Categoria": "Confituras"
         },
         {
@@ -1516,7 +1488,7 @@
             "Codigo": 397,
             "Nombre": "Néctar de guayaba Nezca 24u",
             "Precio": 18.0,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Bebidas"
         }
     ],
