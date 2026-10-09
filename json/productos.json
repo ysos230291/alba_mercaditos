@@ -4,14 +4,14 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 6.5,
-            "Cantidad": 10.0,
+            "Cantidad": 49.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 16,
             "Nombre": "Picadillo mixto cocinerito 400g",
             "Precio": 1.5,
-            "Cantidad": 36.0,
+            "Cantidad": 28.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -158,7 +158,7 @@
             "Codigo": 70,
             "Nombre": "Café La LLave 284g",
             "Precio": 8.0,
-            "Cantidad": 7.0,
+            "Cantidad": 24.0,
             "Categoria": "Café"
         },
         {
@@ -172,21 +172,21 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 47.0,
+            "Cantidad": 43.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 75,
             "Nombre": "Pqt de sal 1kg",
             "Precio": 1.0,
-            "Cantidad": 57.0,
+            "Cantidad": 54.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 29.0,
+            "Cantidad": 26.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -235,7 +235,7 @@
             "Codigo": 85,
             "Nombre": "Cajita 12 pastillas pollo",
             "Precio": 0.9,
-            "Cantidad": 9.0,
+            "Cantidad": 69.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -249,7 +249,7 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 29.0,
+            "Cantidad": 27.0,
             "Categoria": "Básicos"
         },
         {
@@ -473,14 +473,14 @@
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.5,
-            "Cantidad": 183.0,
+            "Cantidad": 181.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.7,
-            "Cantidad": 59.0,
+            "Cantidad": 57.0,
             "Categoria": "Lácteos"
         },
         {
@@ -557,7 +557,7 @@
             "Codigo": 166,
             "Nombre": "Papel Sanitario 4 rollos",
             "Precio": 1.3,
-            "Cantidad": 46.0,
+            "Cantidad": 44.0,
             "Categoria": "Aseo"
         },
         {
@@ -620,14 +620,14 @@
             "Codigo": 181,
             "Nombre": "Bola de res 2.4 a 2.5 kg",
             "Precio": 27.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 26.0,
+            "Cantidad": 22.0,
             "Categoria": "Básicos"
         },
         {
@@ -697,7 +697,7 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
-            "Cantidad": 15.0,
+            "Cantidad": 13.0,
             "Categoria": "Lácteos"
         },
         {
@@ -739,14 +739,14 @@
             "Codigo": 220,
             "Nombre": "Muslo de pollo 10lb",
             "Precio": 12.5,
-            "Cantidad": 19.0,
+            "Cantidad": 58.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 222,
             "Nombre": "Blister Agua 500ml x12",
             "Precio": 7.0,
-            "Cantidad": 11.0,
+            "Cantidad": 9.0,
             "Categoria": "Bebidas"
         },
         {
@@ -778,11 +778,25 @@
             "Categoria": "Confituras"
         },
         {
+            "Codigo": 262,
+            "Nombre": "Caja sazón Fresko 36 sobres",
+            "Precio": 4.0,
+            "Cantidad": 15.0,
+            "Categoria": "Para la cocina"
+        },
+        {
             "Codigo": 265,
             "Nombre": "Café Santo Domingo 283g",
             "Precio": 7.0,
             "Cantidad": 19.0,
             "Categoria": "Café"
+        },
+        {
+            "Codigo": 266,
+            "Nombre": "Garbanzos 340g",
+            "Precio": 2.2,
+            "Cantidad": 48.0,
+            "Categoria": "Básicos"
         },
         {
             "Codigo": 267,
@@ -851,14 +865,14 @@
             "Codigo": 298,
             "Nombre": "Lomo Ahumado xlb",
             "Precio": 3.2,
-            "Cantidad": 157.0,
+            "Cantidad": 155.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 302,
             "Nombre": "Vicky bolito 1.4lb",
             "Precio": 3.0,
-            "Cantidad": 8.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -900,7 +914,7 @@
             "Codigo": 316,
             "Nombre": "Caja 27 jugo manzana 200ml",
             "Precio": 13.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Bebidas"
         },
         {
@@ -953,18 +967,18 @@
             "Categoria": "Confituras"
         },
         {
-            "Codigo": 25,
-            "Nombre": "Paquete de 10 colas de langosta",
-            "Precio": 16.0,
-            "Cantidad": 1.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 116,
             "Nombre": "Cerveza Bucanero caja 24u",
             "Precio": 24.0,
             "Cantidad": 3.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 73,
+            "Nombre": "Aceite 900ml",
+            "Precio": 6.5,
+            "Cantidad": 22.0,
+            "Categoria": "Para la cocina"
         },
         {
             "Codigo": 331,
@@ -1012,7 +1026,7 @@
             "Codigo": 338,
             "Nombre": "Aceite 900ml X12",
             "Precio": 75.0,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1117,7 +1131,7 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 14.0,
-            "Cantidad": 4.0,
+            "Cantidad": 23.0,
             "Categoria": "Básicos"
         },
         {
@@ -1441,6 +1455,20 @@
             "Precio": 2.2,
             "Cantidad": 17.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 405,
+            "Nombre": "Coffee Cream 453g",
+            "Precio": 6.0,
+            "Cantidad": 16.0,
+            "Categoria": "Café"
+        },
+        {
+            "Codigo": 406,
+            "Nombre": "Chícharos verdes IBERIA 340g",
+            "Precio": 2.0,
+            "Cantidad": 48.0,
+            "Categoria": "Básicos"
         }
     ],
     "remitentes": [
