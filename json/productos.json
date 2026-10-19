@@ -4,49 +4,49 @@
             "Codigo": 1,
             "Nombre": "Chuletas de cerdo con grasa y hueso 5lb",
             "Precio": 13.0,
-            "Cantidad": 3.0,
+            "Cantidad": 2.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 2,
             "Nombre": "Costillas de cerdo con piel, 5lb",
             "Precio": 13.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 6,
             "Nombre": "Caja de pollo 40lb (4 pqt x 10lb)",
             "Precio": 45.0,
-            "Cantidad": 5.0,
+            "Cantidad": 3.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 6.5,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 16,
             "Nombre": "Picadillo de pollo condimentado 500g",
             "Precio": 1.5,
-            "Cantidad": 35.0,
+            "Cantidad": 25.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.2,
-            "Cantidad": 44.0,
+            "Cantidad": 39.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 23,
             "Nombre": "Atún en aceite 1kg ",
             "Precio": 10.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -92,24 +92,10 @@
             "Categoria": "Confituras"
         },
         {
-            "Codigo": 50,
-            "Nombre": "Mermelada de mango 440g",
-            "Precio": 1.25,
-            "Cantidad": 3.0,
-            "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 51,
-            "Nombre": "Mermelada de guayaba 440g",
-            "Precio": 1.25,
-            "Cantidad": 5.0,
-            "Categoria": "Confituras"
-        },
-        {
             "Codigo": 54,
             "Nombre": "Lata 3kg fresas en almíbar",
             "Precio": 7.5,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Confituras"
         },
         {
@@ -117,6 +103,13 @@
             "Nombre": "Lata de 3kg peras en almíbar",
             "Precio": 7.5,
             "Cantidad": 6.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 56,
+            "Nombre": "Cascos de naranja 482g",
+            "Precio": 6.0,
+            "Cantidad": 2.0,
             "Categoria": "Confituras"
         },
         {
@@ -130,21 +123,21 @@
             "Codigo": 59,
             "Nombre": "Caja 24 dulces importados",
             "Precio": 8.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 101.0,
+            "Cantidad": 102.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 63,
             "Nombre": "Galletas Crakeñas soda 324g",
             "Precio": 2.8,
-            "Cantidad": 21.0,
+            "Cantidad": 22.0,
             "Categoria": "Confituras"
         },
         {
@@ -172,7 +165,7 @@
             "Codigo": 70,
             "Nombre": "Café La LLave 284g",
             "Precio": 8.0,
-            "Cantidad": 16.0,
+            "Cantidad": 12.0,
             "Categoria": "Café"
         },
         {
@@ -207,35 +200,35 @@
             "Codigo": 77,
             "Nombre": "Vinagre 1L",
             "Precio": 0.8,
-            "Cantidad": 19.0,
+            "Cantidad": 18.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 78,
             "Nombre": "Vino seco 1L",
             "Precio": 0.8,
-            "Cantidad": 19.0,
+            "Cantidad": 18.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 79,
             "Nombre": "Zumo de limón 1L",
             "Precio": 0.8,
-            "Cantidad": 29.0,
+            "Cantidad": 28.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 80,
             "Nombre": "Zumo de naranja 1L",
             "Precio": 0.8,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 82,
             "Nombre": "Aceitunas sin hueso 190g",
             "Precio": 2.0,
-            "Cantidad": 31.0,
+            "Cantidad": 30.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -256,28 +249,28 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 42.0,
+            "Cantidad": 39.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
-            "Cantidad": 78.0,
+            "Cantidad": 76.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 94,
             "Nombre": "Sopa pollo instantánea",
             "Precio": 0.6,
-            "Cantidad": 53.0,
+            "Cantidad": 43.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 95,
             "Nombre": "Sopa res instantánea",
             "Precio": 0.6,
-            "Cantidad": 61.0,
+            "Cantidad": 51.0,
             "Categoria": "Básicos"
         },
         {
@@ -365,6 +358,13 @@
             "Categoria": "Bebidas"
         },
         {
+            "Codigo": 119,
+            "Nombre": "Refresco lata naranja X6",
+            "Precio": 4.25,
+            "Cantidad": 8.0,
+            "Categoria": "Bebidas"
+        },
+        {
             "Codigo": 120,
             "Nombre": "Refresco lata mate X6",
             "Precio": 4.25,
@@ -421,13 +421,6 @@
             "Categoria": "Bebidas"
         },
         {
-            "Codigo": 144,
-            "Nombre": "Crema Ruavieja 700ml",
-            "Precio": 15.0,
-            "Cantidad": 5.0,
-            "Categoria": "Bebidas"
-        },
-        {
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.5,
@@ -438,7 +431,7 @@
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.7,
-            "Cantidad": 48.0,
+            "Cantidad": 47.0,
             "Categoria": "Lácteos"
         },
         {
@@ -459,7 +452,7 @@
             "Codigo": 152,
             "Nombre": "Yogurt Yokey fresa",
             "Precio": 5.5,
-            "Cantidad": 17.0,
+            "Cantidad": 9.0,
             "Categoria": "Lácteos"
         },
         {
@@ -557,7 +550,7 @@
             "Codigo": 175,
             "Nombre": " Chupa chupas XxL",
             "Precio": 4.8,
-            "Cantidad": 3.0,
+            "Cantidad": 2.0,
             "Categoria": "Confituras"
         },
         {
@@ -578,7 +571,7 @@
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 73.0,
+            "Cantidad": 72.0,
             "Categoria": "Básicos"
         },
         {
@@ -606,7 +599,7 @@
             "Codigo": 186,
             "Nombre": "Hamburguesas pollo pt 5u",
             "Precio": 2.0,
-            "Cantidad": 21.0,
+            "Cantidad": 16.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -620,14 +613,14 @@
             "Codigo": 190,
             "Nombre": "Lata melocotón almíbar 425g",
             "Precio": 2.8,
-            "Cantidad": 41.0,
+            "Cantidad": 40.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 193,
             "Nombre": "Jamonilla de res 340g",
             "Precio": 2.3,
-            "Cantidad": 12.0,
+            "Cantidad": 10.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -641,14 +634,14 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
-            "Cantidad": 9.0,
+            "Cantidad": 7.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 204,
             "Nombre": "Pasas secas bote 850g",
             "Precio": 11.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Confituras"
         },
         {
@@ -683,7 +676,7 @@
             "Codigo": 220,
             "Nombre": "Muslo de pollo 10lb",
             "Precio": 12.5,
-            "Cantidad": 23.0,
+            "Cantidad": 21.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -753,7 +746,7 @@
             "Codigo": 282,
             "Nombre": "Mermelada de mango 3.2 Kg",
             "Precio": 4.8,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Confituras"
         },
         {
@@ -774,7 +767,7 @@
             "Codigo": 290,
             "Nombre": "Galletas Amori 35g fresa",
             "Precio": 0.25,
-            "Cantidad": 96.0,
+            "Cantidad": 92.0,
             "Categoria": "Confituras"
         },
         {
@@ -788,14 +781,14 @@
             "Codigo": 298,
             "Nombre": "Lomo Ahumado xlb",
             "Precio": 3.2,
-            "Cantidad": 126.0,
+            "Cantidad": 124.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 309,
             "Nombre": "Recortería mixta",
             "Precio": 2.0,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -851,7 +844,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Lácteos"
         },
         {
@@ -865,15 +858,22 @@
             "Codigo": 320,
             "Nombre": "Café Vima 250g",
             "Precio": 4.8,
-            "Cantidad": 23.0,
+            "Cantidad": 21.0,
             "Categoria": "Café"
         },
         {
-            "Codigo": 322,
-            "Nombre": "Panel solar 640W",
-            "Precio": 250.0,
+            "Codigo": 323,
+            "Nombre": "Pringles Mr Potato picante",
+            "Precio": 2.5,
+            "Cantidad": 2.0,
+            "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 3,
+            "Nombre": "Muslos de cerdo 14.5LB",
+            "Precio": 37.0,
             "Cantidad": 1.0,
-            "Categoria": "Útiles para el hogar"
+            "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 326,
@@ -881,13 +881,6 @@
             "Precio": 0.7,
             "Cantidad": 3.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 25,
-            "Nombre": "Paquete de 10 colas de langosta",
-            "Precio": 16.0,
-            "Cantidad": 1.0,
-            "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 116,
@@ -907,14 +900,14 @@
             "Codigo": 332,
             "Nombre": "Néctar de mango Nezca 24u",
             "Precio": 18.0,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Bebidas"
         },
         {
             "Codigo": 333,
             "Nombre": "Mayonesa tradicional Nezca",
             "Precio": 3.0,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Confituras"
         },
         {
@@ -942,7 +935,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 10.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -953,10 +946,17 @@
             "Categoria": "Aseo"
         },
         {
+            "Codigo": 345,
+            "Nombre": "Salami medio",
+            "Precio": 3.0,
+            "Cantidad": 4.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 346,
             "Nombre": "Jamón prensado natural 6 a 6.2lb",
             "Precio": 14.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -977,7 +977,7 @@
             "Codigo": 351,
             "Nombre": "Mortadella media 1.4 a 1.5lb",
             "Precio": 3.0,
-            "Cantidad": 8.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -991,35 +991,35 @@
             "Codigo": 354,
             "Nombre": "Barra de chocolate con leche",
             "Precio": 0.5,
-            "Cantidad": 19.0,
+            "Cantidad": 16.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 355,
             "Nombre": "Barra de chocolate con galletas",
             "Precio": 0.5,
-            "Cantidad": 54.0,
+            "Cantidad": 51.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 356,
             "Nombre": "Barra de chocolate con avellanas",
             "Precio": 0.5,
-            "Cantidad": 46.0,
+            "Cantidad": 43.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 357,
             "Nombre": "Barra de chocolate con pistachos",
             "Precio": 0.5,
-            "Cantidad": 30.0,
+            "Cantidad": 27.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 14.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Básicos"
         },
         {
@@ -1054,7 +1054,7 @@
             "Codigo": 47,
             "Nombre": "Botonetas tira de 24 pqticos",
             "Precio": 2.8,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Confituras"
         },
         {
@@ -1096,7 +1096,7 @@
             "Codigo": 57,
             "Nombre": "Bote 50 dulcesitos fresa",
             "Precio": 13.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Confituras"
         },
         {
@@ -1109,7 +1109,7 @@
         {
             "Codigo": 150,
             "Nombre": "Havana Club Ritual 700ml",
-            "Precio": 9.0,
+            "Precio": 8.5,
             "Cantidad": 23.0,
             "Categoria": "Bebidas"
         },
@@ -1131,14 +1131,14 @@
             "Codigo": 363,
             "Nombre": "Malta Bucanero ",
             "Precio": 1.0,
-            "Cantidad": 660.0,
+            "Cantidad": 665.0,
             "Categoria": "Bebidas"
         },
         {
             "Codigo": 364,
             "Nombre": "Caja 24u Malta Bucanero",
             "Precio": 23.0,
-            "Cantidad": 6.0,
+            "Cantidad": 4.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1159,7 +1159,7 @@
             "Codigo": 369,
             "Nombre": "Barra de chocolate con fresa",
             "Precio": 0.5,
-            "Cantidad": 286.0,
+            "Cantidad": 283.0,
             "Categoria": "Confituras"
         },
         {
@@ -1201,7 +1201,7 @@
             "Codigo": 375,
             "Nombre": "Olla Reina 6L",
             "Precio": 60.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Útiles para el hogar"
         },
         {
@@ -1243,14 +1243,14 @@
             "Codigo": 391,
             "Nombre": "Flan instantáneo vainilla 60g",
             "Precio": 1.0,
-            "Cantidad": 32.0,
+            "Cantidad": 30.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 392,
             "Nombre": "Flan instantáneo chocolate 60g",
             "Precio": 1.0,
-            "Cantidad": 31.0,
+            "Cantidad": 30.0,
             "Categoria": "Confituras"
         },
         {
@@ -1285,8 +1285,15 @@
             "Codigo": 397,
             "Nombre": "Néctar de guayaba Nezca 24u",
             "Precio": 18.0,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 398,
+            "Nombre": "Butter cookies Nezca 150g",
+            "Precio": 1.8,
+            "Cantidad": 5.0,
+            "Categoria": "Confituras"
         },
         {
             "Codigo": 399,
@@ -1313,14 +1320,14 @@
             "Codigo": 402,
             "Nombre": "Refresco Piñata coctel 8Lt",
             "Precio": 2.2,
-            "Cantidad": 19.0,
+            "Cantidad": 18.0,
             "Categoria": "Bebidas"
         },
         {
             "Codigo": 403,
             "Nombre": "Refresco Piñata piña 8Lt",
             "Precio": 2.2,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1334,7 +1341,7 @@
             "Codigo": 406,
             "Nombre": "Chícharos verdes IBERIA 340g",
             "Precio": 2.0,
-            "Cantidad": 36.0,
+            "Cantidad": 35.0,
             "Categoria": "Básicos"
         },
         {
@@ -1348,7 +1355,7 @@
             "Codigo": 410,
             "Nombre": "Aceite canola y maíz Crisol 2.84Lt",
             "Precio": 14.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1362,7 +1369,7 @@
             "Codigo": 412,
             "Nombre": "Caja 20 yogurt sabores varios",
             "Precio": 12.0,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Lácteos"
         },
         {
