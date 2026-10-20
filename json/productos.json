@@ -116,7 +116,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 99.0,
+            "Cantidad": 97.0,
             "Categoria": "Confituras"
         },
         {
@@ -592,7 +592,7 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Lácteos"
         },
         {
@@ -634,7 +634,7 @@
             "Codigo": 220,
             "Nombre": "Muslo de pollo 10lb",
             "Precio": 12.5,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -843,7 +843,7 @@
         {
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
-            "Precio": 6.5,
+            "Precio": 5.2,
             "Cantidad": 12.0,
             "Categoria": "Para la cocina"
         },
@@ -878,7 +878,7 @@
         {
             "Codigo": 338,
             "Nombre": "Aceite 900ml X12",
-            "Precio": 75.0,
+            "Precio": 60.0,
             "Cantidad": 5.0,
             "Categoria": "Para la cocina"
         },
@@ -886,7 +886,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1061,7 +1061,7 @@
             "Codigo": 363,
             "Nombre": "Malta Bucanero ",
             "Precio": 1.0,
-            "Cantidad": 665.0,
+            "Cantidad": 660.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1074,7 +1074,7 @@
         {
             "Codigo": 366,
             "Nombre": "Galón de Aceite 17.5Lt",
-            "Precio": 75.0,
+            "Precio": 80.0,
             "Cantidad": 7.0,
             "Categoria": "Para la cocina"
         },
@@ -1322,6 +1322,13 @@
             "Precio": 6.0,
             "Cantidad": 16.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 425,
+            "Nombre": "Aceite de girasol 1L",
+            "Precio": 5.5,
+            "Cantidad": 36.0,
+            "Categoria": "Para la cocina"
         }
     ],
     "remitentes": [
