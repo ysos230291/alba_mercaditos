@@ -18,28 +18,28 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 8.0,
+            "Cantidad": 3.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 5.8,
-            "Cantidad": 63.0,
+            "Cantidad": 61.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 16,
             "Nombre": "Picadillo de pollo condimentado 500g",
             "Precio": 1.4,
-            "Cantidad": 10.0,
+            "Cantidad": 3.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 29.0,
+            "Cantidad": 20.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -75,13 +75,6 @@
             "Nombre": "Caramelos blandos 100u",
             "Precio": 2.5,
             "Cantidad": 22.0,
-            "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 46,
-            "Nombre": "Bombones 1kg",
-            "Precio": 7.6,
-            "Cantidad": 4.0,
             "Categoria": "Confituras"
         },
         {
@@ -165,7 +158,7 @@
             "Codigo": 70,
             "Nombre": "Café La LLave 284g",
             "Precio": 8.0,
-            "Cantidad": 12.0,
+            "Cantidad": 10.0,
             "Categoria": "Café"
         },
         {
@@ -242,7 +235,7 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 28.0,
+            "Cantidad": 27.0,
             "Categoria": "Básicos"
         },
         {
@@ -256,7 +249,7 @@
             "Codigo": 91,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 24.0,
+            "Cantidad": 22.0,
             "Categoria": "Básicos"
         },
         {
@@ -431,7 +424,7 @@
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 67.0,
+            "Cantidad": 65.0,
             "Categoria": "Lácteos"
         },
         {
@@ -445,14 +438,14 @@
             "Codigo": 152,
             "Nombre": "Yogurt Yokey fresa",
             "Precio": 5.5,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 153,
             "Nombre": "Yogurt Yokey natural con azúcar",
             "Precio": 5.5,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Lácteos"
         },
         {
@@ -522,7 +515,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 173.0,
+            "Cantidad": 172.0,
             "Categoria": "Confituras"
         },
         {
@@ -536,7 +529,7 @@
             "Codigo": 176,
             "Nombre": "Jamonilla de pollo lata 340g",
             "Precio": 2.3,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -550,7 +543,7 @@
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 69.0,
+            "Cantidad": 68.0,
             "Categoria": "Básicos"
         },
         {
@@ -599,7 +592,7 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Lácteos"
         },
         {
@@ -652,6 +645,62 @@
             "Categoria": "Bebidas"
         },
         {
+            "Codigo": 239,
+            "Nombre": "Cubeta Yogurt CID 4L natural con azúcar",
+            "Precio": 14.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 240,
+            "Nombre": "Cubeta Yogurt CID 4L Guanábana",
+            "Precio": 14.0,
+            "Cantidad": 3.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 243,
+            "Nombre": "Cubeta Yogurt Cid 4L fresa",
+            "Precio": 14.0,
+            "Cantidad": 6.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 245,
+            "Nombre": "Helado  CID 4L  Dulce de leche",
+            "Precio": 14.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 247,
+            "Nombre": "Helado CID 4L Chocolate",
+            "Precio": 14.0,
+            "Cantidad": 6.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 248,
+            "Nombre": "Helado CID 4L Almendra",
+            "Precio": 14.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 251,
+            "Nombre": "Helado CID 4L Fresa",
+            "Precio": 14.0,
+            "Cantidad": 2.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 252,
+            "Nombre": "Helado CID 4L Caramelo",
+            "Precio": 14.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
             "Codigo": 103,
             "Nombre": "Pizza familiar especial de queso",
             "Precio": 10.0,
@@ -690,7 +739,7 @@
             "Codigo": 266,
             "Nombre": "Garbanzos 340g",
             "Precio": 2.2,
-            "Cantidad": 40.0,
+            "Cantidad": 39.0,
             "Categoria": "Básicos"
         },
         {
@@ -858,7 +907,7 @@
             "Codigo": 333,
             "Nombre": "Mayonesa tradicional Nezca",
             "Precio": 3.0,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Confituras"
         },
         {
@@ -872,7 +921,7 @@
             "Codigo": 337,
             "Nombre": "Pollo ahumado 2.3 a 2.5lb",
             "Precio": 8.0,
-            "Cantidad": 22.0,
+            "Cantidad": 15.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -886,8 +935,22 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 31.0,
+            "Cantidad": 30.0,
             "Categoria": "Cárnicos y embutidos"
+        },
+        {
+            "Codigo": 236,
+            "Nombre": "Cubeta Yogurt Cid 4Lt natural sin azúcar",
+            "Precio": 14.0,
+            "Cantidad": 3.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 343,
+            "Nombre": "Helado CID 4L naranja piña",
+            "Precio": 14.0,
+            "Cantidad": 1.0,
+            "Categoria": "Lácteos"
         },
         {
             "Codigo": 344,
@@ -914,21 +977,21 @@
             "Codigo": 353,
             "Nombre": "Barra chocolate con café",
             "Precio": 0.5,
-            "Cantidad": 57.0,
+            "Cantidad": 56.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 354,
             "Nombre": "Barra de chocolate con leche",
             "Precio": 0.5,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 355,
             "Nombre": "Barra de chocolate con galletas",
             "Precio": 0.5,
-            "Cantidad": 51.0,
+            "Cantidad": 50.0,
             "Categoria": "Confituras"
         },
         {
@@ -949,7 +1012,7 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 13.0,
-            "Cantidad": 11.0,
+            "Cantidad": 9.0,
             "Categoria": "Básicos"
         },
         {
@@ -1047,7 +1110,7 @@
             "Codigo": 64,
             "Nombre": "Cascos de naranja en almíbar 963g",
             "Precio": 10.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Confituras"
         },
         {
@@ -1075,7 +1138,7 @@
             "Codigo": 366,
             "Nombre": "Galón de Aceite 17.5Lt",
             "Precio": 80.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1089,7 +1152,7 @@
             "Codigo": 369,
             "Nombre": "Barra de chocolate con fresa",
             "Precio": 0.5,
-            "Cantidad": 281.0,
+            "Cantidad": 280.0,
             "Categoria": "Confituras"
         },
         {
@@ -1236,7 +1299,7 @@
             "Codigo": 401,
             "Nombre": "Sorbeto Nezca chocolate 80g",
             "Precio": 0.8,
-            "Cantidad": 38.0,
+            "Cantidad": 37.0,
             "Categoria": "Confituras"
         },
         {
@@ -1327,7 +1390,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 5.5,
-            "Cantidad": 36.0,
+            "Cantidad": 160.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1336,6 +1399,55 @@
             "Precio": 6.0,
             "Cantidad": 5.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 426,
+            "Nombre": "Helado Cid 280ml chocolate",
+            "Precio": 1.5,
+            "Cantidad": 20.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 427,
+            "Nombre": "Helado CID 280ml fresa",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 428,
+            "Nombre": "Helado CID 280ml vainilla",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 429,
+            "Nombre": "Helado CID 280ml mantecado",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 430,
+            "Nombre": "Helado CID 280ml dulce de leche",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 431,
+            "Nombre": "Helado CID 289ml almendra",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 432,
+            "Nombre": "Helado CID 280ml almendras",
+            "Precio": 1.5,
+            "Cantidad": 15.0,
+            "Categoria": "Lácteos"
         }
     ],
     "remitentes": [
