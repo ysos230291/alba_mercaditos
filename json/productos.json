@@ -18,7 +18,7 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -32,14 +32,14 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 5.8,
-            "Cantidad": 41.0,
+            "Cantidad": 37.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 23,
             "Nombre": "Atún en aceite 1kg ",
             "Precio": 10.0,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -81,7 +81,7 @@
             "Codigo": 46,
             "Nombre": "Bombones 1kg",
             "Precio": 7.6,
-            "Cantidad": 2.0,
+            "Cantidad": 10.0,
             "Categoria": "Confituras"
         },
         {
@@ -137,7 +137,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 86.0,
+            "Cantidad": 85.0,
             "Categoria": "Confituras"
         },
         {
@@ -151,7 +151,7 @@
             "Codigo": 65,
             "Nombre": "Pasta de bocaditos 500g",
             "Precio": 4.8,
-            "Cantidad": 85.0,
+            "Cantidad": 84.0,
             "Categoria": "Confituras"
         },
         {
@@ -165,7 +165,7 @@
             "Codigo": 69,
             "Nombre": "Café Villa Rica 250g",
             "Precio": 4.0,
-            "Cantidad": 40.0,
+            "Cantidad": 38.0,
             "Categoria": "Café"
         },
         {
@@ -200,7 +200,7 @@
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 79.0,
+            "Cantidad": 78.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -445,14 +445,7 @@
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 56.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 149,
-            "Nombre": "Chocolate Nestlé Milo 400g",
-            "Precio": 8.0,
-            "Cantidad": 2.0,
+            "Cantidad": 51.0,
             "Categoria": "Lácteos"
         },
         {
@@ -543,7 +536,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 167.0,
+            "Cantidad": 162.0,
             "Categoria": "Confituras"
         },
         {
@@ -578,7 +571,7 @@
             "Codigo": 180,
             "Nombre": "Gelatina naranja/mandarina 40g",
             "Precio": 0.8,
-            "Cantidad": 33.0,
+            "Cantidad": 32.0,
             "Categoria": "Confituras"
         },
         {
@@ -620,7 +613,7 @@
             "Codigo": 194,
             "Nombre": "Maicena 1kg",
             "Precio": 5.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -678,13 +671,6 @@
             "Precio": 7.0,
             "Cantidad": 7.0,
             "Categoria": "Bebidas"
-        },
-        {
-            "Codigo": 239,
-            "Nombre": "Cubeta Yogurt CID 4L natural con azúcar",
-            "Precio": 14.0,
-            "Cantidad": 3.0,
-            "Categoria": "Lácteos"
         },
         {
             "Codigo": 240,
@@ -851,7 +837,7 @@
             "Codigo": 314,
             "Nombre": "Lata Butter Cookies",
             "Precio": 4.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Confituras"
         },
         {
@@ -879,7 +865,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Lácteos"
         },
         {
@@ -893,7 +879,7 @@
             "Codigo": 320,
             "Nombre": "Café Vima 250g",
             "Precio": 4.8,
-            "Cantidad": 18.0,
+            "Cantidad": 17.0,
             "Categoria": "Café"
         },
         {
@@ -902,13 +888,6 @@
             "Precio": 2.5,
             "Cantidad": 2.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 3,
-            "Nombre": "Muslos de cerdo 14.5LB",
-            "Precio": 36.0,
-            "Cantidad": 1.0,
-            "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 116,
@@ -935,14 +914,14 @@
             "Codigo": 333,
             "Nombre": "Mayonesa tradicional Nezca",
             "Precio": 3.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 336,
             "Nombre": "Café Bustelo 283g",
             "Precio": 8.0,
-            "Cantidad": 53.0,
+            "Cantidad": 52.0,
             "Categoria": "Café"
         },
         {
@@ -963,7 +942,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 21.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -984,14 +963,14 @@
             "Codigo": 350,
             "Nombre": "Jamón embuchado ahumado 2.10 a 2.20lb",
             "Precio": 9.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 353,
             "Nombre": "Barra chocolate con café",
             "Precio": 0.5,
-            "Cantidad": 56.0,
+            "Cantidad": 55.0,
             "Categoria": "Confituras"
         },
         {
@@ -1012,7 +991,7 @@
             "Codigo": 356,
             "Nombre": "Barra de chocolate con avellanas",
             "Precio": 0.5,
-            "Cantidad": 43.0,
+            "Cantidad": 42.0,
             "Categoria": "Confituras"
         },
         {
@@ -1341,7 +1320,7 @@
             "Codigo": 410,
             "Nombre": "Aceite canola y maíz Crisol 2.84Lt",
             "Precio": 14.0,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1363,13 +1342,6 @@
             "Nombre": "Pollo entero 2.5 a 3lb",
             "Precio": 6.5,
             "Cantidad": 4.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
-            "Codigo": 422,
-            "Nombre": "Muslo de cerdo 17 a 18 lb",
-            "Precio": 45.0,
-            "Cantidad": 2.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1404,7 +1376,7 @@
             "Codigo": 426,
             "Nombre": "Helado Cid 280ml chocolate",
             "Precio": 1.5,
-            "Cantidad": 17.0,
+            "Cantidad": 13.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1425,7 +1397,7 @@
             "Codigo": 429,
             "Nombre": "Helado CID 280ml mantecado",
             "Precio": 1.5,
-            "Cantidad": 15.0,
+            "Cantidad": 13.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1436,24 +1408,17 @@
             "Categoria": "Lácteos"
         },
         {
-            "Codigo": 431,
-            "Nombre": "Helado CID 289ml almendra",
-            "Precio": 1.5,
-            "Cantidad": 15.0,
-            "Categoria": "Lácteos"
-        },
-        {
             "Codigo": 432,
             "Nombre": "Helado CID 280ml almendras",
             "Precio": 1.5,
-            "Cantidad": 15.0,
+            "Cantidad": 12.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.3,
-            "Cantidad": 54.0,
+            "Cantidad": 50.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
