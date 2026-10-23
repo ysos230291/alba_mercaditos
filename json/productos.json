@@ -4,7 +4,7 @@
             "Codigo": 1,
             "Nombre": "Chuletas de cerdo con grasa y hueso 5lb",
             "Precio": 12.5,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -22,24 +22,17 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 6,
-            "Nombre": "Caja de pollo 40lb muslo y contramuslo",
-            "Precio": 45.0,
-            "Cantidad": 4.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 5.8,
-            "Cantidad": 48.0,
+            "Cantidad": 45.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 15.0,
+            "Cantidad": 10.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -151,7 +144,7 @@
             "Codigo": 69,
             "Nombre": "Café Villa Rica 250g",
             "Precio": 4.0,
-            "Cantidad": 43.0,
+            "Cantidad": 42.0,
             "Categoria": "Café"
         },
         {
@@ -172,35 +165,35 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 117.0,
+            "Cantidad": 115.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 75,
             "Nombre": "Pqt de sal 1kg",
             "Precio": 1.0,
-            "Cantidad": 18.0,
+            "Cantidad": 17.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 84.0,
+            "Cantidad": 81.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 77,
             "Nombre": "Vinagre 1L",
             "Precio": 0.8,
-            "Cantidad": 17.0,
+            "Cantidad": 16.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 78,
             "Nombre": "Vino seco 1L",
             "Precio": 0.8,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -221,7 +214,7 @@
             "Codigo": 82,
             "Nombre": "Aceitunas sin hueso 190g",
             "Precio": 2.0,
-            "Cantidad": 30.0,
+            "Cantidad": 28.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -242,21 +235,21 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 25.0,
+            "Cantidad": 24.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
-            "Cantidad": 71.0,
+            "Cantidad": 67.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 91,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Básicos"
         },
         {
@@ -410,14 +403,14 @@
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.7,
-            "Cantidad": 43.0,
+            "Cantidad": 41.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 58.0,
+            "Cantidad": 56.0,
             "Categoria": "Lácteos"
         },
         {
@@ -428,17 +421,10 @@
             "Categoria": "Lácteos"
         },
         {
-            "Codigo": 152,
-            "Nombre": "Yogurt Yokey fresa",
-            "Precio": 5.5,
-            "Cantidad": 3.0,
-            "Categoria": "Lácteos"
-        },
-        {
             "Codigo": 153,
             "Nombre": "Yogurt Yokey natural con azúcar",
             "Precio": 5.5,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Lácteos"
         },
         {
@@ -473,7 +459,7 @@
             "Codigo": 166,
             "Nombre": "Papel Sanitario 4 rollos",
             "Precio": 1.3,
-            "Cantidad": 21.0,
+            "Cantidad": 18.0,
             "Categoria": "Aseo"
         },
         {
@@ -508,7 +494,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 172.0,
+            "Cantidad": 170.0,
             "Categoria": "Confituras"
         },
         {
@@ -580,6 +566,13 @@
             "Precio": 2.8,
             "Cantidad": 38.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 202,
+            "Nombre": "Queso Yaguajay 1.5lb aprox",
+            "Precio": 4.0,
+            "Cantidad": 20.0,
+            "Categoria": "Lácteos"
         },
         {
             "Codigo": 204,
@@ -663,13 +656,6 @@
             "Nombre": "Helado CID 4L Chocolate",
             "Precio": 14.0,
             "Cantidad": 4.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 248,
-            "Nombre": "Helado CID 4L Almendra",
-            "Precio": 14.0,
-            "Cantidad": 2.0,
             "Categoria": "Lácteos"
         },
         {
@@ -830,7 +816,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 12.0,
+            "Cantidad": 11.0,
             "Categoria": "Lácteos"
         },
         {
@@ -914,7 +900,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 25.0,
+            "Cantidad": 22.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -935,7 +921,7 @@
             "Codigo": 349,
             "Nombre": "Mortadella especial 7lb",
             "Precio": 10.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -984,7 +970,7 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 13.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Básicos"
         },
         {
@@ -1292,14 +1278,14 @@
             "Codigo": 406,
             "Nombre": "Chícharos verdes IBERIA 340g",
             "Precio": 2.0,
-            "Cantidad": 35.0,
+            "Cantidad": 34.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 409,
             "Nombre": "Detergente 900g",
             "Precio": 2.0,
-            "Cantidad": 29.0,
+            "Cantidad": 27.0,
             "Categoria": "Aseo"
         },
         {
@@ -1355,7 +1341,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 5.5,
-            "Cantidad": 160.0,
+            "Cantidad": 158.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1369,7 +1355,7 @@
             "Codigo": 426,
             "Nombre": "Helado Cid 280ml chocolate",
             "Precio": 1.5,
-            "Cantidad": 20.0,
+            "Cantidad": 18.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1397,7 +1383,7 @@
             "Codigo": 430,
             "Nombre": "Helado CID 280ml dulce de leche",
             "Precio": 1.5,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1418,7 +1404,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.3,
-            "Cantidad": 68.0,
+            "Cantidad": 62.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1427,13 +1413,6 @@
             "Precio": 1.0,
             "Cantidad": 15.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 433,
-            "Nombre": "Arroz 10kg fin de año",
-            "Precio": 13.0,
-            "Cantidad": 20.0,
-            "Categoria": "Básicos"
         }
     ],
     "remitentes": [
