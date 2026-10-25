@@ -15,6 +15,13 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
+            "Codigo": 4,
+            "Nombre": "Lomo deshuesado 3lb",
+            "Precio": 9.0,
+            "Cantidad": 20.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
@@ -53,7 +60,7 @@
             "Codigo": 23,
             "Nombre": "Atún en aceite 1kg ",
             "Precio": 10.0,
-            "Cantidad": 8.0,
+            "Cantidad": 20.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -144,7 +151,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 78.0,
+            "Cantidad": 102.0,
             "Categoria": "Confituras"
         },
         {
@@ -258,6 +265,13 @@
             "Precio": 1.0,
             "Cantidad": 23.0,
             "Categoria": "Para la cocina"
+        },
+        {
+            "Codigo": 87,
+            "Nombre": "Frijol negro 1kg",
+            "Precio": 2.0,
+            "Cantidad": 86.0,
+            "Categoria": "Básicos"
         },
         {
             "Codigo": 88,
@@ -543,7 +557,7 @@
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 54.0,
+            "Cantidad": 114.0,
             "Categoria": "Básicos"
         },
         {
@@ -834,6 +848,13 @@
             "Categoria": "Bebidas"
         },
         {
+            "Codigo": 7,
+            "Nombre": "Lomo deshuesado 5lb",
+            "Precio": 15.0,
+            "Cantidad": 22.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 5.2,
@@ -879,7 +900,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 12.0,
+            "Cantidad": 32.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1371,6 +1392,13 @@
             "Precio": 11.8,
             "Cantidad": 5.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 263,
+            "Nombre": "Café Candao 8oz",
+            "Precio": 4.8,
+            "Cantidad": 8.0,
+            "Categoria": "Café"
         }
     ],
     "remitentes": [
