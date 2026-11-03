@@ -25,7 +25,7 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 24.0,
+            "Cantidad": 16.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -53,7 +53,7 @@
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 31.0,
+            "Cantidad": 63.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -81,14 +81,14 @@
             "Codigo": 33,
             "Nombre": "Galletas María ",
             "Precio": 1.0,
-            "Cantidad": 19.0,
+            "Cantidad": 17.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 45,
             "Nombre": "Caramelos blandos 100u",
             "Precio": 2.5,
-            "Cantidad": 20.0,
+            "Cantidad": 19.0,
             "Categoria": "Confituras"
         },
         {
@@ -137,14 +137,14 @@
             "Codigo": 59,
             "Nombre": "Caja 24 dulces importados",
             "Precio": 8.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 27.0,
+            "Cantidad": 26.0,
             "Categoria": "Confituras"
         },
         {
@@ -158,7 +158,7 @@
             "Codigo": 65,
             "Nombre": "Pasta de bocaditos 500g",
             "Precio": 4.8,
-            "Cantidad": 42.0,
+            "Cantidad": 41.0,
             "Categoria": "Confituras"
         },
         {
@@ -284,7 +284,7 @@
             "Codigo": 101,
             "Nombre": "Cake crema chocolate",
             "Precio": 12.0,
-            "Cantidad": 1.0,
+            "Cantidad": 2.0,
             "Categoria": "Especiales para fiestas"
         },
         {
@@ -494,7 +494,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Confituras"
         },
         {
@@ -550,7 +550,7 @@
             "Codigo": 185,
             "Nombre": "Galletas rosquillas leche 300g",
             "Precio": 1.6,
-            "Cantidad": 20.0,
+            "Cantidad": 18.0,
             "Categoria": "Confituras"
         },
         {
@@ -690,7 +690,7 @@
             "Codigo": 289,
             "Nombre": "Paquete de galletas Kreemez 450g vainilla",
             "Precio": 2.8,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Confituras"
         },
         {
@@ -704,7 +704,7 @@
             "Codigo": 291,
             "Nombre": "Galletas Amori 35g chocolate",
             "Precio": 0.25,
-            "Cantidad": 32.0,
+            "Cantidad": 30.0,
             "Categoria": "Confituras"
         },
         {
@@ -725,7 +725,7 @@
             "Codigo": 314,
             "Nombre": "Lata Butter Cookies",
             "Precio": 4.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Confituras"
         },
         {
@@ -781,7 +781,7 @@
             "Codigo": 7,
             "Nombre": "Lomo deshuesado 5lb",
             "Precio": 15.0,
-            "Cantidad": 20.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -823,14 +823,14 @@
             "Codigo": 353,
             "Nombre": "Barra chocolate con café",
             "Precio": 0.5,
-            "Cantidad": 49.0,
+            "Cantidad": 48.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 355,
             "Nombre": "Barra de chocolate con galletas",
             "Precio": 0.5,
-            "Cantidad": 44.0,
+            "Cantidad": 42.0,
             "Categoria": "Confituras"
         },
         {
@@ -907,21 +907,21 @@
             "Codigo": 32,
             "Nombre": "Galleticas Bourbon 33g",
             "Precio": 0.25,
-            "Cantidad": 181.0,
+            "Cantidad": 177.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 34,
             "Nombre": "Galletas Nikito fresa",
             "Precio": 0.7,
-            "Cantidad": 61.0,
+            "Cantidad": 60.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 35,
             "Nombre": "Galletas Nikito dulce de leche",
             "Precio": 0.7,
-            "Cantidad": 62.0,
+            "Cantidad": 61.0,
             "Categoria": "Confituras"
         },
         {
@@ -949,14 +949,14 @@
             "Codigo": 366,
             "Nombre": "Galón de Aceite 17.5Lt",
             "Precio": 80.0,
-            "Cantidad": 5.0,
+            "Cantidad": 3.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 368,
             "Nombre": "Sorbeticos mini de fresa 200g",
             "Precio": 1.8,
-            "Cantidad": 108.0,
+            "Cantidad": 107.0,
             "Categoria": "Confituras"
         },
         {
@@ -1005,7 +1005,7 @@
             "Codigo": 375,
             "Nombre": "Olla Reina 6L",
             "Precio": 60.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Útiles para el hogar"
         },
         {
@@ -1082,7 +1082,7 @@
             "Codigo": 401,
             "Nombre": "Sorbeto Nezca chocolate 80g",
             "Precio": 0.8,
-            "Cantidad": 30.0,
+            "Cantidad": 29.0,
             "Categoria": "Confituras"
         },
         {
@@ -1180,7 +1180,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.3,
-            "Cantidad": 3.0,
+            "Cantidad": 83.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1308,6 +1308,27 @@
             "Precio": 3.5,
             "Cantidad": 15.0,
             "Categoria": "Para la cocina"
+        },
+        {
+            "Codigo": 493,
+            "Nombre": "Jabón de baño Yili 100g",
+            "Precio": 0.65,
+            "Cantidad": 72.0,
+            "Categoria": "Aseo"
+        },
+        {
+            "Codigo": 135,
+            "Nombre": "Néctar La Estancia manzana 27u",
+            "Precio": 15.0,
+            "Cantidad": 10.0,
+            "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 494,
+            "Nombre": "Néctar La Estancia melocotón 27u",
+            "Precio": 15.0,
+            "Cantidad": 10.0,
+            "Categoria": "Bebidas"
         }
     ],
     "remitentes": [
@@ -1730,6 +1751,24 @@
             "Nombre": "Elier",
             "Apellidos": "Sanchez Cuba",
             "Telefono": "+12396829778"
+        },
+        {
+            "Id": 71,
+            "Nombre": "Marianela",
+            "Apellidos": "Castineiras Fuentes",
+            "Telefono": "+13053210976"
+        },
+        {
+            "Id": 72,
+            "Nombre": "Yusleidy",
+            "Apellidos": "Romero Becerra",
+            "Telefono": "+537869487727"
+        },
+        {
+            "Id": 73,
+            "Nombre": "Carlos Manuel",
+            "Apellidos": "Eire Garcia",
+            "Telefono": "+17865996299"
         }
     ],
     "receptores": [
@@ -2369,6 +2408,13 @@
             "Apellidos": "Pérez Hernandez",
             "Telefono": "+5354067034",
             "Direccion": "Calle tercera entre A y B , reparto 10 de Octubre,"
+        },
+        {
+            "Id": 92,
+            "Nombre": "Luisa",
+            "Apellidos": "Becerra Ferro",
+            "Telefono": "+5359785957",
+            "Direccion": "Km7 carretera a viñales, camino al Marañon"
         }
     ]
 }
