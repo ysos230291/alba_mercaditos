@@ -18,7 +18,7 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -32,7 +32,7 @@
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 60.0,
+            "Cantidad": 59.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -228,7 +228,7 @@
             "Codigo": 91,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 26.0,
+            "Cantidad": 21.0,
             "Categoria": "Básicos"
         },
         {
@@ -466,7 +466,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.2,
-            "Cantidad": 10.0,
+            "Cantidad": 9.0,
             "Categoria": "Confituras"
         },
         {
@@ -760,7 +760,7 @@
             "Codigo": 337,
             "Nombre": "Pollo ahumado 2.3 a 2.5lb",
             "Precio": 8.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -816,7 +816,7 @@
             "Codigo": 360,
             "Nombre": "Mayonesa Celorrio 500g",
             "Precio": 4.2,
-            "Cantidad": 58.0,
+            "Cantidad": 57.0,
             "Categoria": "Confituras"
         },
         {
@@ -858,7 +858,7 @@
             "Codigo": 32,
             "Nombre": "Galleticas Bourbon 33g",
             "Precio": 0.25,
-            "Cantidad": 177.0,
+            "Cantidad": 175.0,
             "Categoria": "Confituras"
         },
         {
@@ -1019,7 +1019,7 @@
             "Codigo": 399,
             "Nombre": "Barra de guayaba Nezca 300g",
             "Precio": 1.8,
-            "Cantidad": 57.0,
+            "Cantidad": 56.0,
             "Categoria": "Confituras"
         },
         {
@@ -1173,7 +1173,7 @@
             "Codigo": 93,
             "Nombre": "Fideos 500g",
             "Precio": 1.1,
-            "Cantidad": 26.0,
+            "Cantidad": 21.0,
             "Categoria": "Básicos"
         },
         {
