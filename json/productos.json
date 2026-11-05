@@ -88,7 +88,7 @@
             "Codigo": 46,
             "Nombre": "Bombones 1kg",
             "Precio": 7.6,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Confituras"
         },
         {
@@ -561,13 +561,6 @@
             "Categoria": "Lácteos"
         },
         {
-            "Codigo": 248,
-            "Nombre": "Helado CID 4L Almendra",
-            "Precio": 14.0,
-            "Cantidad": 2.0,
-            "Categoria": "Lácteos"
-        },
-        {
             "Codigo": 252,
             "Nombre": "Helado CID 4L Caramelo",
             "Precio": 14.0,
@@ -634,7 +627,7 @@
             "Codigo": 117,
             "Nombre": "Refresco cola lata x6",
             "Precio": 4.25,
-            "Cantidad": 10.0,
+            "Cantidad": 6.0,
             "Categoria": "Bebidas"
         },
         {
@@ -645,17 +638,10 @@
             "Categoria": "Confituras"
         },
         {
-            "Codigo": 290,
-            "Nombre": "Galletas Amori 35g fresa",
-            "Precio": 0.25,
-            "Cantidad": 15.0,
-            "Categoria": "Confituras"
-        },
-        {
             "Codigo": 291,
             "Nombre": "Galletas Amori 35g chocolate",
             "Precio": 0.25,
-            "Cantidad": 29.0,
+            "Cantidad": 21.0,
             "Categoria": "Confituras"
         },
         {
@@ -774,7 +760,7 @@
             "Codigo": 355,
             "Nombre": "Barra de chocolate con galletas",
             "Precio": 0.5,
-            "Cantidad": 36.0,
+            "Cantidad": 20.0,
             "Categoria": "Confituras"
         },
         {
@@ -844,7 +830,7 @@
             "Codigo": 32,
             "Nombre": "Galleticas Bourbon 33g",
             "Precio": 0.25,
-            "Cantidad": 174.0,
+            "Cantidad": 166.0,
             "Categoria": "Confituras"
         },
         {
@@ -1110,7 +1096,7 @@
             "Codigo": 67,
             "Nombre": "Palomitas de maíz de mantequilla para microhondas",
             "Precio": 1.0,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Confituras"
         },
         {
@@ -1124,7 +1110,7 @@
             "Codigo": 436,
             "Nombre": "Caja 14 sorbetos Bauducco chocolate",
             "Precio": 4.0,
-            "Cantidad": 11.0,
+            "Cantidad": 9.0,
             "Categoria": "Confituras"
         },
         {
