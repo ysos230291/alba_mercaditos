@@ -11,7 +11,7 @@
             "Codigo": 2,
             "Nombre": "Costillas de cerdo con piel, 5lb",
             "Precio": 12.5,
-            "Cantidad": 4.0,
+            "Cantidad": 14.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -25,7 +25,7 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.5,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -39,14 +39,21 @@
             "Codigo": 9,
             "Nombre": "Hígado de pollo 1kg",
             "Precio": 2.5,
-            "Cantidad": 11.0,
+            "Cantidad": 9.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
+            "Codigo": 11,
+            "Nombre": "File de huevos 30u",
+            "Precio": 5.8,
+            "Cantidad": 60.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 2.0,
-            "Cantidad": 45.0,
+            "Cantidad": 44.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -74,7 +81,7 @@
             "Codigo": 33,
             "Nombre": "Galletas María ",
             "Precio": 1.0,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Confituras"
         },
         {
@@ -137,14 +144,14 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.8,
-            "Cantidad": 16.0,
+            "Cantidad": 14.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 63,
             "Nombre": "Galletas Crakeñas soda 324g",
             "Precio": 2.8,
-            "Cantidad": 6.0,
+            "Cantidad": 4.0,
             "Categoria": "Confituras"
         },
         {
@@ -158,7 +165,7 @@
             "Codigo": 68,
             "Nombre": "Café Nezca 250g",
             "Precio": 4.8,
-            "Cantidad": 27.0,
+            "Cantidad": 25.0,
             "Categoria": "Café"
         },
         {
@@ -179,7 +186,7 @@
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 2.0,
-            "Cantidad": 11.0,
+            "Cantidad": 41.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -214,7 +221,7 @@
             "Codigo": 85,
             "Nombre": "Cajita 12 pastillas pollo",
             "Precio": 1.0,
-            "Cantidad": 26.0,
+            "Cantidad": 24.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -235,7 +242,7 @@
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
-            "Cantidad": 63.0,
+            "Cantidad": 53.0,
             "Categoria": "Básicos"
         },
         {
@@ -382,29 +389,22 @@
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.5,
-            "Cantidad": 53.0,
+            "Cantidad": 47.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.7,
-            "Cantidad": 61.0,
+            "Cantidad": 59.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 20.0,
+            "Cantidad": 16.0,
             "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 163,
-            "Nombre": "Jabón de baño",
-            "Precio": 0.55,
-            "Cantidad": 21.0,
-            "Categoria": "Aseo"
         },
         {
             "Codigo": 164,
@@ -466,7 +466,7 @@
             "Codigo": 176,
             "Nombre": "Jamonilla de pollo lata 340g",
             "Precio": 2.3,
-            "Cantidad": 58.0,
+            "Cantidad": 56.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -515,14 +515,14 @@
             "Codigo": 193,
             "Nombre": "Jamonilla de res 340g",
             "Precio": 2.3,
-            "Cantidad": 58.0,
+            "Cantidad": 55.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 4.0,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Lácteos"
         },
         {
@@ -531,20 +531,6 @@
             "Precio": 7.0,
             "Cantidad": 6.0,
             "Categoria": "Bebidas"
-        },
-        {
-            "Codigo": 245,
-            "Nombre": "Helado  CID 4L  Dulce de leche",
-            "Precio": 14.0,
-            "Cantidad": 2.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 252,
-            "Nombre": "Helado CID 4L Caramelo",
-            "Precio": 14.0,
-            "Cantidad": 2.0,
-            "Categoria": "Lácteos"
         },
         {
             "Codigo": 103,
@@ -578,7 +564,7 @@
             "Codigo": 266,
             "Nombre": "Garbanzos 340g",
             "Precio": 2.2,
-            "Cantidad": 22.0,
+            "Cantidad": 18.0,
             "Categoria": "Básicos"
         },
         {
@@ -613,21 +599,21 @@
             "Codigo": 289,
             "Nombre": "Paquete de galletas Kreemez 450g vainilla",
             "Precio": 2.8,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 291,
             "Nombre": "Galletas Amori 35g chocolate",
             "Precio": 0.25,
-            "Cantidad": 21.0,
+            "Cantidad": 16.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 298,
             "Nombre": "Lomo Ahumado xlb",
             "Precio": 3.0,
-            "Cantidad": 33.0,
+            "Cantidad": 32.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -655,7 +641,7 @@
             "Codigo": 148,
             "Nombre": "1/2 Queso Gouda",
             "Precio": 17.0,
-            "Cantidad": 1.0,
+            "Cantidad": 7.0,
             "Categoria": "Lácteos"
         },
         {
@@ -683,7 +669,7 @@
             "Codigo": 327,
             "Nombre": "Detergente 1kg",
             "Precio": 2.5,
-            "Cantidad": 40.0,
+            "Cantidad": 34.0,
             "Categoria": "Aseo"
         },
         {
@@ -704,7 +690,7 @@
             "Codigo": 336,
             "Nombre": "Café Bustelo 283g",
             "Precio": 8.0,
-            "Cantidad": 30.0,
+            "Cantidad": 28.0,
             "Categoria": "Café"
         },
         {
@@ -774,7 +760,7 @@
             "Codigo": 360,
             "Nombre": "Mayonesa Celorrio 500g",
             "Precio": 4.2,
-            "Cantidad": 56.0,
+            "Cantidad": 55.0,
             "Categoria": "Confituras"
         },
         {
@@ -837,7 +823,7 @@
             "Codigo": 363,
             "Nombre": "Malta Bucanero ",
             "Precio": 1.0,
-            "Cantidad": 72.0,
+            "Cantidad": 42.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1009,13 +995,6 @@
             "Categoria": "Básicos"
         },
         {
-            "Codigo": 409,
-            "Nombre": "Detergente 900g",
-            "Precio": 2.0,
-            "Cantidad": 3.0,
-            "Categoria": "Aseo"
-        },
-        {
             "Codigo": 411,
             "Nombre": "Kit regalo de gel de baño",
             "Precio": 10.0,
@@ -1026,7 +1005,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 5.5,
-            "Cantidad": 66.0,
+            "Cantidad": 62.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1040,7 +1019,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.3,
-            "Cantidad": 65.0,
+            "Cantidad": 54.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1054,14 +1033,14 @@
             "Codigo": 435,
             "Nombre": "Caja 14 sorbetos Bauducco fresa",
             "Precio": 4.0,
-            "Cantidad": 10.0,
+            "Cantidad": 9.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 436,
             "Nombre": "Caja 14 sorbetos Bauducco chocolate",
             "Precio": 4.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Confituras"
         },
         {
@@ -1096,7 +1075,7 @@
             "Codigo": 439,
             "Nombre": "Carne rusa lata 450g",
             "Precio": 2.2,
-            "Cantidad": 54.0,
+            "Cantidad": 53.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1110,7 +1089,7 @@
             "Codigo": 441,
             "Nombre": "Queso crema 200g",
             "Precio": 3.0,
-            "Cantidad": 24.0,
+            "Cantidad": 22.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1124,7 +1103,7 @@
             "Codigo": 477,
             "Nombre": "Sardinas en tomate 115g",
             "Precio": 1.1,
-            "Cantidad": 168.0,
+            "Cantidad": 166.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1152,14 +1131,14 @@
             "Codigo": 493,
             "Nombre": "Jabón de baño Yili 100g",
             "Precio": 0.65,
-            "Cantidad": 68.0,
+            "Cantidad": 58.0,
             "Categoria": "Aseo"
         },
         {
             "Codigo": 135,
             "Nombre": "Néctar La Estancia manzana 27u",
             "Precio": 15.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Bebidas"
         },
         {
@@ -2274,6 +2253,20 @@
             "Apellidos": "GARCÍA CUETO",
             "Telefono": "+5356784152",
             "Direccion": "CALLE STA FINAL E/ CALLE E Y CALLE F, EDIFICIO EDI"
+        },
+        {
+            "Id": 95,
+            "Nombre": "EVELYN",
+            "Apellidos": "SANCHEZ ESQUIJAROZA",
+            "Telefono": "+5353031330",
+            "Direccion": "CALLE 16#48 ENTRE B y C Rpto: CEFERINO FERNÁNDEZ ("
+        },
+        {
+            "Id": 96,
+            "Nombre": "Reinaldo",
+            "Apellidos": "Luis Pérez",
+            "Telefono": "+5355456093",
+            "Direccion": "Carretera a Viñales km 1 M  Reparto Pepe Chepe"
         }
     ]
 }
