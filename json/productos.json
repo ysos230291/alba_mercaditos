@@ -274,6 +274,13 @@
             "Categoria": "Básicos"
         },
         {
+            "Codigo": 99,
+            "Nombre": "Cake relleno cuquita cover merengue",
+            "Precio": 12.0,
+            "Cantidad": 3.0,
+            "Categoria": "Especiales para fiestas"
+        },
+        {
             "Codigo": 100,
             "Nombre": "Cake 3 leches y merengue",
             "Precio": 12.0,
@@ -291,6 +298,13 @@
             "Codigo": 102,
             "Nombre": "Pizza familiar mixta",
             "Precio": 12.0,
+            "Cantidad": 2.0,
+            "Categoria": "Especiales para fiestas"
+        },
+        {
+            "Codigo": 104,
+            "Nombre": "Pizza jamon y queso",
+            "Precio": 10.0,
             "Cantidad": 2.0,
             "Categoria": "Especiales para fiestas"
         },
@@ -389,14 +403,14 @@
             "Codigo": 157,
             "Nombre": "Set 4 vasitos yogurt fresa",
             "Precio": 2.5,
-            "Cantidad": 27.0,
+            "Cantidad": 25.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 158,
             "Nombre": "Set 4 vasitos yogurt natural",
             "Precio": 2.5,
-            "Cantidad": 32.0,
+            "Cantidad": 30.0,
             "Categoria": "Lácteos"
         },
         {
@@ -547,6 +561,13 @@
             "Categoria": "Bebidas"
         },
         {
+            "Codigo": 103,
+            "Nombre": "Pizza familiar especial de queso",
+            "Precio": 10.0,
+            "Cantidad": 2.0,
+            "Categoria": "Especiales para fiestas"
+        },
+        {
             "Codigo": 259,
             "Nombre": "Cerveza Parranda 330ml blister x6",
             "Precio": 4.0,
@@ -580,13 +601,6 @@
             "Precio": 2.2,
             "Cantidad": 21.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 274,
-            "Nombre": "Colchón EKO",
-            "Precio": 180.0,
-            "Cantidad": 2.0,
-            "Categoria": "Útiles para el hogar"
         },
         {
             "Codigo": 282,
@@ -629,13 +643,6 @@
             "Precio": 6.0,
             "Cantidad": 21.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 148,
-            "Nombre": "1/2 Queso Gouda",
-            "Precio": 17.0,
-            "Cantidad": 1.0,
-            "Categoria": "Lácteos"
         },
         {
             "Codigo": 319,
@@ -1047,7 +1054,7 @@
             "Codigo": 67,
             "Nombre": "Palomitas de maíz de mantequilla para microhondas",
             "Precio": 1.0,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Confituras"
         },
         {
