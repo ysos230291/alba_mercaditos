@@ -4,7 +4,7 @@
             "Codigo": 1,
             "Nombre": "Chuletas de cerdo con grasa y hueso 5lb",
             "Precio": 12.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -15,10 +15,17 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
+            "Codigo": 4,
+            "Nombre": "Lomo deshuesado 3lb",
+            "Precio": 9.0,
+            "Cantidad": 3.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -39,7 +46,7 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 16.0,
+            "Cantidad": 12.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -81,7 +88,7 @@
             "Codigo": 33,
             "Nombre": "Galletas María ",
             "Precio": 1.0,
-            "Cantidad": 59.0,
+            "Cantidad": 49.0,
             "Categoria": "Confituras"
         },
         {
@@ -151,7 +158,7 @@
             "Codigo": 63,
             "Nombre": "Galletas Crakeñas soda 324g",
             "Precio": 2.6,
-            "Cantidad": 38.0,
+            "Cantidad": 37.0,
             "Categoria": "Confituras"
         },
         {
@@ -179,70 +186,70 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 9.0,
+            "Cantidad": 6.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 75,
             "Nombre": "Pqt de sal 1kg",
             "Precio": 0.8,
-            "Cantidad": 20.0,
+            "Cantidad": 19.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 1.9,
-            "Cantidad": 26.0,
+            "Cantidad": 24.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 77,
             "Nombre": "Vinagre 1L",
             "Precio": 0.8,
-            "Cantidad": 17.0,
+            "Cantidad": 16.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 78,
             "Nombre": "Vino seco 1L",
             "Precio": 0.8,
-            "Cantidad": 21.0,
+            "Cantidad": 20.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 79,
             "Nombre": "Zumo de limón 1L",
             "Precio": 0.8,
-            "Cantidad": 19.0,
+            "Cantidad": 18.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 80,
             "Nombre": "Zumo de naranja 1L",
             "Precio": 0.8,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 85,
             "Nombre": "Cajita 12 pastillas pollo",
             "Precio": 1.0,
-            "Cantidad": 23.0,
+            "Cantidad": 22.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 86,
             "Nombre": "Cajita 12 pastillas res",
             "Precio": 1.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 46.0,
+            "Cantidad": 44.0,
             "Categoria": "Básicos"
         },
         {
@@ -256,7 +263,7 @@
             "Codigo": 91,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Básicos"
         },
         {
@@ -312,7 +319,7 @@
             "Codigo": 105,
             "Nombre": "Malta Guajira 1,5Lt",
             "Precio": 2.5,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Bebidas"
         },
         {
@@ -375,7 +382,7 @@
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.4,
-            "Cantidad": 42.0,
+            "Cantidad": 41.0,
             "Categoria": "Lácteos"
         },
         {
@@ -389,7 +396,7 @@
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 19.0,
+            "Cantidad": 17.0,
             "Categoria": "Lácteos"
         },
         {
@@ -403,7 +410,7 @@
             "Codigo": 158,
             "Nombre": "Set 4 vasitos yogurt natural",
             "Precio": 2.5,
-            "Cantidad": 29.0,
+            "Cantidad": 27.0,
             "Categoria": "Lácteos"
         },
         {
@@ -452,7 +459,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 36.0,
+            "Cantidad": 35.0,
             "Categoria": "Confituras"
         },
         {
@@ -522,7 +529,7 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 3.8,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Lácteos"
         },
         {
@@ -559,6 +566,13 @@
             "Precio": 0.8,
             "Cantidad": 34.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 262,
+            "Nombre": "Caja sazón Fresko 36 sobres",
+            "Precio": 4.0,
+            "Cantidad": 17.0,
+            "Categoria": "Para la cocina"
         },
         {
             "Codigo": 265,
@@ -641,21 +655,21 @@
             "Codigo": 327,
             "Nombre": "Detergente 1kg",
             "Precio": 2.5,
-            "Cantidad": 16.0,
+            "Cantidad": 12.0,
             "Categoria": "Aseo"
         },
         {
             "Codigo": 7,
             "Nombre": "Lomo deshuesado 5lb",
             "Precio": 15.0,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 4.0,
-            "Cantidad": 35.0,
+            "Cantidad": 34.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -669,7 +683,7 @@
             "Codigo": 336,
             "Nombre": "Café Bustelo 283g",
             "Precio": 8.0,
-            "Cantidad": 24.0,
+            "Cantidad": 22.0,
             "Categoria": "Café"
         },
         {
@@ -683,7 +697,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 24.0,
+            "Cantidad": 23.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -725,7 +739,7 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 13.0,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Básicos"
         },
         {
@@ -942,7 +956,7 @@
             "Codigo": 397,
             "Nombre": "Néctar de guayaba Nezca 24u",
             "Precio": 18.0,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1040,7 +1054,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 68.0,
+            "Cantidad": 64.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1068,7 +1082,7 @@
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 1.2,
-            "Cantidad": 22.0,
+            "Cantidad": 21.0,
             "Categoria": "Básicos"
         },
         {
@@ -1103,14 +1117,14 @@
             "Codigo": 441,
             "Nombre": "Queso crema 200g",
             "Precio": 3.0,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 398,
             "Nombre": "Butter Cookies Nezca",
             "Precio": 2.5,
-            "Cantidad": 3.0,
+            "Cantidad": 2.0,
             "Categoria": "Confituras"
         },
         {
@@ -1131,28 +1145,21 @@
             "Codigo": 489,
             "Nombre": "Gelatina uva 40g",
             "Precio": 0.8,
-            "Cantidad": 39.0,
+            "Cantidad": 38.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 491,
-            "Nombre": "Sazón completo Badia 9oz FA",
-            "Precio": 3.5,
-            "Cantidad": 54.0,
-            "Categoria": "Para la cocina"
         },
         {
             "Codigo": 492,
             "Nombre": "Sazón Completo Badia 9oz",
             "Precio": 3.5,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 493,
             "Nombre": "Jabón de baño Yili 100g",
             "Precio": 0.65,
-            "Cantidad": 22.0,
+            "Cantidad": 14.0,
             "Categoria": "Aseo"
         },
         {
