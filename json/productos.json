@@ -15,52 +15,52 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 4,
-            "Nombre": "Lomo deshuesado 3lb",
-            "Precio": 9.0,
-            "Cantidad": 7.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.0,
-            "Cantidad": 1.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 6,
             "Nombre": "Caja de pollo 40lb muslo y contramuslo a granel",
             "Precio": 42.0,
-            "Cantidad": 1.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 9,
             "Nombre": "Hígado de pollo 1kg",
             "Precio": 2.4,
-            "Cantidad": 15.0,
+            "Cantidad": 14.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 23.0,
+            "Cantidad": 16.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
+            "Codigo": 18,
+            "Nombre": "Spam mixto tubo 4lb aprox",
+            "Precio": 4.5,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 1.8,
-            "Cantidad": 10.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 23,
             "Nombre": "Atún en aceite 1kg ",
             "Precio": 9.5,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -102,7 +102,7 @@
             "Codigo": 48,
             "Nombre": "Gelatina frutos rojos 40g",
             "Precio": 0.8,
-            "Cantidad": 24.0,
+            "Cantidad": 20.0,
             "Categoria": "Confituras"
         },
         {
@@ -144,7 +144,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.6,
-            "Cantidad": 34.0,
+            "Cantidad": 33.0,
             "Categoria": "Confituras"
         },
         {
@@ -165,7 +165,7 @@
             "Codigo": 68,
             "Nombre": "Café Nezca 250g",
             "Precio": 4.5,
-            "Cantidad": 57.0,
+            "Cantidad": 54.0,
             "Categoria": "Café"
         },
         {
@@ -186,14 +186,14 @@
             "Codigo": 75,
             "Nombre": "Pqt de sal 1kg",
             "Precio": 0.8,
-            "Cantidad": 22.0,
+            "Cantidad": 20.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 1.9,
-            "Cantidad": 28.0,
+            "Cantidad": 26.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -263,14 +263,14 @@
             "Codigo": 94,
             "Nombre": "Sopa pollo instantánea",
             "Precio": 0.6,
-            "Cantidad": 41.0,
+            "Cantidad": 31.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 95,
             "Nombre": "Sopa res instantánea",
             "Precio": 0.6,
-            "Cantidad": 68.0,
+            "Cantidad": 58.0,
             "Categoria": "Básicos"
         },
         {
@@ -344,13 +344,6 @@
             "Categoria": "Bebidas"
         },
         {
-            "Codigo": 115,
-            "Nombre": "Cerveza Cristal caja 24u",
-            "Precio": 24.0,
-            "Cantidad": 2.0,
-            "Categoria": "Bebidas"
-        },
-        {
             "Codigo": 138,
             "Nombre": "Cidra 700ml ",
             "Precio": 6.0,
@@ -382,7 +375,7 @@
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.4,
-            "Cantidad": 43.0,
+            "Cantidad": 42.0,
             "Categoria": "Lácteos"
         },
         {
@@ -396,21 +389,21 @@
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 22.0,
+            "Cantidad": 19.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 157,
             "Nombre": "Set 4 vasitos yogurt fresa",
             "Precio": 2.5,
-            "Cantidad": 25.0,
+            "Cantidad": 24.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 158,
             "Nombre": "Set 4 vasitos yogurt natural",
             "Precio": 2.5,
-            "Cantidad": 30.0,
+            "Cantidad": 29.0,
             "Categoria": "Lácteos"
         },
         {
@@ -419,13 +412,6 @@
             "Precio": 2.5,
             "Cantidad": 37.0,
             "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 163,
-            "Nombre": "Jabón de baño",
-            "Precio": 0.55,
-            "Cantidad": 9.0,
-            "Categoria": "Aseo"
         },
         {
             "Codigo": 164,
@@ -466,7 +452,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 38.0,
+            "Cantidad": 36.0,
             "Categoria": "Confituras"
         },
         {
@@ -487,7 +473,7 @@
             "Codigo": 177,
             "Nombre": "Tubo de chorizo aprox 2lb",
             "Precio": 2.5,
-            "Cantidad": 6.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -503,13 +489,6 @@
             "Precio": 2.2,
             "Cantidad": 25.0,
             "Categoria": "Básicos"
-        },
-        {
-            "Codigo": 180,
-            "Nombre": "Gelatina naranja/mandarina 40g",
-            "Precio": 0.8,
-            "Cantidad": 9.0,
-            "Categoria": "Confituras"
         },
         {
             "Codigo": 185,
@@ -634,7 +613,7 @@
             "Codigo": 314,
             "Nombre": "Lata Butter Cookies",
             "Precio": 4.0,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Confituras"
         },
         {
@@ -662,7 +641,7 @@
             "Codigo": 327,
             "Nombre": "Detergente 1kg",
             "Precio": 2.5,
-            "Cantidad": 20.0,
+            "Cantidad": 16.0,
             "Categoria": "Aseo"
         },
         {
@@ -690,7 +669,7 @@
             "Codigo": 336,
             "Nombre": "Café Bustelo 283g",
             "Precio": 8.0,
-            "Cantidad": 26.0,
+            "Cantidad": 24.0,
             "Categoria": "Café"
         },
         {
@@ -718,7 +697,7 @@
             "Codigo": 353,
             "Nombre": "Barra chocolate con café",
             "Precio": 0.5,
-            "Cantidad": 40.0,
+            "Cantidad": 38.0,
             "Categoria": "Confituras"
         },
         {
@@ -746,14 +725,21 @@
             "Codigo": 358,
             "Nombre": "Arroz tailandés bolsa 10kg",
             "Precio": 13.0,
-            "Cantidad": 8.0,
+            "Cantidad": 4.0,
             "Categoria": "Básicos"
+        },
+        {
+            "Codigo": 359,
+            "Nombre": "Malta morena pack 6u",
+            "Precio": 4.5,
+            "Cantidad": 7.0,
+            "Categoria": "Bebidas"
         },
         {
             "Codigo": 360,
             "Nombre": "Mayonesa Celorrio 500g",
             "Precio": 4.0,
-            "Cantidad": 52.0,
+            "Cantidad": 50.0,
             "Categoria": "Confituras"
         },
         {
@@ -830,7 +816,14 @@
             "Codigo": 363,
             "Nombre": "Malta Bucanero ",
             "Precio": 1.0,
-            "Cantidad": 30.0,
+            "Cantidad": 6.0,
+            "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 364,
+            "Nombre": "Caja 24u Malta Bucanero",
+            "Precio": 23.0,
+            "Cantidad": 1.0,
             "Categoria": "Bebidas"
         },
         {
@@ -977,14 +970,14 @@
             "Codigo": 402,
             "Nombre": "Refresco Piñata coctel 8Lt",
             "Precio": 2.0,
-            "Cantidad": 19.0,
+            "Cantidad": 17.0,
             "Categoria": "Bebidas"
         },
         {
             "Codigo": 403,
             "Nombre": "Refresco Piñata piña 8Lt",
             "Precio": 2.0,
-            "Cantidad": 15.0,
+            "Cantidad": 13.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1005,7 +998,7 @@
             "Codigo": 410,
             "Nombre": "Aceite canola y maíz Crisol 2.84Lt",
             "Precio": 13.8,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1019,7 +1012,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 4.8,
-            "Cantidad": 128.0,
+            "Cantidad": 124.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1047,7 +1040,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 72.0,
+            "Cantidad": 68.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1079,11 +1072,11 @@
             "Categoria": "Básicos"
         },
         {
-            "Codigo": 438,
-            "Nombre": "Jamón Vicky 4lb",
-            "Precio": 7.0,
-            "Cantidad": 5.0,
-            "Categoria": "Cárnicos y embutidos"
+            "Codigo": 93,
+            "Nombre": "Fideos 500g",
+            "Precio": 1.1,
+            "Cantidad": 46.0,
+            "Categoria": "Básicos"
         },
         {
             "Codigo": 52,
@@ -1096,7 +1089,7 @@
             "Codigo": 439,
             "Nombre": "Carne rusa lata 450g",
             "Precio": 2.0,
-            "Cantidad": 41.0,
+            "Cantidad": 40.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1110,7 +1103,7 @@
             "Codigo": 441,
             "Nombre": "Queso crema 200g",
             "Precio": 3.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Lácteos"
         },
         {
@@ -1159,7 +1152,7 @@
             "Codigo": 493,
             "Nombre": "Jabón de baño Yili 100g",
             "Precio": 0.65,
-            "Cantidad": 32.0,
+            "Cantidad": 22.0,
             "Categoria": "Aseo"
         },
         {
@@ -1621,6 +1614,42 @@
             "Nombre": "Yerlin",
             "Apellidos": "Lazo",
             "Telefono": "+14705938313"
+        },
+        {
+            "Id": 75,
+            "Nombre": "Yoselin",
+            "Apellidos": "Santalla Prats",
+            "Telefono": "+5358292880"
+        },
+        {
+            "Id": 76,
+            "Nombre": "marina",
+            "Apellidos": "Martinez",
+            "Telefono": "+535355451129"
+        },
+        {
+            "Id": 77,
+            "Nombre": "Barbarita",
+            "Apellidos": "Blanco",
+            "Telefono": "+19547280125"
+        },
+        {
+            "Id": 78,
+            "Nombre": "Yoanna",
+            "Apellidos": "Muñoz",
+            "Telefono": "+15619132806"
+        },
+        {
+            "Id": 79,
+            "Nombre": "Rosseli",
+            "Apellidos": "Cabrera Armenteros",
+            "Telefono": "+13466084897"
+        },
+        {
+            "Id": 80,
+            "Nombre": "Sandra",
+            "Apellidos": "Garcia Salgado",
+            "Telefono": "+17869929294"
         }
     ],
     "receptores": [
@@ -2295,6 +2324,97 @@
             "Apellidos": "Luis Pérez",
             "Telefono": "+5355456093",
             "Direccion": "Carretera a Viñales km 1 M  Reparto Pepe Chepe"
+        },
+        {
+            "Id": 97,
+            "Nombre": "EVELYN",
+            "Apellidos": "SANCHEZ ESQUIJAROZA",
+            "Telefono": "+5353031330",
+            "Direccion": "CALLE 16#48 ENTRE B y C Rpto: CEFERINO FERNÁNDEZ ("
+        },
+        {
+            "Id": 98,
+            "Nombre": "Evelia",
+            "Apellidos": "Prats Cruz",
+            "Telefono": "+5358292880",
+            "Direccion": "Km93 carretera central la conchita pinar del Rio"
+        },
+        {
+            "Id": 99,
+            "Nombre": "Yohanna",
+            "Apellidos": "Marquéz",
+            "Telefono": "+5358958018",
+            "Direccion": "Calle 6ta Colón final Llamazares el barrio que est"
+        },
+        {
+            "Id": 100,
+            "Nombre": "marina",
+            "Apellidos": "Martinez",
+            "Telefono": "+535355451129",
+            "Direccion": "Reparto hermanos cruz entre c y los pinos edificio"
+        },
+        {
+            "Id": 101,
+            "Nombre": "marina",
+            "Apellidos": "Martinez",
+            "Telefono": "+535355451129",
+            "Direccion": "Reparto hermanos cruz entre c y los pinos edificio"
+        },
+        {
+            "Id": 102,
+            "Nombre": "Gracelia",
+            "Apellidos": "Diaz Martinez",
+            "Telefono": "+53588188644",
+            "Direccion": "Calle 27 número 2514 La Rainzar Puerta de Golpe Co"
+        },
+        {
+            "Id": 103,
+            "Nombre": "Gracelia",
+            "Apellidos": "Diaz Martinez",
+            "Telefono": "+53588188644",
+            "Direccion": "Calle 27 número 2514 La Rainzar Puerta de Golpe Co"
+        },
+        {
+            "Id": 104,
+            "Nombre": "rosalba",
+            "Apellidos": "HERNANDEZ BLANCO",
+            "Telefono": "+5350642734",
+            "Direccion": "Calle 61 B Rto Raul Maqueira C.del Sur  20 Mayo"
+        },
+        {
+            "Id": 105,
+            "Nombre": "Sarita",
+            "Apellidos": "Lazo",
+            "Telefono": "+5356363027",
+            "Direccion": "En la Alameda entre el IPE y la cafetería el Membr"
+        },
+        {
+            "Id": 106,
+            "Nombre": "Mayra",
+            "Apellidos": "Muñoz",
+            "Telefono": "+5355291309",
+            "Direccion": "Calle 14 E/ B y C #32 Rpt Capó"
+        },
+        {
+            "Id": 107,
+            "Nombre": "maria cristina",
+            "Apellidos": "Hernandez",
+            "Telefono": "+535359292133",
+            "Direccion": "Calle Antonio Guiterra No. 36 Entre E y F Reparto"
+        },
+        {
+            "Id": 108,
+            "Nombre": "Ivan",
+            "Apellidos": "Cabrera Siles",
+            "Telefono": "+5355625542",
+            "Direccion": "Km 3 carretera Luis Lazo calle 4ta #12 Reparto Jag"
+        },
+        {
+            "Id": 109,
+            "Nombre": "Ivan",
+            "Apellidos": "Cabrera Siles",
+            "Telefono": "+5355625542",
+            "Direccion": "Km 3 carretera Luis Lazo calle 4ta #12 Reparto Jag"
         }
     ]
 }
