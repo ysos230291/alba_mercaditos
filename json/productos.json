@@ -4,7 +4,7 @@
             "Codigo": 1,
             "Nombre": "Chuletas de cerdo con grasa y hueso 5lb",
             "Precio": 12.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -32,7 +32,7 @@
             "Codigo": 6,
             "Nombre": "Caja de pollo 40lb muslo y contramuslo a granel",
             "Precio": 42.0,
-            "Cantidad": 7.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -46,7 +46,7 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 12.0,
+            "Cantidad": 8.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -144,7 +144,7 @@
             "Codigo": 59,
             "Nombre": "Caja 24 dulces importados",
             "Precio": 8.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Confituras"
         },
         {
@@ -242,7 +242,7 @@
             "Codigo": 86,
             "Nombre": "Cajita 12 pastillas res",
             "Precio": 1.0,
-            "Cantidad": 15.0,
+            "Cantidad": 12.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -257,13 +257,6 @@
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
             "Cantidad": 32.0,
-            "Categoria": "Básicos"
-        },
-        {
-            "Codigo": 91,
-            "Nombre": "Macarrones 500g",
-            "Precio": 1.0,
-            "Cantidad": 13.0,
             "Categoria": "Básicos"
         },
         {
@@ -361,7 +354,7 @@
             "Codigo": 140,
             "Nombre": "H.Club especial 700ml",
             "Precio": 8.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Bebidas"
         },
         {
@@ -382,21 +375,21 @@
             "Codigo": 145,
             "Nombre": "Leche condensada 390g",
             "Precio": 1.4,
-            "Cantidad": 41.0,
+            "Cantidad": 35.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.5,
-            "Cantidad": 57.0,
+            "Cantidad": 51.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 17.0,
+            "Cantidad": 15.0,
             "Categoria": "Lácteos"
         },
         {
@@ -459,7 +452,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 35.0,
+            "Cantidad": 32.0,
             "Categoria": "Confituras"
         },
         {
@@ -474,13 +467,6 @@
             "Nombre": "Jamonilla de pollo lata 340g",
             "Precio": 2.2,
             "Cantidad": 53.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
-            "Codigo": 177,
-            "Nombre": "Tubo de chorizo aprox 2lb",
-            "Precio": 2.5,
-            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -683,7 +669,7 @@
             "Codigo": 336,
             "Nombre": "Café Bustelo 283g",
             "Precio": 8.0,
-            "Cantidad": 22.0,
+            "Cantidad": 21.0,
             "Categoria": "Café"
         },
         {
@@ -697,7 +683,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 23.0,
+            "Cantidad": 21.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1005,7 +991,7 @@
             "Codigo": 406,
             "Nombre": "Chícharos verdes IBERIA 340g",
             "Precio": 2.0,
-            "Cantidad": 36.0,
+            "Cantidad": 33.0,
             "Categoria": "Básicos"
         },
         {
@@ -1054,7 +1040,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 64.0,
+            "Cantidad": 60.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
