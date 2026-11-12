@@ -32,21 +32,21 @@
             "Codigo": 6,
             "Nombre": "Caja de pollo 40lb muslo y contramuslo a granel",
             "Precio": 42.0,
-            "Cantidad": 6.0,
+            "Cantidad": 4.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 9,
             "Nombre": "Hígado de pollo 1kg",
             "Precio": 2.4,
-            "Cantidad": 13.0,
+            "Cantidad": 11.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 5.0,
+            "Cantidad": 3.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -172,7 +172,7 @@
             "Codigo": 68,
             "Nombre": "Café Nezca 250g",
             "Precio": 4.5,
-            "Cantidad": 52.0,
+            "Cantidad": 50.0,
             "Categoria": "Café"
         },
         {
@@ -249,7 +249,7 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 43.0,
+            "Cantidad": 41.0,
             "Categoria": "Básicos"
         },
         {
@@ -344,6 +344,27 @@
             "Categoria": "Bebidas"
         },
         {
+            "Codigo": 115,
+            "Nombre": "Cerveza Cristal caja 24u",
+            "Precio": 24.0,
+            "Cantidad": 1.0,
+            "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 118,
+            "Nombre": "Refresco lata limón X6",
+            "Precio": 4.25,
+            "Cantidad": 2.0,
+            "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 121,
+            "Nombre": "Refresco lata piñita X6",
+            "Precio": 4.25,
+            "Cantidad": 2.0,
+            "Categoria": "Bebidas"
+        },
+        {
             "Codigo": 138,
             "Nombre": "Cidra 700ml ",
             "Precio": 6.0,
@@ -382,7 +403,7 @@
             "Codigo": 146,
             "Nombre": "Leche evaporada 354ml",
             "Precio": 1.5,
-            "Cantidad": 51.0,
+            "Cantidad": 47.0,
             "Categoria": "Lácteos"
         },
         {
@@ -428,6 +449,13 @@
             "Categoria": "Aseo"
         },
         {
+            "Codigo": 168,
+            "Nombre": "Pasta Dental",
+            "Precio": 1.0,
+            "Cantidad": 5.0,
+            "Categoria": "Aseo"
+        },
+        {
             "Codigo": 169,
             "Nombre": "Set Shampoo+acondicionador Tropical",
             "Precio": 8.5,
@@ -466,7 +494,7 @@
             "Codigo": 176,
             "Nombre": "Jamonilla de pollo lata 340g",
             "Precio": 2.2,
-            "Cantidad": 53.0,
+            "Cantidad": 51.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -508,7 +536,7 @@
             "Codigo": 193,
             "Nombre": "Jamonilla de res 340g",
             "Precio": 2.2,
-            "Cantidad": 54.0,
+            "Cantidad": 52.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -531,6 +559,76 @@
             "Precio": 7.0,
             "Cantidad": 6.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 239,
+            "Nombre": "Cubeta Yogurt CID 4L natural con azúcar",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 240,
+            "Nombre": "Cubeta Yogurt CID 4L Guanábana",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 241,
+            "Nombre": "Cubeta Yogurt CID 4Lt naranja piña",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 243,
+            "Nombre": "Cubeta Yogurt Cid 4L fresa",
+            "Precio": 13.0,
+            "Cantidad": 6.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 245,
+            "Nombre": "Helado CID 4L  Dulce de leche",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 246,
+            "Nombre": "Helado CID 4L Vainilla",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 247,
+            "Nombre": "Helado CID 4L Chocolate",
+            "Precio": 13.0,
+            "Cantidad": 6.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 248,
+            "Nombre": "Helado CID 4L Almendra",
+            "Precio": 13.0,
+            "Cantidad": 4.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 249,
+            "Nombre": "Helado CID 4L Mantecado",
+            "Precio": 13.0,
+            "Cantidad": 3.0,
+            "Categoria": "Lácteos"
+        },
+        {
+            "Codigo": 251,
+            "Nombre": "Helado CID 4L Fresa",
+            "Precio": 13.0,
+            "Cantidad": 5.0,
+            "Categoria": "Lácteos"
         },
         {
             "Codigo": 103,
@@ -587,6 +685,13 @@
             "Precio": 6.0,
             "Cantidad": 4.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 117,
+            "Nombre": "Refresco cola lata x6",
+            "Precio": 4.25,
+            "Cantidad": 3.0,
+            "Categoria": "Bebidas"
         },
         {
             "Codigo": 291,
@@ -669,7 +774,7 @@
             "Codigo": 178,
             "Nombre": "Bola de res 1kg",
             "Precio": 10.0,
-            "Cantidad": 20.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1012,7 +1117,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 56.0,
+            "Cantidad": 52.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1040,7 +1145,7 @@
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 1.2,
-            "Cantidad": 19.0,
+            "Cantidad": 17.0,
             "Categoria": "Básicos"
         },
         {
@@ -1096,7 +1201,7 @@
             "Codigo": 477,
             "Nombre": "Sardinas en tomate 155g",
             "Precio": 1.1,
-            "Cantidad": 160.0,
+            "Cantidad": 152.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
