@@ -50,13 +50,6 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 18,
-            "Nombre": "Spam mixto tubo 4lb aprox",
-            "Precio": 4.5,
-            "Cantidad": 5.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 1.8,
@@ -88,7 +81,7 @@
             "Codigo": 33,
             "Nombre": "Galletas María ",
             "Precio": 1.0,
-            "Cantidad": 47.0,
+            "Cantidad": 45.0,
             "Categoria": "Confituras"
         },
         {
@@ -151,7 +144,7 @@
             "Codigo": 62,
             "Nombre": "Galletas Crakeñas  mantequilla 324g",
             "Precio": 2.6,
-            "Cantidad": 31.0,
+            "Cantidad": 30.0,
             "Categoria": "Confituras"
         },
         {
@@ -277,7 +270,7 @@
             "Codigo": 99,
             "Nombre": "Cake relleno cuquita cover merengue",
             "Precio": 12.0,
-            "Cantidad": 3.0,
+            "Cantidad": 2.0,
             "Categoria": "Especiales para fiestas"
         },
         {
@@ -298,7 +291,7 @@
             "Codigo": 102,
             "Nombre": "Pizza familiar mixta",
             "Precio": 12.0,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Especiales para fiestas"
         },
         {
@@ -508,7 +501,7 @@
             "Codigo": 177,
             "Nombre": "Tubo de chorizo aprox 2lb",
             "Precio": 2.5,
-            "Cantidad": 9.0,
+            "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -536,35 +529,28 @@
             "Codigo": 189,
             "Nombre": "Lata fresas  en almíbar 425g",
             "Precio": 2.8,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 190,
             "Nombre": "Lata melocotón almíbar 425g",
             "Precio": 2.8,
-            "Cantidad": 8.0,
+            "Cantidad": 7.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 193,
             "Nombre": "Jamonilla de res 340g",
             "Precio": 2.2,
-            "Cantidad": 52.0,
+            "Cantidad": 51.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 3.8,
-            "Cantidad": 9.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 207,
-            "Nombre": "Leche sabor fresa 1kg",
-            "Precio": 7.5,
-            "Cantidad": 1.0,
+            "Cantidad": 8.0,
             "Categoria": "Lácteos"
         },
         {
@@ -585,7 +571,7 @@
             "Codigo": 240,
             "Nombre": "Cubeta Yogurt CID 4L Guanábana",
             "Precio": 13.0,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Lácteos"
         },
         {
@@ -613,14 +599,14 @@
             "Codigo": 246,
             "Nombre": "Helado CID 4L Vainilla",
             "Precio": 13.0,
-            "Cantidad": 4.0,
+            "Cantidad": 3.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 247,
             "Nombre": "Helado CID 4L Chocolate",
             "Precio": 13.0,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Lácteos"
         },
         {
@@ -641,7 +627,7 @@
             "Codigo": 251,
             "Nombre": "Helado CID 4L Fresa",
             "Precio": 13.0,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Lácteos"
         },
         {
@@ -844,7 +830,7 @@
             "Codigo": 359,
             "Nombre": "Malta morena pack 6u",
             "Precio": 4.5,
-            "Cantidad": 6.0,
+            "Cantidad": 5.0,
             "Categoria": "Bebidas"
         },
         {
@@ -879,7 +865,7 @@
             "Codigo": 31,
             "Nombre": "Galletas Roundy fresa",
             "Precio": 0.9,
-            "Cantidad": 31.0,
+            "Cantidad": 28.0,
             "Categoria": "Confituras"
         },
         {
@@ -1054,14 +1040,14 @@
             "Codigo": 399,
             "Nombre": "Barra de guayaba Nezca 300g",
             "Precio": 1.8,
-            "Cantidad": 55.0,
+            "Cantidad": 54.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 400,
             "Nombre": "Sorbeto Nezca Fresa 80g",
             "Precio": 0.8,
-            "Cantidad": 20.0,
+            "Cantidad": 15.0,
             "Categoria": "Confituras"
         },
         {
@@ -1173,7 +1159,7 @@
             "Codigo": 52,
             "Nombre": "Barra de guayaba Conchita",
             "Precio": 1.8,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Confituras"
         },
         {
@@ -1194,14 +1180,14 @@
             "Codigo": 441,
             "Nombre": "Queso crema 200g",
             "Precio": 3.0,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Lácteos"
         },
         {
             "Codigo": 398,
             "Nombre": "Butter Cookies Nezca",
             "Precio": 2.5,
-            "Cantidad": 2.0,
+            "Cantidad": 1.0,
             "Categoria": "Confituras"
         },
         {
