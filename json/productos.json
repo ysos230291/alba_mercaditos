@@ -18,14 +18,14 @@
             "Codigo": 4,
             "Nombre": "Lomo deshuesado 3lb",
             "Precio": 9.0,
-            "Cantidad": 10.0,
+            "Cantidad": 8.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.0,
-            "Cantidad": 10.0,
+            "Cantidad": 9.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -36,24 +36,17 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 9,
-            "Nombre": "Hígado de pollo 1kg",
-            "Precio": 2.4,
-            "Cantidad": 9.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 72.0,
+            "Cantidad": 70.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 20,
             "Nombre": "Salchichas 340g",
             "Precio": 1.8,
-            "Cantidad": 22.0,
+            "Cantidad": 18.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -193,7 +186,7 @@
             "Codigo": 76,
             "Nombre": "Azúcar blanca 1kg",
             "Precio": 1.9,
-            "Cantidad": 22.0,
+            "Cantidad": 20.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -207,7 +200,7 @@
             "Codigo": 78,
             "Nombre": "Vino seco 1L",
             "Precio": 0.8,
-            "Cantidad": 20.0,
+            "Cantidad": 17.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -221,14 +214,14 @@
             "Codigo": 80,
             "Nombre": "Zumo de naranja 1L",
             "Precio": 0.8,
-            "Cantidad": 14.0,
+            "Cantidad": 12.0,
             "Categoria": "Para la cocina"
         },
         {
             "Codigo": 85,
             "Nombre": "Cajita 12 pastillas pollo",
             "Precio": 1.0,
-            "Cantidad": 22.0,
+            "Cantidad": 21.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -242,14 +235,14 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 38.0,
+            "Cantidad": 36.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
-            "Cantidad": 32.0,
+            "Cantidad": 25.0,
             "Categoria": "Básicos"
         },
         {
@@ -480,7 +473,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 27.0,
+            "Cantidad": 26.0,
             "Categoria": "Confituras"
         },
         {
@@ -515,7 +508,7 @@
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 21.0,
+            "Cantidad": 19.0,
             "Categoria": "Básicos"
         },
         {
@@ -669,7 +662,7 @@
             "Codigo": 266,
             "Nombre": "Garbanzos 340g",
             "Precio": 2.2,
-            "Cantidad": 18.0,
+            "Cantidad": 17.0,
             "Categoria": "Básicos"
         },
         {
@@ -760,7 +753,7 @@
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 4.0,
-            "Cantidad": 33.0,
+            "Cantidad": 31.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -769,13 +762,6 @@
             "Precio": 18.0,
             "Cantidad": 1.0,
             "Categoria": "Bebidas"
-        },
-        {
-            "Codigo": 336,
-            "Nombre": "Café Bustelo 283g",
-            "Precio": 8.0,
-            "Cantidad": 21.0,
-            "Categoria": "Café"
         },
         {
             "Codigo": 178,
@@ -1061,7 +1047,7 @@
             "Codigo": 402,
             "Nombre": "Refresco Piñata coctel 8Lt",
             "Precio": 2.0,
-            "Cantidad": 16.0,
+            "Cantidad": 14.0,
             "Categoria": "Bebidas"
         },
         {
@@ -1082,7 +1068,7 @@
             "Codigo": 406,
             "Nombre": "Chícharos verdes IBERIA 340g",
             "Precio": 2.0,
-            "Cantidad": 33.0,
+            "Cantidad": 31.0,
             "Categoria": "Básicos"
         },
         {
@@ -1117,7 +1103,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 48.0,
+            "Cantidad": 41.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1138,21 +1124,21 @@
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 1.2,
-            "Cantidad": 15.0,
+            "Cantidad": 13.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 438,
             "Nombre": "Jamón Vicky 4lb",
             "Precio": 7.0,
-            "Cantidad": 8.0,
+            "Cantidad": 6.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 93,
             "Nombre": "Fideos 500g",
             "Precio": 1.1,
-            "Cantidad": 46.0,
+            "Cantidad": 43.0,
             "Categoria": "Básicos"
         },
         {
@@ -1201,7 +1187,7 @@
             "Codigo": 477,
             "Nombre": "Sardinas en tomate 155g",
             "Precio": 1.1,
-            "Cantidad": 152.0,
+            "Cantidad": 145.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1215,8 +1201,15 @@
             "Codigo": 492,
             "Nombre": "Sazón Completo Badia 9oz",
             "Precio": 3.5,
-            "Cantidad": 13.0,
+            "Cantidad": 10.0,
             "Categoria": "Para la cocina"
+        },
+        {
+            "Codigo": 493,
+            "Nombre": "Jabón de baño Yili 100g",
+            "Precio": 0.65,
+            "Cantidad": 154.0,
+            "Categoria": "Aseo"
         },
         {
             "Codigo": 135,
