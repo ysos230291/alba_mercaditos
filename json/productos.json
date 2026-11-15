@@ -1194,7 +1194,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 4.8,
-            "Cantidad": 123.0,
+            "Cantidad": 83.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1384,6 +1384,13 @@
             "Nombre": "Cerveza Cristal 24u",
             "Precio": 24.0,
             "Cantidad": 35.0,
+            "Categoria": "Ofertas Fin de año"
+        },
+        {
+            "Codigo": 459,
+            "Nombre": "Cerveza Bucanero 24u",
+            "Precio": 24.0,
+            "Cantidad": 10.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1613,7 +1620,7 @@
         {
             "Codigo": 506,
             "Nombre": "Muslos de cerdo 18 a 19lb",
-            "Precio": 43.0,
+            "Precio": 42.0,
             "Cantidad": 4.0,
             "Categoria": "Ofertas Fin de año"
         },
@@ -1727,7 +1734,7 @@
             "Nombre": "Magdalenas mini Vima 200g",
             "Precio": 3.2,
             "Cantidad": 24.0,
-            "Categoria": "Especiales para fiestas"
+            "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 520,
@@ -1755,6 +1762,13 @@
             "Nombre": "Cake cobertura de chocolate relleno crema de chocolate",
             "Precio": 14.0,
             "Cantidad": 15.0,
+            "Categoria": "Ofertas Fin de año"
+        },
+        {
+            "Codigo": 524,
+            "Nombre": "Aceite 1L ",
+            "Precio": 4.8,
+            "Cantidad": 34.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
