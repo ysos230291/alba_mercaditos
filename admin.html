@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="noindex"/>
+<title>Administrar catálogo · Alba Mercadito</title>
+<link rel="icon" type="image/webp" href="img/logo.webp"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{color-scheme:dark;--bg:#131313;--card:#1c1b1b;--field:#0e0e0e;--gold:#f2ca50;--gold2:#d4af37;--txt:#e5e2e1;--mut:#d0c5af;--line:#4d4635;--err:#ffb4ab;--ok:#9bd8a0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 16px/1.5 Inter,sans-serif}
+main{max-width:680px;margin:0 auto;padding:32px 20px 80px}
+h1{font:800 2rem/1.15 Manrope,sans-serif;margin:0 0 4px;color:var(--gold)}
+.sub{color:var(--mut);margin:0 0 28px}
+.sub a{color:var(--gold)}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:18px}
+h2{font:700 1.1rem Manrope,sans-serif;margin:0 0 4px}
+.hint{color:var(--mut);font-size:.875rem;margin:0 0 14px}
+label{display:block;font-size:.875rem;color:var(--mut);margin:12px 0 4px}
+input[type=text],input[type=password]{width:100%;background:var(--field);border:1px solid var(--line);border-radius:6px;color:var(--txt);padding:10px 12px;font:inherit}
+input:focus-visible,button:focus-visible,.pick:focus-within{outline:2px solid var(--gold);outline-offset:2px}
+.row{display:grid;grid-template-columns:1fr 1fr 110px;gap:10px}
+@media(max-width:520px){.row{grid-template-columns:1fr}}
+.pick{display:block;border:2px dashed var(--line);border-radius:8px;padding:22px 14px;text-align:center;cursor:pointer;color:var(--mut);margin:0}
+.pick:hover{border-color:var(--gold)}
+.pick input{position:absolute;opacity:0;width:1px;height:1px}
+.pick b{display:block;color:var(--txt);font-weight:600}
+.msg{margin:10px 0 0;font-size:.9rem}
+.ok{color:var(--ok)}.bad{color:var(--err)}
+#thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:10px;margin-top:12px}
+#thumbs figure{margin:0;background:var(--field);border-radius:6px;padding:6px;text-align:center}
+#thumbs img{width:100%;aspect-ratio:1;object-fit:contain}
+#thumbs figcaption{font-size:.7rem;color:var(--mut);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#go{width:100%;padding:16px;border:0;border-radius:6px;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3c2f00;font:800 1rem Manrope,sans-serif;cursor:pointer}
+#go:disabled{opacity:.5;cursor:wait}
+#log{background:var(--field);border-radius:8px;padding:12px 14px;font-size:.85rem;min-height:44px;white-space:pre-wrap;margin-top:14px;color:var(--mut)}
+details{margin-top:6px}summary{cursor:pointer;color:var(--gold);font-size:.9rem}
+ol{color:var(--mut);font-size:.875rem;padding-left:20px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Actualizar catálogo</h1>
+  <p class="sub">Sube el archivo del día y las imágenes nuevas. Los clientes verán los cambios en 1 o 2 minutos. <a href="index.html">Ver catálogo</a></p>
+
+  <section>
+    <h2>1. Productos del día</h2>
+    <p class="hint">El archivo <b>productos.json</b> con los precios y el stock actualizados.</p>
+    <label class="pick"><input type="file" id="jsonFile" accept=".json,application/json"/><b>Elegir archivo JSON</b><span id="jsonName">Ningún archivo elegido</span></label>
+    <p id="jsonMsg" class="msg"></p>
+  </section>
+
+  <section>
+    <h2>2. Imágenes nuevas <span style="font-weight:400;color:var(--mut)">(opcional)</span></h2>
+    <p class="hint">Cada imagen debe llamarse igual que el código del producto (por ejemplo 1025.jpg). Se convierten solas a .webp. Si ya existe una con ese nombre, se reemplaza.</p>
+    <label class="pick"><input type="file" id="imgFiles" accept="image/*" multiple/><b>Elegir imágenes</b><span id="imgName">Ninguna imagen elegida</span></label>
+    <p id="imgMsg" class="msg"></p>
+    <div id="thumbs"></div>
+  </section>
+
+  <section>
+    <button id="go" type="button">Publicar cambios</button>
+    <div id="log" role="status" aria-live="polite">Esperando archivos…</div>
+  </section>
+
+  <section>
+    <details id="cfgBox">
+      <summary>Conexión con GitHub (se configura una sola vez)</summary>
+      <div class="row">
+        <div><label for="owner">Usuario</label><input type="text" id="owner" autocomplete="off"/></div>
+        <div><label for="repo">Repositorio</label><input type="text" id="repo" autocomplete="off"/></div>
+        <div><label for="branch">Rama</label><input type="text" id="branch" value="main" autocomplete="off"/></div>
+      </div>
+      <label for="token">Token de acceso</label>
+      <input type="password" id="token" autocomplete="off" placeholder="github_pat_…"/>
+      <p class="hint" style="margin-top:8px">El token se guarda solo en este dispositivo. No lo compartas.</p>
+      <ol>
+        <li>En GitHub: Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.</li>
+        <li>Repository access: “Only select repositories” y elige este repositorio.</li>
+        <li>Permissions → Repository permissions → Contents: “Read and write”.</li>
+        <li>Copia el token y pégalo arriba.</li>
+      </ol>
+    </details>
+  </section>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+const LS = 'alba_admin_cfg';
+let jsonText = null, imgs = [];
+
+// --- Configuración (se recuerda en este dispositivo) ---
+(function initCfg() {
+  let c = {};
+  try { c = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) {}
+  const h = location.hostname, p = location.pathname.split('/').filter(Boolean);
+  if (!c.owner && h.endsWith('.github.io')) {
+    c.owner = h.split('.')[0];
+    c.repo = (p[0] && !p[0].endsWith('.html')) ? p[0] : h;
+  }
+  $('owner').value = c.owner || '';
+  $('repo').value = c.repo || '';
+  $('branch').value = c.branch || 'main';
+  $('token').value = c.token || '';
+  if (!c.token) $('cfgBox').open = true;
+})();
+const getCfg = () => ({
+  owner: $('owner').value.trim(), repo: $('repo').value.trim(),
+  branch: $('branch').value.trim() || 'main', token: $('token').value.trim()
+});
+
+const log = t => { $('log').textContent = t; };
+const say = (el, t, cls) => { el.textContent = t; el.className = 'msg ' + (cls || ''); };
+
+// --- 1. JSON: lee y valida el formato que espera el catálogo ---
+$('jsonFile').onchange = async e => {
+  const f = e.target.files[0]; jsonText = null;
+  $('jsonName').textContent = f ? f.name : 'Ningún archivo elegido';
+  if (!f) return;
+  try {
+    const t = await f.text();
+    const d = JSON.parse(t);
+    const lista = Array.isArray(d) ? d : d.productos;
+    if (!Array.isArray(lista)) throw new Error('No se encontró la lista de productos.');
+    const mal = lista.filter(p => p.Codigo == null || !p.Nombre || typeof p.Precio !== 'number' || p.Cantidad == null);
+    if (mal.length) throw new Error(mal.length + ' productos con datos incompletos o con el precio como texto. Ejemplo: ' + JSON.stringify(mal[0]));
+    const conStock = lista.filter(p => p.Cantidad > 0).length;
+    const cats = new Set(lista.map(p => p.Categoria).filter(Boolean)).size;
+    jsonText = t;
+    say($('jsonMsg'), `Archivo correcto: ${lista.length} productos, ${conStock} con stock, ${cats} categorías.`, 'ok');
+  } catch (err) {
+    say($('jsonMsg'), 'No se puede usar este archivo. ' + err.message, 'bad');
+  }
+};
+
+// --- 2. Imágenes: reduce y convierte a .webp en el navegador ---
+$('imgFiles').onchange = async e => {
+  imgs = []; $('thumbs').innerHTML = '';
+  const files = [...e.target.files];
+  $('imgName').textContent = files.length ? files.length + ' imágenes elegidas' : 'Ninguna imagen elegida';
+  let fallos = 0;
+  for (const f of files) {
+    try {
+      const bmp = await createImageBitmap(f);
+      const s = Math.min(1, 1000 / Math.max(bmp.width, bmp.height));
+      const c = document.createElement('canvas');
+      c.width = Math.round(bmp.width * s); c.height = Math.round(bmp.height * s);
+      c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+      const blob = await new Promise(r => c.toBlob(r, 'image/webp', 0.85));
+      const name = f.name.replace(/\.[^.]+$/, '') + '.webp';
+      imgs.push({ name, blob });
+      const fig = document.createElement('figure');
+      const im = document.createElement('img'); im.src = URL.createObjectURL(blob); im.alt = name;
+      const cap = document.createElement('figcaption'); cap.textContent = name;
+      fig.append(im, cap); $('thumbs').append(fig);
+    } catch (err) { fallos++; }
+  }
+  say($('imgMsg'), fallos ? `${fallos} archivos no se pudieron leer como imagen.` : (imgs.length ? `${imgs.length} imágenes listas.` : ''), fallos ? 'bad' : 'ok');
+};
+
+// --- Publicación: un solo commit con todos los archivos ---
+const b64 = buf => {
+  const u = new Uint8Array(buf); let s = '';
+  for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000));
+  return btoa(s);
+};
+async function gh(cfg, path, opt = {}) {
+  const r = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/${path}`, {
+    ...opt,
+    headers: { Authorization: 'Bearer ' + cfg.token, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' }
+  });
+  if (!r.ok) {
+    let m = ''; try { m = (await r.json()).message; } catch (e) {}
+    if (r.status === 401) m = 'El token no es válido o venció. Crea uno nuevo.';
+    if (r.status === 403 || r.status === 404) m = 'Sin permiso o repositorio/rama incorrectos. Revisa usuario, repositorio, rama y que el token tenga permiso Contents: Read and write. (' + m + ')';
+    throw new Error(m || ('Error ' + r.status));
+  }
+  return r.json();
+}
+
+$('go').onclick = async () => {
+  const cfg = getCfg();
+  if (!jsonText && !imgs.length) return log('Elige primero el archivo JSON o alguna imagen.');
+  if (!cfg.owner || !cfg.repo || !cfg.token) { $('cfgBox').open = true; return log('Completa la conexión con GitHub (usuario, repositorio y token).'); }
+  localStorage.setItem(LS, JSON.stringify(cfg));
+  $('go').disabled = true;
+  try {
+    log('Conectando con GitHub…');
+    const ref = await gh(cfg, `git/ref/heads/${cfg.branch}`);
+    const base = ref.object.sha;
+    const baseCommit = await gh(cfg, `git/commits/${base}`);
+    const tree = [];
+    const blob = async (content, path) => {
+      const b = await gh(cfg, 'git/blobs', { method: 'POST', body: JSON.stringify({ content, encoding: 'base64' }) });
+      tree.push({ path, mode: '100644', type: 'blob', sha: b.sha });
+    };
+    let n = 0; const total = (jsonText ? 1 : 0) + imgs.length;
+    if (jsonText) { await blob(b64(new TextEncoder().encode(jsonText)), 'json/productos.json'); log(`Subiendo archivos… ${++n}/${total}`); }
+    for (const im of imgs) { await blob(b64(await im.blob.arrayBuffer()), 'img/' + im.name); log(`Subiendo archivos… ${++n}/${total}`); }
+    log('Guardando cambios…');
+    const t = await gh(cfg, 'git/trees', { method: 'POST', body: JSON.stringify({ base_tree: baseCommit.tree.sha, tree }) });
+    const c = await gh(cfg, 'git/commits', { method: 'POST', body: JSON.stringify({ message: 'Actualización de catálogo ' + new Date().toLocaleString('es'), tree: t.sha, parents: [base] }) });
+    await gh(cfg, `git/refs/heads/${cfg.branch}`, { method: 'PATCH', body: JSON.stringify({ sha: c.sha }) });
+    log(`Publicado: ${jsonText ? 'productos.json' : ''}${jsonText && imgs.length ? ' y ' : ''}${imgs.length ? imgs.length + ' imágenes' : ''}.\nLos cambios estarán visibles en 1 o 2 minutos. Si no los ves, usa el botón de refrescar del catálogo.`);
+  } catch (err) {
+    log('No se pudo publicar. ' + err.message);
+  }
+  $('go').disabled = false;
+};
+</script>
+</body>
+</html>
