@@ -778,13 +778,6 @@
             "Categoria": "Ofertas Fin de año"
         },
         {
-            "Codigo": 178,
-            "Nombre": "Bola de res 1kg",
-            "Precio": 10.0,
-            "Cantidad": 6.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 353,
             "Nombre": "Barra chocolate con café",
             "Precio": 0.5,
@@ -1685,13 +1678,6 @@
             "Nombre": "Atún en aceite 1kg",
             "Precio": 9.0,
             "Cantidad": 12.0,
-            "Categoria": "Ofertas Fin de año"
-        },
-        {
-            "Codigo": 518,
-            "Nombre": "Carne de res 1kg",
-            "Precio": 10.0,
-            "Cantidad": 8.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
