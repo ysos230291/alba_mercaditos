@@ -15,6 +15,13 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
+            "Codigo": 4,
+            "Nombre": "Lomo deshuesado 3lb",
+            "Precio": 9.0,
+            "Cantidad": 3.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.0,
@@ -718,7 +725,7 @@
             "Codigo": 7,
             "Nombre": "Lomo deshuesado 5lb",
             "Precio": 15.0,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1798,6 +1805,20 @@
             "Precio": 30.0,
             "Cantidad": 3.0,
             "Categoria": "Ofertas Fin de año"
+        },
+        {
+            "Codigo": 542,
+            "Nombre": "Pierna de cerdo deshuesada de 7.4 a 8lb",
+            "Precio": 22.0,
+            "Cantidad": 3.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
+            "Codigo": 543,
+            "Nombre": "Pierna de cerdo deshuesada 8.3 a 9lb",
+            "Precio": 25.0,
+            "Cantidad": 3.0,
+            "Categoria": "Cárnicos y embutidos"
         }
     ],
     "remitentes": [
