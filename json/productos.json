@@ -1184,6 +1184,13 @@
             "Categoria": "Confituras"
         },
         {
+            "Codigo": 439,
+            "Nombre": "Carne rusa lata 450g",
+            "Precio": 2.0,
+            "Cantidad": 8.0,
+            "Categoria": "Cárnicos y embutidos"
+        },
+        {
             "Codigo": 440,
             "Nombre": "Ketshup 310g",
             "Precio": 2.0,
@@ -1394,6 +1401,13 @@
             "Categoria": "Ofertas Fin de año"
         },
         {
+            "Codigo": 476,
+            "Nombre": "Paquetes de bombones 800g",
+            "Precio": 5.0,
+            "Cantidad": 4.0,
+            "Categoria": "Ofertas Fin de año"
+        },
+        {
             "Codigo": 477,
             "Nombre": "Sardinas en tomate 155g",
             "Precio": 1.1,
@@ -1427,6 +1441,13 @@
             "Precio": 3.5,
             "Cantidad": 21.0,
             "Categoria": "Para la cocina"
+        },
+        {
+            "Codigo": 493,
+            "Nombre": "Jabón de baño Yili 100g",
+            "Precio": 0.65,
+            "Cantidad": 26.0,
+            "Categoria": "Aseo"
         },
         {
             "Codigo": 135,
@@ -1496,6 +1517,13 @@
             "Nombre": "Muslos de cerdo 18 a 19lb",
             "Precio": 42.0,
             "Cantidad": 1.0,
+            "Categoria": "Ofertas Fin de año"
+        },
+        {
+            "Codigo": 504,
+            "Nombre": "Muslo de cerdo 16 a 17lb",
+            "Precio": 38.0,
+            "Cantidad": 4.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1670,7 +1698,7 @@
             "Codigo": 529,
             "Nombre": "Jabón Yily 90g",
             "Precio": 0.65,
-            "Cantidad": 66.0,
+            "Cantidad": 50.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1702,6 +1730,13 @@
             "Categoria": "Ofertas Fin de año"
         },
         {
+            "Codigo": 533,
+            "Nombre": "Tina 4L helado Chocolate",
+            "Precio": 13.0,
+            "Cantidad": 3.0,
+            "Categoria": "Ofertas Fin de año"
+        },
+        {
             "Codigo": 534,
             "Nombre": "Tina 4L helado fresa",
             "Precio": 13.0,
@@ -1712,7 +1747,7 @@
             "Codigo": 535,
             "Nombre": "Tina 4Lt helado vainilla",
             "Precio": 13.0,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
