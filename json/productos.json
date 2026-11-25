@@ -1,13 +1,6 @@
 {
     "productos": [
         {
-            "Codigo": 1,
-            "Nombre": "Chuletas de cerdo con grasa y hueso 5lb",
-            "Precio": 12.0,
-            "Cantidad": 3.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 2,
             "Nombre": "Costillas de cerdo con piel, 5lb",
             "Precio": 12.0,
@@ -18,7 +11,7 @@
             "Codigo": 5,
             "Nombre": "Paquete de pollo muslo y contramuslo 10lb",
             "Precio": 12.0,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -32,14 +25,14 @@
             "Codigo": 11,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 32.0,
+            "Cantidad": 30.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 18,
-            "Nombre": "Spam mixto tubo 4lb aprox",
-            "Precio": 4.5,
-            "Cantidad": 3.0,
+            "Codigo": 20,
+            "Nombre": "Salchichas 340g",
+            "Precio": 1.8,
+            "Cantidad": 48.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -137,7 +130,7 @@
             "Codigo": 63,
             "Nombre": "Galletas Crakeñas soda 324g",
             "Precio": 2.6,
-            "Cantidad": 32.0,
+            "Cantidad": 31.0,
             "Categoria": "Confituras"
         },
         {
@@ -151,7 +144,7 @@
             "Codigo": 68,
             "Nombre": "Café Nezca 250g",
             "Precio": 4.5,
-            "Cantidad": 16.0,
+            "Cantidad": 13.0,
             "Categoria": "Café"
         },
         {
@@ -165,7 +158,7 @@
             "Codigo": 74,
             "Nombre": "Pasta de tomate 400g",
             "Precio": 1.0,
-            "Cantidad": 24.0,
+            "Cantidad": 15.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -221,21 +214,21 @@
             "Codigo": 87,
             "Nombre": "Frijol negro 1kg",
             "Precio": 2.0,
-            "Cantidad": 28.0,
+            "Cantidad": 25.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 88,
             "Nombre": "Arroz bolsa 1kg",
             "Precio": 1.4,
-            "Cantidad": 26.0,
+            "Cantidad": 17.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 94,
             "Nombre": "Sopa pollo instantánea",
             "Precio": 0.6,
-            "Cantidad": 17.0,
+            "Cantidad": 14.0,
             "Categoria": "Básicos"
         },
         {
@@ -386,24 +379,10 @@
             "Categoria": "Lácteos"
         },
         {
-            "Codigo": 146,
-            "Nombre": "Leche evaporada 354ml",
-            "Precio": 1.5,
-            "Cantidad": 6.0,
-            "Categoria": "Lácteos"
-        },
-        {
             "Codigo": 147,
             "Nombre": "Leche 1kg Lela",
             "Precio": 6.0,
-            "Cantidad": 15.0,
-            "Categoria": "Lácteos"
-        },
-        {
-            "Codigo": 157,
-            "Nombre": "Set 4 vasitos yogurt fresa",
-            "Precio": 2.5,
-            "Cantidad": 8.0,
+            "Cantidad": 25.0,
             "Categoria": "Lácteos"
         },
         {
@@ -424,7 +403,7 @@
             "Codigo": 163,
             "Nombre": "Jabón de baño",
             "Precio": 0.55,
-            "Cantidad": 342.0,
+            "Cantidad": 337.0,
             "Categoria": "Aseo"
         },
         {
@@ -445,7 +424,7 @@
             "Codigo": 168,
             "Nombre": "Pasta Dental",
             "Precio": 1.0,
-            "Cantidad": 59.0,
+            "Cantidad": 57.0,
             "Categoria": "Aseo"
         },
         {
@@ -466,7 +445,7 @@
             "Codigo": 61,
             "Nombre": "Galleta Soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 47.0,
+            "Cantidad": 46.0,
             "Categoria": "Confituras"
         },
         {
@@ -484,13 +463,6 @@
             "Categoria": "Cárnicos y embutidos"
         },
         {
-            "Codigo": 177,
-            "Nombre": "Tubo de chorizo aprox 2lb",
-            "Precio": 2.5,
-            "Cantidad": 3.0,
-            "Categoria": "Cárnicos y embutidos"
-        },
-        {
             "Codigo": 179,
             "Nombre": "Kermato 330ml",
             "Precio": 1.0,
@@ -501,7 +473,7 @@
             "Codigo": 182,
             "Nombre": "Frijol Colorado 1kg",
             "Precio": 2.2,
-            "Cantidad": 24.0,
+            "Cantidad": 23.0,
             "Categoria": "Básicos"
         },
         {
@@ -529,7 +501,7 @@
             "Codigo": 193,
             "Nombre": "Jamonilla de res 340g",
             "Precio": 2.2,
-            "Cantidad": 36.0,
+            "Cantidad": 35.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -543,7 +515,7 @@
             "Codigo": 202,
             "Nombre": "Queso Yaguajay 1.5lb aprox",
             "Precio": 3.8,
-            "Cantidad": 5.0,
+            "Cantidad": 4.0,
             "Categoria": "Lácteos"
         },
         {
@@ -711,7 +683,7 @@
             "Codigo": 327,
             "Nombre": "Detergente 1kg",
             "Precio": 2.5,
-            "Cantidad": 29.0,
+            "Cantidad": 28.0,
             "Categoria": "Aseo"
         },
         {
@@ -725,7 +697,7 @@
             "Codigo": 73,
             "Nombre": "Aceite 900ml",
             "Precio": 4.0,
-            "Cantidad": 7.0,
+            "Cantidad": 5.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -809,7 +781,7 @@
             "Codigo": 32,
             "Nombre": "Galleticas Bourbon 33g",
             "Precio": 0.25,
-            "Cantidad": 161.0,
+            "Cantidad": 157.0,
             "Categoria": "Confituras"
         },
         {
@@ -867,6 +839,13 @@
             "Precio": 23.0,
             "Cantidad": 1.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 365,
+            "Nombre": "Papas prefritas Vima 1kg",
+            "Precio": 4.5,
+            "Cantidad": 6.0,
+            "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 366,
@@ -963,7 +942,7 @@
             "Codigo": 390,
             "Nombre": "Natilla chocolate 40g",
             "Precio": 0.7,
-            "Cantidad": 62.0,
+            "Cantidad": 61.0,
             "Categoria": "Confituras"
         },
         {
@@ -991,14 +970,14 @@
             "Codigo": 400,
             "Nombre": "Sorbeto Nezca Fresa 80g",
             "Precio": 0.8,
-            "Cantidad": 11.0,
+            "Cantidad": 10.0,
             "Categoria": "Confituras"
         },
         {
             "Codigo": 401,
             "Nombre": "Sorbeto Nezca chocolate 80g",
             "Precio": 0.8,
-            "Cantidad": 17.0,
+            "Cantidad": 16.0,
             "Categoria": "Confituras"
         },
         {
@@ -1040,7 +1019,7 @@
             "Codigo": 416,
             "Nombre": "Lata Butter Cookies",
             "Precio": 4.0,
-            "Cantidad": 16.0,
+            "Cantidad": 15.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1089,7 +1068,7 @@
             "Codigo": 425,
             "Nombre": "Aceite de girasol 1L",
             "Precio": 4.8,
-            "Cantidad": 40.0,
+            "Cantidad": 39.0,
             "Categoria": "Para la cocina"
         },
         {
@@ -1103,7 +1082,7 @@
             "Codigo": 15,
             "Nombre": "Picadillo cocinerito 400g",
             "Precio": 1.2,
-            "Cantidad": 6.0,
+            "Cantidad": 44.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1124,14 +1103,14 @@
             "Codigo": 92,
             "Nombre": "Spaguettis 500g",
             "Precio": 1.2,
-            "Cantidad": 21.0,
+            "Cantidad": 60.0,
             "Categoria": "Básicos"
         },
         {
             "Codigo": 93,
             "Nombre": "Fideos 500g",
             "Precio": 1.1,
-            "Cantidad": 53.0,
+            "Cantidad": 50.0,
             "Categoria": "Básicos"
         },
         {
@@ -1140,13 +1119,6 @@
             "Precio": 1.8,
             "Cantidad": 8.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 439,
-            "Nombre": "Carne rusa lata 450g",
-            "Precio": 2.0,
-            "Cantidad": 8.0,
-            "Categoria": "Cárnicos y embutidos"
         },
         {
             "Codigo": 440,
@@ -1166,7 +1138,7 @@
             "Codigo": 445,
             "Nombre": "Galletas soda 7 tacos",
             "Precio": 3.0,
-            "Cantidad": 71.0,
+            "Cantidad": 69.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1180,7 +1152,7 @@
             "Codigo": 447,
             "Nombre": "Pasta bocadito 500g",
             "Precio": 4.8,
-            "Cantidad": 25.0,
+            "Cantidad": 24.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1201,7 +1173,7 @@
             "Codigo": 450,
             "Nombre": "Café La llave 284g",
             "Precio": 7.5,
-            "Cantidad": 13.0,
+            "Cantidad": 12.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1229,7 +1201,7 @@
             "Codigo": 454,
             "Nombre": "Macarrones 500g",
             "Precio": 1.0,
-            "Cantidad": 58.0,
+            "Cantidad": 57.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1257,7 +1229,7 @@
             "Codigo": 458,
             "Nombre": "Cerveza Cristal 24u",
             "Precio": 24.0,
-            "Cantidad": 18.0,
+            "Cantidad": 17.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1265,13 +1237,6 @@
             "Nombre": "Cerveza Bucanero 24u",
             "Precio": 24.0,
             "Cantidad": 8.0,
-            "Categoria": "Ofertas Fin de año"
-        },
-        {
-            "Codigo": 461,
-            "Nombre": "Pack 6 refresco limón lata",
-            "Precio": 4.2,
-            "Cantidad": 5.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1341,7 +1306,7 @@
             "Codigo": 473,
             "Nombre": "Mayonesa Celorrio ",
             "Precio": 4.0,
-            "Cantidad": 28.0,
+            "Cantidad": 27.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1362,14 +1327,14 @@
             "Codigo": 476,
             "Nombre": "Paquetes de bombones 800g",
             "Precio": 5.0,
-            "Cantidad": 4.0,
+            "Cantidad": 15.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 477,
             "Nombre": "Sardinas en tomate 155g",
             "Precio": 1.1,
-            "Cantidad": 95.0,
+            "Cantidad": 93.0,
             "Categoria": "Cárnicos y embutidos"
         },
         {
@@ -1378,6 +1343,13 @@
             "Precio": 0.8,
             "Cantidad": 36.0,
             "Categoria": "Confituras"
+        },
+        {
+            "Codigo": 490,
+            "Nombre": "Pasta de tomate 400g",
+            "Precio": 1.0,
+            "Cantidad": 9.0,
+            "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 491,
@@ -1481,21 +1453,21 @@
             "Codigo": 510,
             "Nombre": "Salchichas 340g",
             "Precio": 1.8,
-            "Cantidad": 61.0,
+            "Cantidad": 59.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 511,
             "Nombre": "Paquetes de pollo 10lb",
             "Precio": 12.0,
-            "Cantidad": 9.0,
+            "Cantidad": 8.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
             "Codigo": 512,
             "Nombre": "Jamón Seco ahumado 2.5lb",
             "Precio": 7.5,
-            "Cantidad": 70.0,
+            "Cantidad": 69.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1530,7 +1502,7 @@
             "Codigo": 516,
             "Nombre": "File de huevos 30u",
             "Precio": 4.8,
-            "Cantidad": 14.0,
+            "Cantidad": 13.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1677,7 +1649,7 @@
             "Codigo": 533,
             "Nombre": "Tina 4L helado Chocolate",
             "Precio": 13.0,
-            "Cantidad": 3.0,
+            "Cantidad": 2.0,
             "Categoria": "Ofertas Fin de año"
         },
         {
@@ -1735,6 +1707,13 @@
             "Precio": 25.0,
             "Cantidad": 7.0,
             "Categoria": "Cárnicos y embutidos"
+        },
+        {
+            "Codigo": 545,
+            "Nombre": "Refresco Havik 24 u surtido",
+            "Precio": 16.0,
+            "Cantidad": 25.0,
+            "Categoria": "Bebidas"
         }
     ],
     "remitentes": [
