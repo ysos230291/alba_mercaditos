@@ -463,6 +463,13 @@
             "Categoria": "Confituras"
         },
         {
+            "Codigo": 183,
+            "Nombre": "Manzanas rojas bolsa 3lb",
+            "Precio": 8.0,
+            "Cantidad": 36.0,
+            "Categoria": "Frutas frescas"
+        },
+        {
             "Codigo": 189,
             "Nombre": "Lata fresas  en almíbar 425g",
             "Precio": 2.8,
@@ -685,13 +692,6 @@
             "Precio": 0.5,
             "Cantidad": 15.0,
             "Categoria": "Confituras"
-        },
-        {
-            "Codigo": 358,
-            "Nombre": "Arroz Guyanés bolsa 10kg",
-            "Precio": 13.0,
-            "Cantidad": 10.0,
-            "Categoria": "Básicos"
         },
         {
             "Codigo": 359,
@@ -1644,6 +1644,13 @@
             "Precio": 5.5,
             "Cantidad": 16.0,
             "Categoria": "Bebidas"
+        },
+        {
+            "Codigo": 547,
+            "Nombre": "Bolsa uvas rojas 2.2lb",
+            "Precio": 12.0,
+            "Cantidad": 24.0,
+            "Categoria": "Frutas frescas"
         }
     ],
     "remitentes": [
